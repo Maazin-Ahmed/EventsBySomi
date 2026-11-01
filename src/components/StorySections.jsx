@@ -1,0 +1,34 @@
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { imageSrcSet, imageUrl } from '../content.js'
+
+export function Introduction() {
+  return <section className="intro-section" id="intro"><div className="intro-seal" aria-hidden="true">✳</div><p className="eyebrow eyebrow-dark">A HERITAGE OF CELEBRATION</p><h2>Old-world soul.<br/><em>Personal by nature.</em></h2><p className="intro-body">At Events by Somi, Indian celebrations are honored with thoughtful design and a personal touch. From the first gathering to the final detail, we help bring your traditions, loved ones, and vision together in a setting that feels unmistakably yours.</p><a className="text-link" href="#approach">Our way of bringing it together <span>↓</span></a></section>
+}
+
+export function Process() {
+  const steps = [['Listen', 'Tell us about your celebration, your traditions, and what you want guests to feel.'], ['Shape', 'We bring your ideas together with decor, mandap, and rental selections.'], ['Gather', 'Your setting comes together around the moments you are there to share.']]
+  return <section className="process-section" id="approach"><div className="process-top"><p className="eyebrow">A CONSIDERED APPROACH</p><h2>From first thought<br/>to <em>gathered together.</em></h2><p>A few thoughtful steps make room for the celebration you have imagined.</p></div><div className="process-steps">{steps.map(([name, text], i) => <article key={name}><span className="step-number">0{i + 1}</span><div className="step-line"/><h3>{name}</h3><p>{text}</p></article>)}</div></section>
+}
+
+export function Gallery() {
+  const ref = useRef(null)
+  const shots = [
+    ['photo-1519741497674-611481863552', 'A table set for a wedding celebration', 'wide'],
+    ['photo-1519167758481-83f550bb49b3', 'A ceremony setting under a canopy', 'tall'],
+    ['photo-1519225421980-715cb0215aed', 'Flowers arranged for a celebration', 'square'],
+    ['photo-1464366400600-7168b8af9bc3', 'A detail from the reception table', 'wide'],
+    ['photo-1507504031003-b417219a0fde', 'A gathering prepared for an evening event', 'square'],
+  ]
+  useEffect(() => {
+    const root = ref.current
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    const scope = gsap.context(() => gsap.utils.toArray('.gallery-tile', root).forEach((tile, index) => gsap.from(tile, { y: 40, opacity: 0, duration: .8, delay: index % 2 * .1, scrollTrigger: { trigger: tile, start: 'top 88%' } })), root)
+    return () => scope.revert()
+  }, [])
+  return <section className="gallery-section" id="gallery" ref={ref}><div className="gallery-head"><p className="eyebrow eyebrow-dark">COLLECTED MOMENTS</p><h2>A feeling, in <em>full bloom.</em></h2><p>A glimpse of the gatherings, details, and traditions that inspire us.</p></div><div className="editorial-gallery">{shots.map(([image, alt, size], i) => <figure className={`gallery-tile gallery-tile--${size}`} key={`${image}-${i}`}><img src={imageUrl(image, 800)} srcSet={imageSrcSet(image)} sizes="(max-width: 600px) 86vw, 34vw" alt={alt} loading="lazy"/><figcaption>EVENTS BY SOMI <span>{String(i + 1).padStart(2, '0')}</span></figcaption></figure>)}</div></section>
+}
+
+export function SiteFooter() {
+  return <footer className="site-footer"><div className="footer-top"><a className="brand-mark brand-mark--footer" href="#home"><span className="brand-mark__ornament">✳</span><span>EVENTS <i>BY</i> SOMI</span></a><p>Rooted in tradition.<br/><em>Designed for your story.</em></p><a className="footer-cta" href="#enquiry">Let’s create a gathering <span>↗</span></a></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Events by Somi</span><span>Indian celebrations, thoughtfully designed</span><div><a href="#privacy">Privacy policy</a><a href="#terms">Terms & conditions</a></div><span className="business-placeholder">Business contact details to be added</span></div><div className="legal-notes"><details id="privacy"><summary>Privacy policy</summary><p>We use the details you submit only to respond to your event enquiry. A full business privacy policy and contact information will be added before launch.</p></details><details id="terms"><summary>Terms & conditions</summary><p>Rental availability, pricing, delivery, and event terms are confirmed directly with the business. Full business terms will be added before launch.</p></details></div></footer>
+}
