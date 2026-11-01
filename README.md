@@ -1,0 +1,23 @@
+# Events by Somi
+
+Responsive event design and rentals website built with React, Vite, GSAP, and GSAP ScrollTrigger. Pinned horizontal showcases are desktop-only; touch layouts retain native vertical scrolling and horizontal swipe. Reduced-motion preferences disable the pinned effects and Lenis.
+
+## Run locally
+
+```sh
+npm install
+npm run dev
+```
+
+The Vite development server includes `/api/enquiries`. For a production build, run `npm run build` then `npm start`; the Node server serves `dist` and the enquiry API on port 4173 (or `PORT`).
+
+## Enquiry delivery
+
+Copy `.env.example` to `.env` and configure `EMAIL_RELAY_URL`, `ENQUIRY_TO_EMAIL`, and optionally `EMAIL_RELAY_TOKEN`. The relay is a trusted HTTPS JSON endpoint that sends the provided message; it receives `to`, `subject`, `replyTo`, `text`, and the validated `enquiry` object. The form returns success only after the relay responds with a 2xx status. Until configured, submissions return an explicit delivery error. Do not expose relay credentials in client code.
+
+The endpoint validates all required fields, strips unknown rental/service options, rejects honeypot submissions, limits payload size, and rate-limits requests per IP. By default, rate limiting uses the direct connection address. Set `TRUST_PROXY=true` only when a trusted reverse proxy strips and replaces `X-Forwarded-For`.
+
+## Launch placeholders
+
+No Utsav Decor & Rentals HTML source was present in the workspace. Inventory is taken from the supplied project brief. Set `VITE_WHATSAPP_NUMBER` to the verified WhatsApp business number (digits only), and replace the privacy policy and terms placeholders with approved legal text before launch. Photography is currently loaded from Unsplash URLs; replace with licensed business photography and self-host responsive AVIF/WebP variants for production.
+# EventsBySomi
