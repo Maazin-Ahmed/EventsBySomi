@@ -21,4 +21,4 @@ const server = http.createServer(async (req, res) => {
   } catch { res.writeHead(503, { 'content-type': 'text/plain' }); res.end('Build the website before starting the server.') }
 })
 const port = Number(process.env.PORT) || 4173
-server.listen(port, () => console.log(`Events by Somi listening on port ${port}`))
+server.listen(port, () => console.log(`Events by Somia listening on port ${port}`))

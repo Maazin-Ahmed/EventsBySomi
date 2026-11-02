@@ -1,4 +1,4 @@
-# Events by Somi
+# Events by Somia
 
 Responsive event design and rentals website built with React, Vite, GSAP, and GSAP ScrollTrigger. Pinned horizontal showcases are desktop-only; touch layouts retain native vertical scrolling and horizontal swipe. Reduced-motion preferences disable the pinned effects and Lenis.
 
@@ -20,4 +20,4 @@ The endpoint validates all required fields, strips unknown rental/service option
 ## Launch placeholders
 
 No Utsav Decor & Rentals HTML source was present in the workspace. Inventory is taken from the supplied project brief. Set `VITE_WHATSAPP_NUMBER` to the verified WhatsApp business number (digits only), and replace the privacy policy and terms placeholders with approved legal text before launch. Photography is currently loaded from Unsplash URLs; replace with licensed business photography and self-host responsive AVIF/WebP variants for production.
-# EventsBySomi
+# EventsBySomia
