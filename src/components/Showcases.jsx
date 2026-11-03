@@ -5,12 +5,14 @@ import { rentalGroups, imageSrcSet, imageUrl } from '../content.js'
 export function MandapShowcase() {
   const ref = useRef(null)
   useEffect(() => {
+    const section = ref.current
+    if (!section) return
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (reduced) return
     const scope = gsap.context(() => {
-      gsap.fromTo('.mandap-image', { scale: 1.17 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: '.mandap-section', start: 'top bottom', end: 'center center', scrub: true } })
-      gsap.from('.mandap-copy > *', { y: 30, opacity: 0, stagger: .12, scrollTrigger: { trigger: '.mandap-section', start: 'top 60%' } })
-    }, ref)
+      gsap.fromTo('.mandap-image', { scale: 1.17 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: section, start: 'top bottom', end: 'center center', scrub: true } })
+      gsap.from('.mandap-copy > *', { y: 30, opacity: 0, stagger: .12, scrollTrigger: { trigger: section, start: 'top 60%' } })
+    }, section)
     return () => scope.revert()
   }, [])
   return <section className="mandap-section" ref={ref}>

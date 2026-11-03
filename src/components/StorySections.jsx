@@ -39,13 +39,12 @@ export function SiteFooter() {
       <a className="footer-cta" href="/contact#enquiry">Request a Quote <span>↗</span></a>
     </div>
     <div className="footer-link-columns">
-      <nav className="footer-link-group" aria-label="Website links"><h3>Explore</h3><a href="/about">About</a><a href="/gallery">Gallery</a><a href="/contact">Contact</a></nav>
+      <nav className="footer-link-group" aria-label="Website links"><h3>Explore</h3><a href="/about">About</a><a href="/faq">FAQs</a><a href="/gallery">Gallery</a><a href="/contact">Contact</a></nav>
       <nav className="footer-link-group footer-link-group--celebrations" aria-label="Celebration pages"><h3>Celebrations</h3>{celebrations.map(item => <a href={`/celebrations/${item.slug}`} key={item.slug}>{item.name}</a>)}</nav>
       <nav className="footer-link-group" aria-label="Rental collections"><h3>Rental collections</h3>{rentalGroups.map(item => <a href={`/collections/${item.slug}`} key={item.slug}>{item.title}</a>)}</nav>
       <div className="footer-link-group footer-contact"><h3>Contact</h3><a href="tel:+19544960556">+1 954-496-0556</a><a href="mailto:contact@eventsbysomia.com">contact@eventsbysomia.com</a><a href="https://wa.me/19544960556" target="_blank" rel="noreferrer">WhatsApp</a><a href="https://maps.google.com/?q=9266+Delemar+Ct,+Wellington,+FL+33414" target="_blank" rel="noreferrer">9266 Delemar Ct<br/>Wellington, FL 33414<br/>United States</a></div>
     </div>
-    <div className="footer-bottom"><span>© {new Date().getFullYear()} Events by Somia</span><span>Rooted in tradition. Designed for your story.</span><div><a href="#privacy">Privacy policy</a><a href="#terms">Terms & conditions</a></div></div>
-    <div className="legal-notes"><details id="privacy"><summary>Privacy policy</summary><p>We use the details you submit only to respond to your event enquiry. For questions, contact <a href="mailto:contact@eventsbysomia.com">contact@eventsbysomia.com</a>.</p></details><details id="terms"><summary>Terms & conditions</summary><p>Rental availability, pricing, delivery, and event terms are confirmed directly with the business.</p></details></div>
+    <div className="footer-bottom"><span>© {new Date().getFullYear()} Events by Somia</span><span>Rooted in tradition. Designed for your story.</span><div><a href="/privacy-policy">Privacy policy</a><a href="/terms">Terms & conditions</a></div></div>
   </footer>
 
 }

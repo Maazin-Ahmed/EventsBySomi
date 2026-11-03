@@ -13,7 +13,8 @@ const editorialImages = [
 
 export function PageHero({ image, eyebrow, title, intro, action, palette, crumb = '', quoteHref }) {
   const crumbHref = crumb === 'Celebrations' ? '/celebrations' : crumb === 'Rentals' ? '/collections' : '/'
-  return <section className="inner-hero" style={{ '--hero-image': `url(${imageUrl(image, 2000)})` }}>
+  return <section className="inner-hero">
+    <img className="inner-hero__image" src={imageUrl(image, 1400)} srcSet={imageSrcSet(image)} sizes="100vw" alt="" fetchPriority="high"/>
     <div className="inner-hero__shade"/><Navigation/>
     <div className="inner-hero__content"><nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a>{crumb && crumb !== title && <><span>/</span><a href={crumbHref}>{crumb}</a></>}<span>/</span><span aria-current="page">{title}</span></nav>
       <p className="eyebrow"><span/>{eyebrow}</p><h1>{title}</h1><p className="inner-hero__intro">{intro}</p>{palette && <p className="palette-note">{palette}</p>}

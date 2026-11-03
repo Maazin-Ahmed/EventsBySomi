@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
@@ -10,10 +10,12 @@ import { Introduction, Process, Gallery, SiteFooter } from './components/StorySe
 import Enquiry from './components/Enquiry.jsx'
 import Navigation from './components/Navigation.jsx'
 import GalleryPage from './components/GalleryPage.jsx'
-import { CelebrationPage, CollectionPage, ListingPage, SimplePage } from './components/CatalogPages.jsx'
+import { CelebrationPage, CollectionPage, ListingPage } from './components/CatalogPages.jsx'
 import { celebrations, rentalGroups } from './content.js'
+import { applyPageSeo } from './seo.js'
 import './styles.css'
 
+const InfoPage = lazy(() => import('./components/InfoPages.jsx'))
 gsap.registerPlugin(ScrollTrigger)
 
 export default function App() {
@@ -23,25 +25,7 @@ export default function App() {
   const celebration = celebrationMatch && celebrations.find(item => item.slug === celebrationMatch[1])
   const collection = collectionMatch && rentalGroups.find(item => item.slug === collectionMatch[1])
   useEffect(() => {
-    const titles = {
-      '/': 'Events by Somia — South Asian celebrations, thoughtfully designed',
-      '/celebrations': 'Celebrations — Events by Somia',
-      '/collections': 'Rental Collections — Events by Somia',
-      '/gallery': 'Gallery Inspiration — Events by Somia', '/about': 'About — Events by Somia', '/contact': 'Request a Quote — Events by Somia',
-    }
-    const descriptions = {
-      '/celebrations': 'Explore weddings, Mehendi, Haldi, Sangeet, and other South Asian celebrations with Events by Somia.',
-      '/collections': 'Explore seating, tables, linens, mandap and stage, decor, and serveware rentals from Events by Somia.',
-      '/gallery': 'Editorial inspiration for South Asian celebrations, ceremony settings, event decor, and rental collections. Images are not a portfolio of Events by Somia client work.',
-      '/about': 'Learn about Events by Somia, bringing thoughtful rental and decor selections to South Asian celebrations in the United States.',
-      '/contact': 'Tell Events by Somia about your celebration and request a quote for decor and event rentals.',
-    }
-    const page = celebration || collection
-    document.title = page ? `${page.name || page.title} — Events by Somia` : titles[path] || 'Events by Somia'
-    const description = page?.intro || page?.description || descriptions[path] || 'Thoughtfully designed South Asian celebrations, decor, and event rentals by Events by Somia in Wellington, Florida.'
-    document.querySelector('meta[name="description"]')?.setAttribute('content', description)
-    document.querySelector('meta[property="og:title"]')?.setAttribute('content', document.title)
-    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description)
+    applyPageSeo(path)
   }, [path, celebration, collection])
   useEffect(() => {
     if (path === '/contact' && window.location.hash === '#enquiry') {
@@ -75,7 +59,10 @@ export default function App() {
   if (collection) return <CollectionPage group={collection}/>
   if (path === '/celebrations' || path === '/collections') return <ListingPage type={path.slice(1)}/>
   if (path === '/gallery') return <GalleryPage/>
-  if (path === '/about') return <SimplePage type="about"/>
+  if (path === '/about') return <Suspense fallback={<div className="page-loading" role="status">Loading page…</div>}><InfoPage type="about"/></Suspense>
+  if (path === '/faq') return <Suspense fallback={<div className="page-loading" role="status">Loading page…</div>}><InfoPage type="faq"/></Suspense>
+  if (path === '/privacy-policy') return <Suspense fallback={<div className="page-loading" role="status">Loading page…</div>}><InfoPage type="privacy"/></Suspense>
+  if (path === '/terms') return <Suspense fallback={<div className="page-loading" role="status">Loading page…</div>}><InfoPage type="terms"/></Suspense>
   if (path === '/contact') return <><section className="contact-intro"><Navigation/><p className="eyebrow"><span/>EVENTS BY SOMIA</p><h1>Let’s begin<br/><em>with your story.</em></h1><p>Tell us a little about the celebration you have in mind.</p></section><Enquiry/><SiteFooter/></>
   return <><Hero/><main><Introduction/><Celebrations/><MandapShowcase/><RentalCollections/><DecorativeDetails/><Process/><Gallery/><Enquiry/></main><SiteFooter/></>
 }

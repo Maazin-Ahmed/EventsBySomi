@@ -6,11 +6,13 @@ import { imageSrcSet, imageUrl } from '../content.js'
 export default function Hero() {
   const root = useRef(null)
   useEffect(() => {
+    const section = root.current
+    if (!section) return
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     const scope = gsap.context(() => {
       if (!reduced) {
         gsap.from('.hero-copy > *', { y: 32, opacity: 0, duration: 1, stagger: .13, ease: 'power3.out', delay: .15 })
-        gsap.to('.hero-image', { yPercent: 16, scale: 1.12, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } })
+        gsap.to('.hero-image', { yPercent: 16, scale: 1.12, ease: 'none', scrollTrigger: { trigger: section, start: 'top top', end: 'bottom top', scrub: true } })
         gsap.from('.hanging-light', { y: -50, opacity: 0, duration: 1.3, ease: 'power2.out', delay: .5 })
       }
     }, root)

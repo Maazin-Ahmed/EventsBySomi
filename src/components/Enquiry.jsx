@@ -109,7 +109,7 @@ export default function Enquiry() {
         {field('requirements', 'Additional requirements', <textarea id="requirements" name="requirements" rows="4" placeholder="Tell us what you have in mind…" value={form.requirements} onChange={e => update('requirements', e.target.value)}/>, false)}
         <div className="honeypot" aria-hidden="true"><label htmlFor="website">Leave this field empty</label><input id="website" name="website" tabIndex="-1" autoComplete="off" value={form.website} onChange={e => update('website', e.target.value)}/></div>
       </div>
-      <div className="submit-row"><button className="button button-wine" disabled={status === 'loading'}>{status === 'loading' ? 'Sending your enquiry…' : 'Send your enquiry'} <span>{status === 'loading' ? '◌' : '↗'}</span></button><p>By submitting, you agree to our <a href="#privacy">Privacy Policy</a> and <a href="#terms">Terms.</a></p></div>
+      <div className="submit-row"><button className="button button-wine" disabled={status === 'loading'}>{status === 'loading' ? 'Sending your enquiry…' : 'Send your enquiry'} <span>{status === 'loading' ? '◌' : '↗'}</span></button><p>By submitting, you agree to our <a href="/privacy-policy">Privacy Policy</a> and <a href="/terms">Terms.</a></p></div>
       <div aria-live="polite" role="status" className={`form-status form-status--${status}`}>{status === 'success' && 'Thank you. Your enquiry has been received, and we’ll be in touch.'}{status === 'error' && (errors.form || 'We could not send your enquiry. Please try again.')}{status === 'invalid' && 'Please review the highlighted fields and try again.'}</div>
     </form>
   </section>
