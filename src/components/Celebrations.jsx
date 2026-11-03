@@ -20,12 +20,12 @@ export default function Celebrations() {
   return <section id="celebrations" className="celebrations-section" ref={section}>
     <div className="section-heading celebration-heading"><div className="reveal"><p className="eyebrow eyebrow-dark">MOMENTS WORTH GATHERING FOR</p><h2>Every reason to<br/><em>come together.</em></h2></div><p className="section-note reveal">Rooted in tradition, shaped around you. We create settings for the milestones and everyday moments that bring your loved ones close.</p></div>
     <div className="celebration-track">
-      {celebrations.map((item, i) => <article className="celebration-card" key={item.name}>
+      {celebrations.map(item => <a className="celebration-card" key={item.slug} href={`/celebrations/${item.slug}`} aria-label={`Explore ${item.name}`}>
         <img src={imageUrl(item.image, 800)} srcSet={imageSrcSet(item.image)} sizes="(max-width: 899px) 80vw, 35vw" alt={`${item.name} celebration decor`} loading="lazy" />
-        <div className="celebration-card__shade"/><span className="card-index">{String(i + 1).padStart(2, '0')}</span>
+        <div className="celebration-card__shade"/>
         <div className="celebration-card__copy"><p>{item.local}</p><h3>{item.name}</h3><span>{item.note}</span></div>
-      </article>)}
+      </a>)}
     </div>
-    <div className="gallery-progress" aria-hidden="true"><span/> <span>SCROLL TO DISCOVER</span> <span>10 CELEBRATIONS</span></div>
+    <div className="gallery-progress" aria-hidden="true"><span/> <span>SCROLL TO DISCOVER</span> <span>SOUTH ASIAN CELEBRATIONS</span></div>
   </section>
 }

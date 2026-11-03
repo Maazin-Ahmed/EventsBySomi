@@ -17,7 +17,7 @@ Copy `.env.example` to `.env` and configure `EMAIL_RELAY_URL`, `ENQUIRY_TO_EMAIL
 
 The endpoint validates all required fields, strips unknown rental/service options, rejects honeypot submissions, limits payload size, and rate-limits requests per IP. By default, rate limiting uses the direct connection address. Set `TRUST_PROXY=true` only when a trusted reverse proxy strips and replaces `X-Forwarded-For`.
 
-## Launch placeholders
+## Brand and photography
 
-No Utsav Decor & Rentals HTML source was present in the workspace. Inventory is taken from the supplied project brief. Set `VITE_WHATSAPP_NUMBER` to the verified WhatsApp business number (digits only), and replace the privacy policy and terms placeholders with approved legal text before launch. Photography is currently loaded from Unsplash URLs; replace with licensed business photography and self-host responsive AVIF/WebP variants for production.
+The listed rental inventory is taken from the supplied project brief. Contact details in the site use the provided Events by Somia business information. The project has no local inventory photography; editorial and category images are loaded from Unsplash URLs. Replace these with licensed business inventory photography and self-host responsive AVIF/WebP variants when available. A WhatsApp number was not provided, so that optional link remains hidden unless `VITE_WHATSAPP_NUMBER` is configured. The privacy and terms sections should be replaced with approved legal text before launch.
 # EventsBySomia

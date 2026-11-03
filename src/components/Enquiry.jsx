@@ -1,12 +1,17 @@
 import { cloneElement, useState } from 'react'
-import { rentalGroups, services, states } from '../content.js'
+import { celebrationEventType, rentalGroups, services, states } from '../content.js'
 
 const blank = { fullName: '', email: '', phone: '', eventType: '', eventDate: '', guests: '', venue: '', city: '', state: '', zip: '', services: [], colourTheme: '', budget: '', requirements: '', rentalCategories: [], website: '' }
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const phonePattern = /^\+?1?\s*\(?[2-9]\d{2}\)?[ .-]*[2-9]\d{2}[ .-]*\d{4}$/
 
 export default function Enquiry() {
-  const [form, setForm] = useState(blank)
+  const [form, setForm] = useState(() => {
+    const query = new URLSearchParams(window.location.search)
+    const eventType = celebrationEventType(query.get('event') || '')
+    const category = rentalGroups.find(group => group.slug === query.get('category'))?.title || ''
+    return { ...blank, eventType, rentalCategories: category ? [category] : [] }
+  })
   const whatsappNumber = (import.meta.env.VITE_WHATSAPP_NUMBER || '').replace(/\D/g, '')
   const whatsappHref = whatsappNumber ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Hello, I would like to ask about an event.')}` : '#enquiry'
   const [errors, setErrors] = useState({})
@@ -46,14 +51,14 @@ export default function Enquiry() {
     {errors[key] && <small id={`${key}-error`}>{errors[key]}</small>}{help && <small className="field-help">{help}</small>}
   </div>
   return <section className="enquiry-section" id="enquiry">
-    <div className="enquiry-aside"><p className="eyebrow">LET’S BEGIN</p><h2>Tell us what<br/>you’re <em>dreaming.</em></h2><p>Share a few details and our team can learn what matters most to you and your celebration.</p><div className="enquiry-rule"/><p className="aside-small">Have a quick question?</p><a className="whatsapp-link" href={whatsappHref} target={whatsappNumber ? '_blank' : undefined} rel={whatsappNumber ? 'noreferrer' : undefined}>Contact us on WhatsApp <span>↗</span></a>{!whatsappNumber && <p className="placeholder-note">Business WhatsApp number to be added before launch.</p>}</div>
+    <div className="enquiry-aside"><p className="eyebrow">LET’S BEGIN</p><h2>Tell us what<br/>you’re <em>dreaming.</em></h2><p>Share a few details and our team can learn what matters most to you and your celebration.</p><div className="enquiry-rule"/><p className="aside-small">Have a quick question?</p>{whatsappNumber && <a className="whatsapp-link" href={whatsappHref} target="_blank" rel="noreferrer">Contact us on WhatsApp <span>↗</span></a>}<a className="whatsapp-link" href="tel:+19544960556">Call +1 954-496-0556 <span>↗</span></a><a className="whatsapp-link" href="mailto:contact@eventsbysomia.com">Email our team <span>↗</span></a></div>
     <form className="enquiry-form" onSubmit={submit} noValidate>
-      <div className="form-heading"><span>01</span><div><h3>Your celebration</h3><p>Fields marked * are required.</p></div></div>
+      <div className="form-heading"><div><h3>Your celebration</h3><p>Fields marked * are required.</p></div></div>
       <div className="form-grid">
         {field('fullName', 'Full name', <input id="fullName" name="fullName" autoComplete="name" value={form.fullName} onChange={e => update('fullName', e.target.value)} required aria-invalid={!!errors.fullName}/>, true)}
         {field('email', 'Email address', <input id="email" name="email" type="email" autoComplete="email" value={form.email} onChange={e => update('email', e.target.value)} required aria-invalid={!!errors.email}/>, true)}
         {field('phone', 'Phone number', <input id="phone" name="phone" type="tel" autoComplete="tel" placeholder="+1 (555) 000-0000" value={form.phone} onChange={e => update('phone', e.target.value)} required aria-invalid={!!errors.phone}/>, true, 'US numbers with country code +1 are supported.')}
-        {field('eventType', 'Event type', <select id="eventType" name="eventType" value={form.eventType} onChange={e => update('eventType', e.target.value)} required><option value="">Select celebration</option>{['Wedding (Shaadi)', 'Mehendi', 'Haldi', 'Sangeet', 'Baby shower (Godh Bharai)', 'Birthday (Janamdin)', 'Griha Pravesh', 'Pooja', 'Get-together', 'Anniversary'].map(x => <option key={x}>{x}</option>)}</select>, true)}
+        {field('eventType', 'Event type', <select id="eventType" name="eventType" value={form.eventType} onChange={e => update('eventType', e.target.value)} required><option value="">Select celebration</option>{['Wedding (Shaadi)', 'Mehendi', 'Haldi', 'Sangeet', 'Baby shower (Godh Bharai)', 'Birthday (Janamdin)', 'Anniversary', 'Pooja', 'Griha Pravesh', 'Get-together'].map(x => <option key={x}>{x}</option>)}</select>, true)}
         {field('eventDate', 'Event date', <input id="eventDate" name="eventDate" type="date" value={form.eventDate} onChange={e => update('eventDate', e.target.value)} required min={new Date().toISOString().slice(0, 10)}/>, true, 'Select the event date.')}
         {field('guests', 'Number of guests', <input id="guests" name="guests" type="number" min="1" max="99999" inputMode="numeric" placeholder="e.g. 150" value={form.guests} onChange={e => update('guests', e.target.value)} required/>, true)}
         {field('venue', 'Venue', <input id="venue" name="venue" value={form.venue} onChange={e => update('venue', e.target.value)} placeholder="Venue name, if selected" autoComplete="organization"/>)}
