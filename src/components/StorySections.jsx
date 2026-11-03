@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { imageSrcSet, imageUrl } from '../content.js'
+import { celebrations, imageSrcSet, imageUrl, rentalGroups } from '../content.js'
 
 export function Introduction() {
   return <section className="intro-section" id="intro"><div className="intro-seal" aria-hidden="true">✳</div><p className="eyebrow eyebrow-dark">A HERITAGE OF CELEBRATION</p><h2>Old-world soul.<br/><em>Personal by nature.</em></h2><p className="intro-body">At Events by Somia, South Asian celebrations are honored with thoughtful design and a personal touch. From the first gathering to the final detail, we help bring your traditions, loved ones, and vision together in a setting that feels unmistakably yours.</p><a className="text-link" href="#approach">Our way of bringing it together <span>↓</span></a></section>
@@ -30,6 +30,22 @@ export function Gallery() {
 }
 
 export function SiteFooter() {
-  return <footer className="site-footer"><div className="footer-top"><a className="brand-mark brand-mark--footer" href="/"><span className="brand-mark__ornament">✳</span><span>EVENTS <i>BY</i> SOMIA</span></a><p>Rooted in tradition.<br/><em>Designed for your story.</em></p><a className="footer-cta" href="/contact#enquiry">Let’s create a gathering <span>↗</span></a></div><div className="footer-contact"><a href="tel:+19544960556">+1 954-496-0556</a><a href="mailto:contact@eventsbysomia.com">contact@eventsbysomia.com</a><a href="https://maps.google.com/?q=9266+Delemar+Ct,+Wellington,+FL+33414" target="_blank" rel="noreferrer">9266 Delemar Ct, Wellington, FL 33414</a></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Events by Somia</span><span>South Asian celebrations, thoughtfully designed</span><div><a href="#privacy">Privacy policy</a><a href="#terms">Terms & conditions</a></div></div><div className="legal-notes"><details id="privacy"><summary>Privacy policy</summary><p>We use the details you submit only to respond to your event enquiry. For questions, contact contact@eventsbysomia.com.</p></details><details id="terms"><summary>Terms & conditions</summary><p>Rental availability, pricing, delivery, and event terms are confirmed directly with the business.</p></details></div></footer>
+  return <footer className="site-footer">
+    <div className="footer-top">
+      <div className="footer-brand-block">
+        <a className="brand-mark brand-mark--footer" href="/" aria-label="Events by Somia, home"><span className="brand-mark__ornament" aria-hidden="true">✳</span><span>EVENTS <i>BY</i> SOMIA</span></a>
+        <p>Thoughtful decor and rental pieces for South Asian celebrations and cultural gatherings.</p>
+      </div>
+      <a className="footer-cta" href="/contact#enquiry">Request a Quote <span>↗</span></a>
+    </div>
+    <div className="footer-link-columns">
+      <nav className="footer-link-group" aria-label="Website links"><h3>Explore</h3><a href="/about">About</a><a href="/gallery">Gallery</a><a href="/contact">Contact</a></nav>
+      <nav className="footer-link-group footer-link-group--celebrations" aria-label="Celebration pages"><h3>Celebrations</h3>{celebrations.map(item => <a href={`/celebrations/${item.slug}`} key={item.slug}>{item.name}</a>)}</nav>
+      <nav className="footer-link-group" aria-label="Rental collections"><h3>Rental collections</h3>{rentalGroups.map(item => <a href={`/collections/${item.slug}`} key={item.slug}>{item.title}</a>)}</nav>
+      <div className="footer-link-group footer-contact"><h3>Contact</h3><a href="tel:+19544960556">+1 954-496-0556</a><a href="mailto:contact@eventsbysomia.com">contact@eventsbysomia.com</a><a href="https://wa.me/19544960556" target="_blank" rel="noreferrer">WhatsApp</a><a href="https://maps.google.com/?q=9266+Delemar+Ct,+Wellington,+FL+33414" target="_blank" rel="noreferrer">9266 Delemar Ct<br/>Wellington, FL 33414<br/>United States</a></div>
+    </div>
+    <div className="footer-bottom"><span>© {new Date().getFullYear()} Events by Somia</span><span>Rooted in tradition. Designed for your story.</span><div><a href="#privacy">Privacy policy</a><a href="#terms">Terms & conditions</a></div></div>
+    <div className="legal-notes"><details id="privacy"><summary>Privacy policy</summary><p>We use the details you submit only to respond to your event enquiry. For questions, contact <a href="mailto:contact@eventsbysomia.com">contact@eventsbysomia.com</a>.</p></details><details id="terms"><summary>Terms & conditions</summary><p>Rental availability, pricing, delivery, and event terms are confirmed directly with the business.</p></details></div>
+  </footer>
 
 }

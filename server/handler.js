@@ -3,6 +3,8 @@ import { createHash } from 'node:crypto'
 const celebrations = ['Wedding (Shaadi)', 'Mehendi', 'Haldi', 'Sangeet', 'Baby shower (Godh Bharai)', 'Birthday (Janamdin)', 'Griha Pravesh', 'Pooja', 'Get-together', 'Anniversary']
 const services = ['Decor and design', 'Wedding mandap', 'Event rentals', 'Stage setup', 'Floral and fabric backdrop', 'Other listed rentals']
 const rentalCategories = ['Seating', 'Tables', 'Linens', 'Mandap & stage', 'Decor', 'Serveware']
+const countryCodes = new Set(['+1', '+44', '+61', '+64', '+91', '+92', '+880', '+977', '+94', '+971'])
+const usPhonePattern = /^\+?1?\s*\(?[2-9]\d{2}\)?[ .-]*[2-9]\d{2}[ .-]*\d{4}$/
 const states = new Set('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC'.split(' '))
 const requests = new Map()
 const WINDOW_MS = 15 * 60 * 1000
@@ -11,7 +13,20 @@ const MAX_REQUESTS = 5
 function clean(value, max = 2000) { return typeof value === 'string' ? value.trim().replace(/[\u0000-\u001F\u007F]/g, ' ').slice(0, max) : '' }
 function fail(res, status, error) { res.writeHead(status, { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' }); res.end(JSON.stringify({ error })) }
 function validEmail(value) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) }
-function validPhone(value) { return /^\+?1?\s*\(?[2-9]\d{2}\)?[ .-]*[2-9]\d{2}[ .-]*\d{4}$/.test(value) }
+function normalizePhone(value, submittedCountryCode) {
+  let digits = value.replace(/\D/g, '')
+  let countryCode = submittedCountryCode
+  if (!countryCode) {
+    if (!usPhonePattern.test(value)) return null
+    countryCode = '+1'
+    if (digits.length === 11 && digits.startsWith('1')) digits = digits.slice(1)
+  }
+  if (!countryCodes.has(countryCode)) return null
+  if (countryCode === '+1' && digits.length === 11 && digits.startsWith('1')) digits = digits.slice(1)
+  if (digits.length < 6 || digits.length > 14 || countryCode.replace(/\D/g, '').length + digits.length > 15) return null
+  if (countryCode === '+1' && !usPhonePattern.test(`+1${digits}`)) return null
+  return { countryCode, nationalNumber: digits, e164: `${countryCode}${digits}` }
+}
 
 function rateLimit(key, now = Date.now()) {
   const previous = requests.get(key) || []
@@ -44,8 +59,9 @@ export async function handleEnquiry(req, res) {
   if (!data || typeof data !== 'object' || Array.isArray(data)) return fail(res, 400, 'Invalid request body.')
 
   if (clean(data.website, 300)) return fail(res, 400, 'Unable to submit this enquiry.')
+  const phone = normalizePhone(clean(data.phone, 30), clean(data.countryCode, 4))
   const enquiry = {
-    fullName: clean(data.fullName, 120), email: clean(data.email, 254), phone: clean(data.phone, 30),
+    fullName: clean(data.fullName, 120), email: clean(data.email, 254), phone: phone?.e164 || '', countryCode: phone?.countryCode || '',
     eventType: clean(data.eventType, 80), eventDate: clean(data.eventDate, 10), guests: clean(String(data.guests ?? ''), 5),
     venue: clean(data.venue, 200), city: clean(data.city, 100), state: clean(data.state, 2), zip: clean(data.zip, 10),
     services: Array.isArray(data.services) ? [...new Set(data.services.filter(x => services.includes(x)))].slice(0, services.length) : [],
@@ -56,7 +72,7 @@ export async function handleEnquiry(req, res) {
   const today = new Date(); today.setUTCHours(0, 0, 0, 0)
   const validDate = eventDay && !Number.isNaN(eventDay.getTime()) && eventDay.toISOString().slice(0, 10) === enquiry.eventDate
   const budgets = ['', 'Under $5,000', '$5,000–$10,000', '$10,000–$25,000', '$25,000+', 'Prefer to discuss']
-  const invalid = !enquiry.fullName || enquiry.fullName.length < 2 || !validEmail(enquiry.email) || !validPhone(enquiry.phone) ||
+  const invalid = !enquiry.fullName || enquiry.fullName.length < 2 || !validEmail(enquiry.email) || !phone ||
     !celebrations.includes(enquiry.eventType) || !validDate || eventDay < today || !budgets.includes(enquiry.budget) ||
     !/^\d{1,5}$/.test(enquiry.guests) || Number(enquiry.guests) < 1 || !enquiry.city || !states.has(enquiry.state) ||
     !/^\d{5}(?:-\d{4})?$/.test(enquiry.zip) || !enquiry.services.length ||

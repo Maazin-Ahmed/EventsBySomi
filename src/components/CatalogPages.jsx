@@ -11,13 +11,13 @@ const editorialImages = [
   'photo-1519167758481-83f550bb49b3', 'photo-1464366400600-7168b8af9bc3',
 ]
 
-function PageHero({ image, eyebrow, title, intro, action, palette, crumb = '' }) {
+export function PageHero({ image, eyebrow, title, intro, action, palette, crumb = '', quoteHref }) {
   const crumbHref = crumb === 'Celebrations' ? '/celebrations' : crumb === 'Rentals' ? '/collections' : '/'
   return <section className="inner-hero" style={{ '--hero-image': `url(${imageUrl(image, 2000)})` }}>
     <div className="inner-hero__shade"/><Navigation/>
     <div className="inner-hero__content"><nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a>{crumb && crumb !== title && <><span>/</span><a href={crumbHref}>{crumb}</a></>}<span>/</span><span aria-current="page">{title}</span></nav>
       <p className="eyebrow"><span/>{eyebrow}</p><h1>{title}</h1><p className="inner-hero__intro">{intro}</p>{palette && <p className="palette-note">{palette}</p>}
-      <div className="inner-hero__actions"><a className="button button-light" href="#catalogue">{action || 'Explore the Collection'} <span>↓</span></a><a className="button button-outline" href={`/contact?${crumb === 'Celebrations' ? 'event' : 'category'}=${crumb === 'Celebrations' ? (celebrations.find(item => item.name === title)?.slug || '') : (rentalGroups.find(item => item.title === title)?.slug || '')}#enquiry`}>Request a Quote <span>↗</span></a></div>
+      <div className="inner-hero__actions"><a className="button button-light" href="#catalogue">{action || 'Explore the Collection'} <span>↓</span></a><a className="button button-outline" href={quoteHref || `/contact?${crumb === 'Celebrations' ? 'event' : 'category'}=${crumb === 'Celebrations' ? (celebrations.find(item => item.name === title)?.slug || '') : (rentalGroups.find(item => item.title === title)?.slug || '')}#enquiry`}>Request a Quote <span>↗</span></a></div>
     </div>
     <a className="inner-hero__scroll" href="#catalogue">DISCOVER <span>↓</span></a>
   </section>
