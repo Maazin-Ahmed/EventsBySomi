@@ -37,7 +37,5 @@ export default function Hero() {
       <p className="hero-lede">A gathering of color, ritual, and the people who make it yours.</p>
       <a className="button button-light" href="#celebrations">Explore our celebrations <span>↓</span></a>
     </div>
-      <div className="hero-caption"><span>A celebration in every detail</span><span>EVENTS BY SOMIA · EST. WITH INTENTION</span></div>
-    <a className="hero-scroll" href="#intro" aria-label="Scroll to introduction">SCROLL <span>↓</span></a>
   </section>
 }
