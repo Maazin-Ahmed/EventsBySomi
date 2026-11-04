@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { celebrations, imageSrcSet, imageUrl } from '../content.js'
+import { imageById } from '../imageManifest.js'
 
 export default function Celebrations() {
   const section = useRef(null)
@@ -20,8 +21,8 @@ export default function Celebrations() {
   return <section id="celebrations" className="celebrations-section" ref={section}>
     <div className="section-heading celebration-heading"><div className="reveal"><p className="eyebrow eyebrow-dark">MOMENTS WORTH GATHERING FOR</p><h2>Every reason to<br/><em>come together.</em></h2></div><p className="section-note reveal">Rooted in tradition, shaped around you. We create settings for the milestones and everyday moments that bring your loved ones close.</p></div>
     <div className="celebration-track">
-      {celebrations.map(item => <a className="celebration-card" key={item.slug} href={`/celebrations/${item.slug}`} aria-label={`Explore ${item.name}`}>
-        <img src={imageUrl(item.image, 800)} srcSet={imageSrcSet(item.image)} sizes="(max-width: 899px) 80vw, 35vw" alt={`${item.name} celebration decor`} loading="lazy" />
+      {celebrations.map(item => <a className={`celebration-card${item.image ? '' : ' celebration-card--text'}`} key={item.slug} href={`/celebrations/${item.slug}`} aria-label={`Explore ${item.name}`}>
+        {item.image && <img src={imageUrl(item.image, 800)} srcSet={imageSrcSet(item.image)} sizes="(max-width: 899px) 80vw, 35vw" width={imageById[item.image].sourceSample.width} height={imageById[item.image].sourceSample.height} style={{ objectPosition: imageById[item.image].objectPosition }} alt={`${item.name} celebration inspiration`} loading="lazy" />}
         <div className="celebration-card__shade"/>
         <div className="celebration-card__copy"><p>{item.local}</p><h3>{item.name}</h3><span>{item.note}</span></div>
       </a>)}

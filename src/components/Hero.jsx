@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import Navigation from './Navigation.jsx'
 import { imageSrcSet, imageUrl } from '../content.js'
+import { imageById } from '../imageManifest.js'
 
 export default function Hero() {
   const root = useRef(null)
@@ -19,7 +20,7 @@ export default function Hero() {
     return () => scope.revert()
   }, [])
   return <section className="hero" id="home" ref={root}>
-    <div className="hero-photo"><img className="hero-image" src={imageUrl('photo-1519741497674-611481863552', 1400)} srcSet={imageSrcSet('photo-1519741497674-611481863552')} sizes="100vw" alt="An elegant wedding reception set for an evening celebration" fetchPriority="high" /></div>
+    <div className="hero-photo"><img className="hero-image" src={imageUrl('photo-1519741497674-611481863552', 1400)} srcSet={imageSrcSet('photo-1519741497674-611481863552')} sizes="100vw" width={imageById['photo-1519741497674-611481863552'].sourceSample.width} height={imageById['photo-1519741497674-611481863552'].sourceSample.height} style={{ objectPosition: imageById['photo-1519741497674-611481863552'].objectPosition }} alt="An elegant wedding reception set for an evening celebration" fetchPriority="high" /></div>
     <div className="hero-overlay" />
     <Navigation />
       <svg className="hanging-light" aria-hidden="true" viewBox="0 0 150 310" fill="none">

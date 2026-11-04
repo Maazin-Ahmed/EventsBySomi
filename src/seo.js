@@ -29,13 +29,13 @@ function getPage(path) {
   if (celebration) return {
     title: `${celebration.name} Decor & Rentals | Events by Somia — Wellington, FL`,
     description: celebration.intro,
-    image: imageUrl(celebration.image, 1600),
+    image: imageUrl(celebration.pageImage || celebration.image, 1600),
     crumbs: ['Celebrations', celebration.name],
   }
   if (collection) return {
     title: `${collection.title} Rentals | Events by Somia — Wellington, FL`,
     description: collection.description,
-    image: imageUrl(collection.image, 1600),
+    image: collection.pageImage || collection.image ? imageUrl(collection.pageImage || collection.image, 1600) : fallbackImage,
     crumbs: ['Rental Collections', collection.title],
   }
   const pages = {
@@ -66,7 +66,7 @@ function getPage(path) {
     '/about': {
       title: 'About Events by Somia | Wellington, Florida',
       description: 'Discover the Events by Somia approach to South Asian celebrations, thoughtful details, and contemporary event styling.',
-      image: imageUrl('photo-1519167758481-83f550bb49b3', 1600),
+      image: imageUrl('photo-1744804298789-437504006ff8', 1600),
       crumbs: ['About'],
     },
     '/faq': {

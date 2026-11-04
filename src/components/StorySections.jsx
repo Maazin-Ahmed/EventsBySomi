@@ -1,6 +1,4 @@
-import { useEffect, useRef } from 'react'
-import { gsap } from 'gsap'
-import { celebrations, imageSrcSet, imageUrl, rentalGroups } from '../content.js'
+import { celebrations, rentalGroups } from '../content.js'
 
 export function Introduction() {
   return <section className="intro-section" id="intro"><div className="intro-seal" aria-hidden="true">✳</div><p className="eyebrow eyebrow-dark">A HERITAGE OF CELEBRATION</p><h2>Old-world soul.<br/><em>Personal by nature.</em></h2><p className="intro-body">At Events by Somia, South Asian celebrations are honored with thoughtful design and a personal touch. From the first gathering to the final detail, we help bring your traditions, loved ones, and vision together in a setting that feels unmistakably yours.</p><a className="text-link" href="#approach">Our way of bringing it together <span>↓</span></a></section>
@@ -12,21 +10,7 @@ export function Process() {
 }
 
 export function Gallery() {
-  const ref = useRef(null)
-  const shots = [
-    ['photo-1519741497674-611481863552', 'A table set for a wedding celebration', 'wide'],
-    ['photo-1519167758481-83f550bb49b3', 'A ceremony setting under a canopy', 'tall'],
-    ['photo-1519225421980-715cb0215aed', 'Flowers arranged for a celebration', 'square'],
-    ['photo-1464366400600-7168b8af9bc3', 'A detail from the reception table', 'wide'],
-    ['photo-1507504031003-b417219a0fde', 'A gathering prepared for an evening event', 'square'],
-  ]
-  useEffect(() => {
-    const root = ref.current
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
-    const scope = gsap.context(() => gsap.utils.toArray('.gallery-tile', root).forEach((tile, index) => gsap.from(tile, { y: 40, opacity: 0, duration: .8, delay: index % 2 * .1, scrollTrigger: { trigger: tile, start: 'top 88%' } })), root)
-    return () => scope.revert()
-  }, [])
-  return <section className="gallery-section" id="gallery" ref={ref}><div className="gallery-head"><p className="eyebrow eyebrow-dark">COLLECTED MOMENTS</p><h2>A feeling, in <em>full bloom.</em></h2><p>A glimpse of the gatherings, details, and traditions that inspire us.</p></div><div className="editorial-gallery">{shots.map(([image, alt, size], i) => <figure className={`gallery-tile gallery-tile--${size}`} key={`${image}-${i}`}><img src={imageUrl(image, 800)} srcSet={imageSrcSet(image)} sizes="(max-width: 600px) 86vw, 34vw" alt={alt} loading="lazy"/><figcaption>EVENTS BY SOMIA</figcaption></figure>)}</div></section>
+  return <section className="gallery-section gallery-section--teaser" id="gallery"><div className="gallery-head"><p className="eyebrow eyebrow-dark">COLLECTED MOMENTS</p><h2>A feeling, in <em>full bloom.</em></h2><p>A visual reference of ceremony settings, cultural details, and rental inspiration to help you shape your own gathering.</p><a className="button button-wine" href="/gallery">Explore the Gallery <span>↗</span></a></div></section>
 }
 
 export function SiteFooter() {

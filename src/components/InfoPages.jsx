@@ -39,7 +39,7 @@ function legalContactLinks(text) {
 
 export function AboutPage() {
   return <>
-    <PageHero image="photo-1519167758481-83f550bb49b3" eyebrow="OUR PHILOSOPHY" title="About us" intro="Royal Indian heritage meets modern American luxury. Events by Somia brings thoughtful decor and rental selections to South Asian celebrations and cultural gatherings." crumb="About us" quoteHref="/contact#enquiry" action="Our approach"/>
+    <PageHero image="photo-1744804298789-437504006ff8" eyebrow="OUR PHILOSOPHY" title="About us" intro="Royal Indian heritage meets modern American luxury. Events by Somia brings thoughtful decor and rental selections to South Asian celebrations and cultural gatherings." crumb="About us" quoteHref="/contact#enquiry" action="Our approach"/>
     <main className="info-page about-page" id="catalogue">
       <ContentSection eyebrow="ROOTED IN TRADITION. PERSONAL BY NATURE." title="A setting should feel like it belongs to you." className="about-philosophy">
         <div className="info-copy-columns">
@@ -64,7 +64,7 @@ export function AboutPage() {
 
 export function FaqPage() {
   return <>
-    <PageHero image="photo-1464366400600-7168b8af9bc3" eyebrow="A FEW HELPFUL DETAILS" title="Frequently asked questions" intro="Learn what to expect when exploring celebrations, rental collections, and an enquiry with Events by Somia." crumb="Frequently asked questions" quoteHref="/contact#enquiry" action="Browse collections"/>
+    <PageHero image={null} eyebrow="A FEW HELPFUL DETAILS" title="Frequently asked questions" intro="Learn what to expect when exploring celebrations, rental collections, and an enquiry with Events by Somia." crumb="Frequently asked questions" quoteHref="/contact#enquiry" action="Browse collections"/>
     <main className="info-page faq-page" id="catalogue">
       <div className="faq-intro"><p>Every celebration has its own requirements. These answers explain how to begin; the team can discuss availability and event-specific arrangements with you directly.</p><a href="/contact#enquiry">Ask us about your event <span aria-hidden="true">↗</span></a></div>
       {faqGroups.map((group, groupIndex) => <section className="faq-group" key={group.title} aria-labelledby={`faq-${group.title.toLowerCase().replace(/\s+/g, '-')}`}>
@@ -98,7 +98,7 @@ function LegalPage({ type }) {
     ? 'A clear explanation of the information collected through this website and how an enquiry is handled.'
     : 'The terms for using this website and exploring its celebration inspiration and rental catalogue.'
   return <>
-    <PageHero image={isPrivacy ? 'photo-1600210492486-724fe5c67fb0' : 'photo-1519225421980-715cb0215aed'} eyebrow="WEBSITE INFORMATION" title={title} intro={intro} crumb={title} quoteHref="/contact#enquiry" action="Contact us"/>
+    <PageHero image={null} eyebrow="WEBSITE INFORMATION" title={title} intro={intro} crumb={title} quoteHref="/contact#enquiry" action="Contact us"/>
     <main className="info-page legal-page" id="catalogue">
       <p className="legal-updated">Website information for Events by Somia</p>
       {sections.map((section, index) => <section className="legal-section" key={section.title} aria-labelledby={`legal-section-${index}`}>

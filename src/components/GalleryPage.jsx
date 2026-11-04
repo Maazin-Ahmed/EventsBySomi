@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { imageSrcSet, imageUrl } from '../content.js'
-import { galleryCategories, galleryImages } from '../galleryContent.js'
+import { galleryCategories, galleryImages } from '../imageManifest.js'
 import { PageHero } from './CatalogPages.jsx'
 import { SiteFooter } from './StorySections.jsx'
 
@@ -14,7 +14,7 @@ export default function GalleryPage() {
 
   const filteredImages = category === 'All'
     ? galleryImages
-    : galleryImages.filter(item => item.category === category)
+    : galleryImages.filter(item => item.categories.includes(category))
   const isOpen = activeIndex !== null
 
   useEffect(() => {
@@ -82,7 +82,7 @@ export default function GalleryPage() {
 
   return <>
     <PageHero
-      image="photo-1745573673583-a51f665ae48e"
+      image={null}
       eyebrow="EDITORIAL INSPIRATION"
       title="Gallery"
       intro="A considered collection of ceremony settings, color, flowers, and thoughtful details to help shape your own celebration."
@@ -111,15 +111,17 @@ export default function GalleryPage() {
       </nav>
 
       <section className="gallery-masonry" ref={galleryRef} aria-label={`${category === 'All' ? 'All' : category} editorial inspiration`}>
-        {filteredImages.map((item, index) => <figure className={`gallery-shot gallery-shot--${index % 5}`} key={`${item.category}-${item.image}-${index}`}>
+        {filteredImages.map((item, index) => <figure className="gallery-shot" key={item.id}>
           <button type="button" className="gallery-shot__button" onClick={() => openImage(index)} aria-label={`Open larger image: ${item.alt}`}>
             <img
               src={imageUrl(item.image, 1000)}
               srcSet={imageSrcSet(item.image)}
               sizes="(max-width: 600px) 92vw, (max-width: 950px) 45vw, 31vw"
               alt={item.alt}
-              loading={index < 3 ? 'eager' : 'lazy'}
-              fetchPriority={index === 0 ? 'high' : undefined}
+              width={item.sourceSample.width}
+              height={item.sourceSample.height}
+              style={{ objectPosition: item.objectPosition, aspectRatio: item.aspectRatio }}
+              loading="lazy"
             />
             <span className="gallery-shot__caption"><span>{item.category}</span><span>{item.caption}</span></span>
           </button>
@@ -136,8 +138,8 @@ export default function GalleryPage() {
     {isOpen && <div className="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer" onMouseDown={event => { if (event.target === event.currentTarget) closeImage() }}>
       <button ref={closeButtonRef} type="button" className="gallery-lightbox__close" onClick={closeImage} aria-label="Close image viewer">×</button>
       <button type="button" className="gallery-lightbox__control gallery-lightbox__previous" onClick={() => move(-1)} aria-label="Previous image">‹</button>
-      <figure className="gallery-lightbox__figure" key={`${activeImage.category}-${activeIndex}`}>
-        <img src={imageUrl(activeImage.image, 2200)} srcSet={imageSrcSet(activeImage.image)} sizes="100vw" alt={activeImage.alt}/>
+      <figure className="gallery-lightbox__figure" key={activeImage.id}>
+        <img src={imageUrl(activeImage.image, 2200)} srcSet={imageSrcSet(activeImage.image)} sizes="100vw" alt={activeImage.alt} width={activeImage.sourceSample.width} height={activeImage.sourceSample.height}/>
         <figcaption><span>{activeImage.category}</span>{activeImage.caption}</figcaption>
       </figure>
       <button type="button" className="gallery-lightbox__control gallery-lightbox__next" onClick={() => move(1)} aria-label="Next image">›</button>
