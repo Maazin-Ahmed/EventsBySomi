@@ -2,24 +2,26 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { celebrations, rentalGroups } from '../src/content.js'
-import { auditedSampleHashes, galleryCategories, galleryImages, imageManifest } from '../src/imageManifest.js'
+import { auditedSampleHashes, galleryCategories, galleryImages, imageAssignments, imageManifest, rentalListingHero } from '../src/imageManifest.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const failures = []
 const galleryIds = galleryImages.map(asset => asset.image)
 const registryIds = imageManifest.map(asset => asset.image)
 const homepagePlacements = [
-  'photo-1519741497674-611481863552',
+  imageAssignments.homepageHero,
   ...celebrations.filter(item => item.image).map(item => item.image),
-  ...rentalGroups.filter(group => group.image && group.slug !== 'serveware').map(group => group.image),
-  'photo-1772127822552-ce9ef537bdcf',
+  ...rentalGroups.filter(group => group.image).map(group => group.image),
+  imageAssignments.mandapShowcase,
+  ...Object.values(imageAssignments.decorativeDetails),
 ]
 const detailPlacements = [
   ...celebrations.map(item => item.pageImage || item.image).filter(Boolean),
   ...rentalGroups.map(group => group.pageImage || group.image).filter(Boolean),
-  'photo-1744804298789-437504006ff8',
+  imageAssignments.aboutPage,
 ]
-const contentPlacements = [...homepagePlacements, ...detailPlacements]
+const listingPlacements = [...rentalGroups.map(group => group.listingImage).filter(Boolean), rentalListingHero]
+const contentPlacements = [...homepagePlacements, ...detailPlacements, ...listingPlacements]
 
 function duplicates(values) {
   return [...new Set(values.filter((value, index) => values.indexOf(value) !== index))]
@@ -60,6 +62,10 @@ for (const asset of imageManifest) {
   if (Math.abs(measuredRatio - asset.aspectRatio) > 0.006) failures.push(`Aspect ratio mismatch: ${asset.image}`)
   if (!auditedSampleHashes[asset.image]) failures.push(`Missing audited sample hash: ${asset.image}`)
   if (!asset.assignment?.length || !asset.categories?.length || !asset.alt) failures.push(`Incomplete assignment metadata: ${asset.image}`)
+}
+
+for (const group of rentalGroups) {
+  if (!group.image || !group.pageImage || !group.listingImage) failures.push(`Rental image assignment missing: ${group.title}`)
 }
 
 for (const category of galleryCategories.filter(category => category !== 'All')) {

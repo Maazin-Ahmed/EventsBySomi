@@ -1,5 +1,5 @@
 import { celebrations, imageSrcSet, imageUrl, rentalGroups } from '../content.js'
-import { imageById } from '../imageManifest.js'
+import { imageById, rentalListingHero } from '../imageManifest.js'
 import Navigation from './Navigation.jsx'
 import { SiteFooter } from './StorySections.jsx'
 
@@ -7,7 +7,7 @@ import { SiteFooter } from './StorySections.jsx'
 export function PageHero({ image, eyebrow, title, intro, action, palette, crumb = '', quoteHref }) {
   const crumbHref = crumb === 'Celebrations' ? '/celebrations' : crumb === 'Rentals' ? '/collections' : '/'
   return <section className={`inner-hero${image ? '' : ' inner-hero--text'}`}>
-    {image && <img className="inner-hero__image" src={imageUrl(image, 1400)} srcSet={imageSrcSet(image)} sizes="100vw" width={imageById[image]?.sourceSample.width} height={imageById[image]?.sourceSample.height} style={{ objectPosition: imageById[image]?.objectPosition }} alt="" fetchPriority="high"/>}
+    {image && <img className="inner-hero__image" src={imageUrl(image, 1400)} srcSet={imageSrcSet(image)} sizes="100vw" width={imageById[image]?.sourceSample.width} height={imageById[image]?.sourceSample.height} style={{ objectPosition: imageById[image]?.objectPosition }} alt={imageById[image]?.alt || ''} fetchPriority="high"/>}
     <div className="inner-hero__shade"/><Navigation/>
     <div className="inner-hero__content"><nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a>{crumb && crumb !== title && <><span>/</span><a href={crumbHref}>{crumb}</a></>}<span>/</span><span aria-current="page">{title}</span></nav>
       <p className="eyebrow"><span/>{eyebrow}</p><h1>{title}</h1><p className="inner-hero__intro">{intro}</p>{palette && <p className="palette-note">{palette}</p>}
@@ -54,8 +54,15 @@ export function ListingPage({ type }) {
   const entries = isEvents ? celebrations : rentalGroups
   const title = isEvents ? 'Celebrations' : 'Rental Collections'
   const intro = isEvents ? 'South Asian celebrations, thoughtfully gathered around your traditions, people, and vision.' : 'Considered pieces for ceremonies, shared meals, and the moments in between.'
-  return <><PageHero image={null} eyebrow={isEvents ? 'MOMENTS WORTH GATHERING FOR' : 'GATHERED WITH CARE'} title={title} intro={intro} crumb={isEvents ? 'Celebrations' : 'Rentals'} action="Explore the catalogue"/>
-    <main className="catalog-main listing-main" id="catalogue"><div className="catalog-heading"><p className="eyebrow eyebrow-dark">EVENTS BY SOMIA</p><h2>{isEvents ? <>Every reason to<br/><em>come together.</em></> : <>The details that<br/><em>make it yours.</em></>}</h2></div><div className="listing-grid">{entries.map(item => <a className="listing-card listing-card--text" href={isEvents ? `/celebrations/${item.slug}` : `/collections/${item.slug}`} key={item.slug}><div><p className="eyebrow">{isEvents ? item.local : 'EVENT RENTALS'}</p><h3>{item.name || item.title}</h3><p>{isEvents ? item.note : item.description}</p><span>Explore {isEvents ? 'celebration' : 'collection'} ↗</span></div></a>)}</div></main><SiteFooter/></>
+  return <><PageHero image={isEvents ? null : rentalListingHero} eyebrow={isEvents ? 'MOMENTS WORTH GATHERING FOR' : 'GATHERED WITH CARE'} title={title} intro={intro} crumb={isEvents ? 'Celebrations' : 'Rentals'} action="Explore the catalogue"/>
+    <main className="catalog-main listing-main" id="catalogue"><div className="catalog-heading"><p className="eyebrow eyebrow-dark">EVENTS BY SOMIA</p><h2>{isEvents ? <>Every reason to<br/><em>come together.</em></> : <>The details that<br/><em>make it yours.</em></>}</h2></div><div className="listing-grid">{entries.map(item => {
+      const image = isEvents ? null : item.listingImage
+      const asset = image ? imageById[image] : null
+      return <a className={`listing-card${image ? '' : ' listing-card--text'}`} href={isEvents ? `/celebrations/${item.slug}` : `/collections/${item.slug}`} key={item.slug}>
+        {image && <img src={imageUrl(image, 900)} srcSet={imageSrcSet(image)} sizes="(max-width: 600px) 86vw, (max-width: 899px) 42vw, 29vw" width={asset.sourceSample.width} height={asset.sourceSample.height} style={{ objectPosition: asset.objectPosition }} alt={asset.alt} loading="lazy"/>}
+        <div><p className="eyebrow">{isEvents ? item.local : 'EVENT RENTALS'}</p><h3>{item.name || item.title}</h3><p>{isEvents ? item.note : item.description}</p><span>Explore {isEvents ? 'celebration' : 'collection'} ↗</span></div>
+      </a>
+    })}</div></main><SiteFooter/></>
 }
 
 export function SimplePage({ type }) {

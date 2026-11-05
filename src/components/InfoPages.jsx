@@ -1,6 +1,7 @@
 import { PageHero } from './CatalogPages.jsx'
 import { SiteFooter } from './StorySections.jsx'
 import { faqGroups, privacySections, termsSections } from '../pageContent.js'
+import { imageAssignments } from '../imageManifest.js'
 
 function ContentSection({ eyebrow, title, children, className = '' }) {
   return <section className={`info-section ${className}`} aria-labelledby={`${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-heading`}>
@@ -39,7 +40,7 @@ function legalContactLinks(text) {
 
 export function AboutPage() {
   return <>
-    <PageHero image="photo-1744804298789-437504006ff8" eyebrow="OUR PHILOSOPHY" title="About us" intro="Royal Indian heritage meets modern American luxury. Events by Somia brings thoughtful decor and rental selections to South Asian celebrations and cultural gatherings." crumb="About us" quoteHref="/contact#enquiry" action="Our approach"/>
+    <PageHero image={imageAssignments.aboutPage} eyebrow="OUR PHILOSOPHY" title="About us" intro="Royal Indian heritage meets modern American luxury. Events by Somia brings thoughtful decor and rental selections to South Asian celebrations and cultural gatherings." crumb="About us" quoteHref="/contact#enquiry" action="Our approach"/>
     <main className="info-page about-page" id="catalogue">
       <ContentSection eyebrow="ROOTED IN TRADITION. PERSONAL BY NATURE." title="A setting should feel like it belongs to you." className="about-philosophy">
         <div className="info-copy-columns">
