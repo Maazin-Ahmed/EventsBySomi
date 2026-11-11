@@ -14,11 +14,13 @@ import { CelebrationPage, CollectionPage, ListingPage } from './components/Catal
 import { celebrations, rentalGroups } from './content.js'
 import { applyPageSeo } from './seo.js'
 import './styles.css'
+import { CartProvider, useCart } from './rental/Cart.jsx'
+import { CartPage, QuotePage, ConfirmationPage, RentalProcess } from './rental/Pages.jsx'
 
 const InfoPage = lazy(() => import('./components/InfoPages.jsx'))
 gsap.registerPlugin(ScrollTrigger)
 
-export default function App() {
+function AppContent() {
   const path = window.location.pathname.replace(/\/$/, '') || '/'
   const celebrationMatch = path.match(/^\/celebrations\/([^/]+)$/)
   const collectionMatch = path.match(/^\/collections\/([^/]+)$/)
@@ -55,6 +57,10 @@ export default function App() {
       if (lenis) { gsap.ticker.remove(tick); lenis.destroy() }
     }
   }, [])
+  if (path === '/cart') return <CartPage/>
+  if (path === '/request-quote') return <QuotePage/>
+  if (path === '/request-confirmation') return <ConfirmationPage/>
+  if (path === '/collections') return <><ListingPage type="collections"/><RentalProcess/></>
   if (celebration) return <CelebrationPage item={celebration}/>
   if (collection) return <CollectionPage group={collection}/>
   if (path === '/celebrations' || path === '/collections') return <ListingPage type={path.slice(1)}/>
@@ -66,3 +72,5 @@ export default function App() {
   if (path === '/contact') return <><section className="contact-intro"><Navigation/><p className="eyebrow"><span/>EVENTS BY SOMIA</p><h1>Let’s begin<br/><em>with your story.</em></h1><p>Tell us a little about the celebration you have in mind.</p></section><Enquiry/><SiteFooter/></>
   return <><Hero/><main><Introduction/><Celebrations/><MandapShowcase/><RentalCollections/><DecorativeDetails/><Process/><Gallery/><Enquiry/></main><SiteFooter/></>
 }
+
+export default function App() { return <CartProvider><AppContent/></CartProvider> }

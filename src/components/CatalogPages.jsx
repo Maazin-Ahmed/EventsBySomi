@@ -2,6 +2,7 @@ import { celebrations, imageSrcSet, imageUrl, rentalGroups } from '../content.js
 import { imageById, rentalListingHero } from '../imageManifest.js'
 import Navigation from './Navigation.jsx'
 import { SiteFooter } from './StorySections.jsx'
+import { useCart } from '../rental/Cart.jsx'
 
 // Unsplash editorial photography, including subject-matched mandap, haldi, stage, diya, and thali images.
 export function PageHero({ image, eyebrow, title, intro, action, palette, crumb = '', quoteHref }) {
@@ -38,11 +39,12 @@ export function CelebrationPage({ item }) {
 }
 
 export function CollectionPage({ group }) {
+  const { add } = useCart()
   const related = rentalGroups.filter(item => item.slug !== group.slug).slice(0, 3)
   return <><PageHero image={group.pageImage || group.image} eyebrow="EVENT RENTALS" title={group.title} intro={group.description} crumb="Rentals"/>
     <main className="catalog-main" id="catalogue">
       <section className="inventory-section"><div className="catalog-heading"><p className="eyebrow eyebrow-dark">THE RENTAL CATALOGUE</p><h2>Considered pieces,<br/><em>gathered with care.</em></h2><p>Explore the items in this collection. Rental details and availability are confirmed directly with our team.</p></div>
-        <div className="inventory-grid inventory-grid--catalogue">{group.items.map(item => <article className="inventory-card inventory-card--text" key={item}><div><p className="eyebrow eyebrow-dark">{group.title}</p><h3>{item}</h3><p>Ask our team about this piece and how it can fit into your celebration setting.</p></div></article>)}</div>
+        <div className="inventory-grid inventory-grid--catalogue">{group.items.map(item => <article className="inventory-card inventory-card--text rental-item" key={item}><img src={imageUrl(group.listingImage, 600)} alt="" loading="lazy"/><div><p className="eyebrow eyebrow-dark">{group.title}</p><h3>{item}</h3><p>Ask our team about this piece and how it can fit into your celebration setting.</p><button className="button button-wine" onClick={() => add(group, item)}>Add to Cart</button></div></article>)}</div>
       </section>
       <RelatedCollections groups={related} label="Related collections"/>
       <div className="related-inline"><a href="/collections">← All rental collections</a><a href="/celebrations">Explore celebrations →</a></div>
