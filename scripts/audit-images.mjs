@@ -3,11 +3,13 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { celebrations, rentalGroups } from '../src/content.js'
 import { auditedSampleHashes, galleryCategories, galleryImages, imageAssignments, imageManifest, rentalListingHero } from '../src/imageManifest.js'
+import { rentalImageSources } from './rentalImageSources.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const failures = []
 const galleryIds = galleryImages.map(asset => asset.image)
 const registryIds = imageManifest.map(asset => asset.image)
+const rentalSourceIds = rentalImageSources.map(asset => asset.photoId)
 const homepagePlacements = [
   imageAssignments.homepageHero,
   ...celebrations.filter(item => item.image).map(item => item.image),
@@ -77,7 +79,7 @@ const unregisteredReferences = new Set()
 for (const file of sourceFiles) {
   const source = fs.readFileSync(file, 'utf8')
   for (const match of source.matchAll(/photo-[A-Za-z0-9_-]+/g)) {
-    if (!registryIds.includes(match[0])) unregisteredReferences.add(match[0])
+    if (!registryIds.includes(match[0]) && !rentalSourceIds.includes(match[0])) unregisteredReferences.add(match[0])
   }
 }
 if (unregisteredReferences.size) failures.push(`Unregistered source references: ${[...unregisteredReferences].join(', ')}`)

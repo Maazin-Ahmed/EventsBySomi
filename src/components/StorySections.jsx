@@ -28,7 +28,7 @@ export function SiteFooter() {
       <nav className="footer-link-group" aria-label="Rental collections"><h3>Rental collections</h3>{rentalGroups.map(item => <a href={`/collections/${item.slug}`} key={item.slug}>{item.title}</a>)}</nav>
       <div className="footer-link-group footer-contact"><h3>Contact</h3><a href="tel:+19544960556">+1 954-496-0556</a><a href="mailto:contact@eventsbysomia.com">contact@eventsbysomia.com</a><a href="https://wa.me/19544960556" target="_blank" rel="noreferrer">WhatsApp</a><a href="https://maps.google.com/?q=9266+Delemar+Ct,+Wellington,+FL+33414" target="_blank" rel="noreferrer">9266 Delemar Ct<br/>Wellington, FL 33414<br/>United States</a></div>
     </div>
-    <div className="footer-bottom"><span>© {new Date().getFullYear()} Events by Somia</span><span>Rooted in tradition. Designed for your story.</span><div><a href="/privacy-policy">Privacy policy</a><a href="/terms">Terms & conditions</a></div></div>
+    <div className="footer-bottom"><span>© {new Date().getFullYear()} Events by Somia</span><span>Rooted in tradition. Designed for your story.</span><div><a href="/rental-photo-credits.html">Photo credits</a><a href="/privacy-policy">Privacy policy</a><a href="/terms">Terms & conditions</a></div></div>
   </footer>
 
 }

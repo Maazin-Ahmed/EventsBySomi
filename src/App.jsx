@@ -16,6 +16,7 @@ import { applyPageSeo } from './seo.js'
 import './styles.css'
 import { CartProvider, useCart } from './rental/Cart.jsx'
 import { CartPage, QuotePage, ConfirmationPage, RentalProcess } from './rental/Pages.jsx'
+import { CatalogueProvider } from './rental/Catalogue.jsx'
 
 const InfoPage = lazy(() => import('./components/InfoPages.jsx'))
 gsap.registerPlugin(ScrollTrigger)
@@ -73,4 +74,4 @@ function AppContent() {
   return <><Hero/><main><Introduction/><Celebrations/><MandapShowcase/><RentalCollections/><DecorativeDetails/><Process/><Gallery/><Enquiry/></main><SiteFooter/></>
 }
 
-export default function App() { return <CartProvider><AppContent/></CartProvider> }
+export default function App() { return <CatalogueProvider><CartProvider><AppContent/></CartProvider></CatalogueProvider> }

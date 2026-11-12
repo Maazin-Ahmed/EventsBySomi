@@ -1,0 +1,348 @@
+{
+  "auditedAt": "2026-11-12T17:24:38.212Z",
+  "base": "https://www.eventsbysomia.com",
+  "results": [
+    {
+      "id": "decor:torans",
+      "url": "/images/rentals/toran-480-480x320-6573e358cf.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 480,
+      "height": 320
+    },
+    {
+      "id": "decor:diyas",
+      "url": "/images/rentals/diya-480-480x270-7ed1d145fb.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 480,
+      "height": 270
+    },
+    {
+      "id": "decor:urlis",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "decor:kalash",
+      "url": "/images/rentals/kalash-480-270x480-344091c45f.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 270,
+      "height": 480
+    },
+    {
+      "id": "decor:fanoos-and-lanterns",
+      "url": "/images/rentals/fanoos-480-480x320-4cd59aa16f.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 480,
+      "height": 320
+    },
+    {
+      "id": "decor:marigold-garlands-and-malas",
+      "url": "/images/rentals/marigold-garland-480-360x480-48ac4583dc.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 360,
+      "height": 480
+    },
+    {
+      "id": "decor:rose-garlands",
+      "url": "/images/rentals/rose-garland-480-480x320-171a237c87.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 480,
+      "height": 320
+    },
+    {
+      "id": "linens:tablecloths-and-chadar",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "linens:silk-runners",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "linens:brocade-runners",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "linens:napkins",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "linens:chair-covers",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "linens:chair-sashes",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "linens:ceiling-drapes",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "linens:wall-drapes-and-parda",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "mandap-stage:wedding-mandaps",
+      "url": "/images/rentals/wedding-mandap-480-480x320-4a061589da.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 480,
+      "height": 320
+    },
+    {
+      "id": "mandap-stage:stage-setups",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "mandap-stage:sweetheart-table-setups",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "mandap-stage:pillars-and-stambh",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "mandap-stage:arches",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "mandap-stage:floral-backdrops",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "mandap-stage:fabric-backdrops",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "mandap-stage:frame-backdrops",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "mandap-stage:tents-canopies-and-shamiyana",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "seating:chiavari-chairs",
+      "url": "/images/rentals/chiavari-chair-480-270x480-9146473311.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 270,
+      "height": 480
+    },
+    {
+      "id": "seating:banquet-chairs",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "seating:folding-chairs",
+      "url": "/images/rentals/folding-chair-480-480x322-01acd5ae49.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 480,
+      "height": 322
+    },
+    {
+      "id": "seating:sofas-and-loveseats",
+      "url": "/images/rentals/sofa-loveseat-480-480x320-65969e3216.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 480,
+      "height": 320
+    },
+    {
+      "id": "seating:gaddi-and-floor-mattresses",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "seating:bolsters",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "seating:chowki",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "seating:jhoola",
+      "url": "/images/rentals/jhoola-480-360x480-86887417be.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 360,
+      "height": 480
+    },
+    {
+      "id": "serveware:thaal-and-platters",
+      "url": "/images/rentals/thaal-480-480x326-45c08d78b0.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 480,
+      "height": 326
+    },
+    {
+      "id": "serveware:handi",
+      "url": "/images/rentals/handi-480-320x480-1bdbe0809d.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 320,
+      "height": 480
+    },
+    {
+      "id": "serveware:chafing-dishes",
+      "url": "/images/rentals/chafing-dish-480-480x320-449c3ac8c1.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 480,
+      "height": 320
+    },
+    {
+      "id": "serveware:plates-and-glasses",
+      "url": "/images/rentals/plates-glasses-480-320x480-2a1ad25e57.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 320,
+      "height": 480
+    },
+    {
+      "id": "serveware:katori",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "tables:round-60-inch-tables",
+      "url": "/images/rentals/round-table-480-480x320-fce06f5929.webp",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "validImage": false,
+      "bytes": 2202,
+      "width": 480,
+      "height": 320
+    },
+    {
+      "id": "tables:banquet-tables-6ft-and-8ft",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "tables:buffet-tables",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "tables:cocktail-and-high-tables",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "tables:low-chowki-tables",
+      "url": null,
+      "status": "UNMAPPED",
+      "width": null,
+      "height": null
+    }
+  ]
+}

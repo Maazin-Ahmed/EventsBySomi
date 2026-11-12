@@ -7,8 +7,17 @@
     "dev": "vite",
     "build": "vite build",
     "audit:images": "node scripts/audit-images.mjs",
+    "audit:rental-images": "node scripts/audit-rental-images.mjs",
+    "images:sync-rentals": "node scripts/sync-rental-images.mjs",
+    "db:generate-phase5.1-seed": "node scripts/generate-phase5.1-seed.mjs",
+    "db:verify:phase5.1": "node --env-file=.env scripts/verify-phase5.1-remote.mjs",
     "start": "node --env-file-if-exists=.env server/index.js",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "images:prepare-storage": "node scripts/prepare-product-storage.mjs",
+    "images:upload-storage": "node scripts/upload-product-storage.mjs",
+    "db:verify:product-images": "node --env-file=.env scripts/verify-product-storage.mjs",
+    "qa:product-images": "node scripts/qa-product-images.mjs",
+    "qa:rental-regression": "node scripts/qa-rental-regression.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.119.0",

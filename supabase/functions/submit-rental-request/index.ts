@@ -22,7 +22,10 @@ Deno.serve(async req => {
     if (!Array.isArray(r.requested_items) || !r.requested_items.length || r.requested_items.length > 100) return response({ error: 'At least one rental item is required' }, 422)
     const items = r.requested_items.map((x: any) => ({ id: String(x?.id || ''), category: String(x?.category || ''), category_name: String(x?.category_name || ''), name: String(x?.name || '').trim(), quantity: x?.quantity }))
     if (items.some((x: any) => !x.id || !allowed.has(x.category) || !x.category_name || !x.name || x.name.length > 160 || !Number.isInteger(x.quantity) || x.quantity < 1 || x.quantity > 10000)) return response({ error: 'One or more rental items are invalid' }, 422)
-    const url = Deno.env.get('SUPABASE_URL'), key = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')
+    const url = Deno.env.get('SUPABASE_URL')
+    // Prefer the current Supabase secret API key; retain the legacy service-role
+    // variable for projects that have not migrated their function secrets.
+    const key = Deno.env.get('SUPABASE_SECRET_KEY') || Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')
     if (!url || !key) return response({ error: 'Request service is not configured' }, 503)
     const payload = { p_customer: { full_name: name, email, phone }, p_request: { event_type: r.event_type.trim(), event_date: r.event_date, delivery_address: r.delivery_address.trim(), event_venue: r.event_venue.trim(), preferred_delivery_date: r.preferred_delivery_date || null, preferred_pickup_date: r.preferred_pickup_date || null, requested_items: items, additional_notes: String(r.additional_notes || '').slice(0,5000), status: 'received' } }
     const result = await fetch(`${url}/rest/v1/rpc/submit_rental_request`, { method:'POST', headers:{ apikey:key, Authorization:`Bearer ${key}`, 'Content-Type':'application/json' }, body:JSON.stringify(payload) })

@@ -62,3 +62,43 @@ Deploy the local `submit-rental-request` function to project `xuiohhowgpfesakxik
 - Invalid dates/JSONB/RPC payload: **NOT TESTED against database**; requests cannot reach the deployed function. Frontend and local Edge Function source were inspected.
 - Service-role key in frontend source: **PASS** — none found.
 - Application changes: only a temporary safe startup diagnostic was added. No schema or product code was otherwise modified during this diagnostic.
+
+## Deployment follow-up — 2026-11-12
+
+- Local Edge Function source reviewed in full. It uses Deno native APIs (`Deno.serve`, `Deno.env`, `fetch`) and has no imports requiring installation. Request validation, CORS, method handling, and the `p_customer`/`p_request` RPC payload are present.
+- Updated the function secret lookup to prefer `SUPABASE_SECRET_KEY` and fall back to `SUPABASE_SERVICE_ROLE_KEY`; `SUPABASE_URL` remains required. No credential value is present in or logged from source.
+- Supabase CLI was not installed globally. Temporary `npx supabase --version` reported **3.1.0**.
+- Authentication check `npx --yes supabase projects list` failed with exact CLI error: `AccessTokenRequiredError: Access token not provided. Supply an access token by running supabase login or setting the SUPABASE_ACCESS_TOKEN environment variable.` No token was requested or displayed.
+- Deployment and function list verification were **BLOCKED** by missing CLI authentication. Deployment was not attempted. No function HTTP retest was run after the local source change.
+- Next action: authenticate the CLI interactively in the user's own terminal/session, without sharing a token. Then deploy only with `supabase functions deploy submit-rental-request --project-ref xuiohhowgpfesakxikvo --use-api`, list functions, and repeat OPTIONS plus invalid-payload HTTP checks.
+
+## Post-deployment integration verification — 2026-11-12
+
+### Deployment and secrets
+
+- **PASS** — `npx supabase functions list --project-ref xuiohhowgpfesakxikvo` lists `submit-rental-request` as `ACTIVE`, version 1, with JWT verification enabled.
+- **PASS** — secret names (values filtered out) include `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY`. The singular `SUPABASE_SECRET_KEY` is not listed, but the function supports the listed legacy key as a fallback. No secret value was printed or stored in this report.
+
+### Live endpoint checks
+
+- **PASS** — `OPTIONS https://xuiohhowgpfesakxikvo.supabase.co/functions/v1/submit-rental-request` returned **HTTP 200**, `Access-Control-Allow-Origin: *`, body `ok`.
+- **PASS** — POST with `Content-Type: application/json` and body `{}` returned **HTTP 400**, body `{"error":"Malformed request payload"}`. This is a handler validation response, not a gateway authentication error. No customer data was sent.
+- **PASS** — POST with `{ "customer": {}, "request": {} }` returned **HTTP 422**, body `{"error":"Valid name, email, and 10-digit US phone are required"}`. This confirms field validation executes. No database write was attempted by either invalid probe.
+
+### RPC and schema integration
+
+- **PASS** — read-only database inspection confirms the signature is `submit_rental_request(p_customer jsonb, p_request jsonb)`, return type `jsonb`, security definer enabled. The function body inserts/updates customer by normalized email, inserts the rental request using `customer_id` and `requested_items`, and returns JSON including `request_number` and `customer_id`.
+- **PASS** — `service_role_can_execute=true`; `anon_can_execute=false`. No public RPC permission was added.
+- **PASS** — tables have RLS enabled and no policies. Customers have the expected six columns. Rental requests have expected columns, JSONB `requested_items`, required customer FK, non-empty-array check, unique request number, and `status` default `pending` (allowed status check excludes `received`). The RPC omits status from its insert so the DB default applies; the local Edge Function's extra `status: received` JSON key is ignored by this RPC.
+- **PASS** — customer unique index on `lower(email)` matches the RPC's `ON CONFLICT (LOWER(email))`; request number has an `EBS-` UUID-derived default.
+- **PASS** — `SUPABASE_URL` and the legacy `SUPABASE_SERVICE_ROLE_KEY` secret names are present. The Edge Function prioritizes `SUPABASE_SECRET_KEY` and falls back to the available legacy service-role secret.
+
+### Logs and frontend
+
+- **PASS (limited log review)** — Supabase CLI function logs were queried for the last 24 hours. Two entries were returned; aggregate classification found no auth failures, missing-secret messages, RPC/permission errors, or invalid-payload log messages. The function does not log validation failures, so this does not mean no invalid requests occurred.
+- **NOT TESTED** — Full browser form/cart flow, loading UI, frontend console, and success navigation were not exercised because no browser automation/session is available. Source inspection shows the form invokes the deployed function, requires a non-empty `request_number`, and only reaches the confirmation route after that check; confirmation then clears the cart.
+- **NOT TESTED** — No production customer or rental-request rows were inserted. A real end-to-end test requires the user's approval first.
+
+### Approval gate for real test
+
+Prepared test request (not submitted): name `EventsBySomia Integration Test`; email `supabase-integration-test@example.invalid`; phone `9545550100`; event type `Weddings`; event date `2027-01-15`; delivery address and venue labeled `TEST ONLY`; one `Seating / Chiavari chairs` item, quantity 1; notes `TEST ONLY — authorized integration verification`. Submission will create/update a customer row and create a rental request. Obtain explicit user approval before sending it.
