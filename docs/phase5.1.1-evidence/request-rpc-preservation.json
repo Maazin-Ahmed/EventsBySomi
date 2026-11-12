@@ -1,0 +1,5 @@
+{
+  "unchanged": true,
+  "sha256": "4fa628249b125bc18736e45ebe6dda6ec3d82df796b0b836ff1570a06dd75840",
+  "verification": "Exact pg_get_functiondef comparison before and after image-only transaction"
+}

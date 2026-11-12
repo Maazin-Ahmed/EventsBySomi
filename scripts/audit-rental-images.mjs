@@ -48,15 +48,45 @@ for (const product of productImageManifest) {
 
 const expectedImages = productImageManifest.length * 5
 if (images !== expectedImages) failures.push(`Expected ${expectedImages} optimized variants, checked ${images}.`)
+const storageManifestFile = path.join(root, 'scripts/product-storage-manifest.json')
+let storageProducts = []
+let storageBytes = 0
+if (fs.existsSync(storageManifestFile)) {
+  storageProducts = JSON.parse(fs.readFileSync(storageManifestFile, 'utf8'))
+  const sourceHashes = new Set()
+  const imageHashes = new Set()
+  const objectPaths = new Set()
+  for (const product of storageProducts) {
+    if (!expectedIds.includes(product.id)) failures.push('Unknown storage product: ' + product.id)
+    if (!product.sourcePage || !product.photographer || !product.licenseUrl || !product.visualReview) failures.push('Incomplete storage attribution: ' + product.id)
+    if (sourceHashes.has(product.originalSha256)) failures.push('Duplicate source photograph: ' + product.id)
+    sourceHashes.add(product.originalSha256)
+    for (const type of ['image', 'thumbnail']) {
+      const asset = product[type]
+      if (objectPaths.has(asset.objectPath)) failures.push('Duplicate storage path: ' + asset.objectPath)
+      objectPaths.add(asset.objectPath)
+      const file = path.join(root, 'public/images/rental-product-images', asset.objectPath)
+      if (!fs.existsSync(file)) { failures.push('Missing upload asset: ' + asset.objectPath); continue }
+      const bytes = fs.readFileSync(file)
+      const hash = crypto.createHash('sha256').update(bytes).digest('hex')
+      if (imageHashes.has(hash) || hash !== asset.sha256) failures.push('Duplicate or changed storage bytes: ' + asset.objectPath)
+      imageHashes.add(hash)
+      if (bytes.toString('ascii', 0, 4) !== 'RIFF' || bytes.toString('ascii', 8, 12) !== 'WEBP') failures.push('Invalid storage WebP: ' + asset.objectPath)
+      if (!asset.width || !asset.height || Math.max(asset.width, asset.height) > (type === 'image' ? 1400 : 384)) failures.push('Invalid storage dimensions: ' + asset.objectPath)
+      if (bytes.length !== asset.bytes || bytes.length > (type === 'image' ? 512000 : 60000)) failures.push('Storage image size budget exceeded: ' + asset.objectPath)
+      storageBytes += bytes.length
+    }
+  }
+}
 if (failures.length) {
   console.error(failures.join('\n'))
   process.exitCode = 1
 } else {
   console.log(`Catalogue products: ${products.length}`)
-  console.log(`Exact matches: ${productImageManifest.filter(item => item.matchType === 'exact').length}`)
-  console.log(`Representative matches: ${productImageManifest.filter(item => item.matchType === 'representative').length}`)
-  console.log(`Products missing suitable images: ${products.length - productImageManifest.length}`)
-  console.log(`Optimized local WebP variants: ${images}`)
-  console.log(`Total image storage: ${totalBytes} bytes`)
-  console.log('Local paths, WebP format, unique assets, dimensions, and file size budgets: PASS')
+  console.log(`Retained legacy variants: ${images}; ${totalBytes} bytes (historical 16-product manifest)`)
+  console.log(`Current approved Storage products: ${storageProducts.length}/${products.length}`)
+  console.log(`Current products missing suitable images: ${products.length - storageProducts.length}`)
+  console.log(`Current optimized upload objects: ${storageProducts.length * 2}; ${storageBytes} bytes`)
+  console.log('Asset integrity: PASS — local paths, WebP format, unique photograph hashes, attribution, dimensions, and size budgets')
+  if (storageProducts.length !== products.length) console.log('COVERAGE INCOMPLETE — see phase5.1.1 audit; missing photographs are not counted as passing images.')
 }

@@ -1,0 +1,343 @@
+{
+  "verifiedAt": "2026-11-12T17:40:44.896Z",
+  "products": 42,
+  "categories": 6,
+  "approved": 39,
+  "coveragePercent": 92.9,
+  "duplicateAssignments": 0,
+  "preservedFields": true,
+  "missing": [
+    "linens:brocade-runners",
+    "tables:low-chowki-tables",
+    "seating:chowki"
+  ],
+  "checks": [
+    {
+      "id": "mandap-stage:wedding-mandaps",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/wedding-mandaps-807554eccb79.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/wedding-mandaps-be0ee813b8a5-thumb.webp",
+      "image_alt": "A South Asian wedding ceremony beneath a flower-decorated mandap",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "linens:tablecloths-and-chadar",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/tablecloths-and-chadar-37355a022720.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/tablecloths-and-chadar-0290dea61ad0-thumb.webp",
+      "image_alt": "Red tablecloth draped over a round reception table",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "serveware:thaal-and-platters",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/thaal-and-platters-8ea2b4e901a3.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/thaal-and-platters-7cd1096cd7dc-thumb.webp",
+      "image_alt": "A traditional Indian metal thaal arranged with a shared meal",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "seating:chiavari-chairs",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/chiavari-chairs-fe7790430ddb.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/chiavari-chairs-a52badf69edc-thumb.webp",
+      "image_alt": "White Chiavari chairs arranged on a lawn for an outdoor event",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "tables:round-60-inch-tables",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/round-60-inch-tables-03f6996fa666.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/round-60-inch-tables-b5b297f80519-thumb.webp",
+      "image_alt": "Round reception tables arranged for a celebration",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "decor:torans",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/torans-71900f278f12.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/torans-c219a764a812-thumb.webp",
+      "image_alt": "A marigold toran welcoming guests above a doorway",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "tables:banquet-tables-6ft-and-8ft",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-24138ffb6507.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-dcfe4e6f3175-thumb.webp",
+      "image_alt": "Long rectangular wooden banquet table arranged with place settings for a reception",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "mandap-stage:stage-setups",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/stage-setups-e0874fd7c28f.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/stage-setups-ce988f89f500-thumb.webp",
+      "image_alt": "A white and blush wedding stage with an ornate loveseat, floral pedestals and hanging flowers",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "linens:silk-runners",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/silk-runners-cc4bb271c4a4.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/silk-runners-7cbd3790baf1-thumb.webp",
+      "image_alt": "Representative silk and metallic thread table runner with orange decorative motifs",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "decor:diyas",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/diyas-3b510f9e7e0e.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/diyas-97f375c9eee7-thumb.webp",
+      "image_alt": "A single lit diya placed beside flowers at dusk",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "serveware:handi",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/handi-3a22c21b9853.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/handi-d53f2cdc7c64-thumb.webp",
+      "image_alt": "An Indian dish cooking in a brass pot",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "seating:banquet-chairs",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/banquet-chairs-d53195641dff.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/banquet-chairs-b739ff7b18a3-thumb.webp",
+      "image_alt": "Red upholstered metal-frame banquet chairs arranged around event tables",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "decor:urlis",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/urlis-2dc945f77170.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/urlis-b8b860ddc6a9-thumb.webp",
+      "image_alt": "A shallow copper-colored decorative urli filled with water and floating flowers",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "seating:folding-chairs",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/folding-chairs-e8c6ed33bbeb.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/folding-chairs-bc36ff2c8db7-thumb.webp",
+      "image_alt": "A group of white metal folding chairs arranged in rows",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "serveware:chafing-dishes",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-43f0a438c9e4.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-b6c9ff6f742e-thumb.webp",
+      "image_alt": "A stainless steel chafing dish filled with food",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "mandap-stage:sweetheart-table-setups",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/sweetheart-table-setups-012928fb9c2b.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/sweetheart-table-setups-166a278fe23e-thumb.webp",
+      "image_alt": "A decorated sweetheart table for two with floral garland and candles in an outdoor setting",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "tables:buffet-tables",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/buffet-tables-313b6bc21df8.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/buffet-tables-801a1c4067da-thumb.webp",
+      "image_alt": "Long dark buffet tables with visible pedestal supports arranged for event serving",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "linens:brocade-runners",
+      "status": "BLOCKED",
+      "image_url": null
+    },
+    {
+      "id": "linens:napkins",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/napkins-6639e26919c0.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/napkins-4f6f1bdf43ff-thumb.webp",
+      "image_alt": "Folded navy cloth napkins with silver cutlery on a white tablecloth",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "seating:sofas-and-loveseats",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/sofas-and-loveseats-b31c3c8eee28.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/sofas-and-loveseats-e6b576e1f226-thumb.webp",
+      "image_alt": "An ornate ivory event loveseat with a tufted back and carved wooden frame",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "tables:cocktail-and-high-tables",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/cocktail-and-high-tables-b28722894a28.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/cocktail-and-high-tables-5788a17c05c0-thumb.webp",
+      "image_alt": "Tall round cocktail tables dressed in white and blue cloth for an event",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "mandap-stage:pillars-and-stambh",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/pillars-and-stambh-4033120a8c42.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/pillars-and-stambh-88433ae20b02-thumb.webp",
+      "image_alt": "Carved golden ceremonial pillars supporting a flower-decorated Indian wedding mandap",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "decor:kalash",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/kalash-5014830e88f2.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/kalash-a3d1d49a929d-thumb.webp",
+      "image_alt": "A ceremonial kalash with coconut, flowers, and traditional offerings",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "serveware:plates-and-glasses",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/plates-and-glasses-3a3ab601d84c.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/plates-and-glasses-0a120bb62e6d-thumb.webp",
+      "image_alt": "Dinner plates and drinking glasses arranged on a dining table",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "tables:low-chowki-tables",
+      "status": "BLOCKED",
+      "image_url": null
+    },
+    {
+      "id": "mandap-stage:arches",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/arches-c03428dc43fa.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/arches-edd33503e6e1-thumb.webp",
+      "image_alt": "A freestanding outdoor wedding arch covered with white and blush flowers",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "linens:chair-covers",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-covers-716020899155.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-covers-dfa230134708-thumb.webp",
+      "image_alt": "White fitted chair covers with ties around a reception table",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "serveware:katori",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/katori-2f2effb2db82.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/katori-5a1928ccb5c0-thumb.webp",
+      "image_alt": "Small stainless steel katori bowls serving an Indian meal on a round tray",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "decor:fanoos-and-lanterns",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/fanoos-and-lanterns-4df02b555ead.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/fanoos-and-lanterns-b773111edbc2-thumb.webp",
+      "image_alt": "Colorful hanging fanoos lanterns displayed for Diwali",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "seating:gaddi-and-floor-mattresses",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/gaddi-and-floor-mattresses-ada91ad843ee.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/gaddi-and-floor-mattresses-bcf74b41ffe7-thumb.webp",
+      "image_alt": "Traditional magenta Indian gaddi floor mattress with cushions in Jaipur",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "mandap-stage:floral-backdrops",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/floral-backdrops-1ec4549f7c80.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/floral-backdrops-2c09a00d3155-thumb.webp",
+      "image_alt": "A white flower wall forming a wedding backdrop behind a reception table",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "decor:marigold-garlands-and-malas",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/marigold-garlands-and-malas-eb983e3da036.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/marigold-garlands-and-malas-77fa20beae11-thumb.webp",
+      "image_alt": "Orange marigold malas arranged together in close-up",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "linens:chair-sashes",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-sashes-9f0b04ab31bd.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-sashes-2d925713aada-thumb.webp",
+      "image_alt": "Black fabric sashes tied in bows around white event chairs",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "seating:bolsters",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-bb380d1ce001.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-032162a08b47-thumb.webp",
+      "image_alt": "Traditional cylindrical green velvet bolster with red and gold bands on Indian floor seating",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "decor:rose-garlands",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/rose-garlands-653aa42f24d6.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/rose-garlands-23ccf8f605af-thumb.webp",
+      "image_alt": "Traditional floral garlands with red roses, jasmine, and other flowers",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "seating:chowki",
+      "status": "BLOCKED",
+      "image_url": null
+    },
+    {
+      "id": "linens:ceiling-drapes",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/ceiling-drapes-d53a5e9dbac6.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/ceiling-drapes-738a201afb10-thumb.webp",
+      "image_alt": "Pink and cream fabric drapes suspended in swags overhead",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "mandap-stage:fabric-backdrops",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/fabric-backdrops-f70709d7a16e.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/fabric-backdrops-f66b73f428a2-thumb.webp",
+      "image_alt": "An ivory fabric event backdrop with crossed drapes and warm decorative lights",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "seating:jhoola",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/jhoola-1f109947c08c.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/jhoola-de25fa9acd64-thumb.webp",
+      "image_alt": "A traditional decorative jhoola swing in an ornate Indian interior",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "mandap-stage:frame-backdrops",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/frame-backdrops-34a32666d453.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/frame-backdrops-cebea300698d-thumb.webp",
+      "image_alt": "A black freestanding event backdrop frame hung with white fabric and greenery",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "linens:wall-drapes-and-parda",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/wall-drapes-and-parda-7a4f09cb416c.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/wall-drapes-and-parda-a3222eff8ee3-thumb.webp",
+      "image_alt": "Red fabric curtain with clearly defined vertical pleats",
+      "image_match_type": "representative"
+    },
+    {
+      "id": "mandap-stage:tents-canopies-and-shamiyana",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/tents-canopies-and-shamiyana-97ce5c959ca2.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/tents-canopies-and-shamiyana-a6831c6d1ede-thumb.webp",
+      "image_alt": "A large white event marquee tent with peaked roof and clear side panels",
+      "image_match_type": "representative"
+    }
+  ]
+}

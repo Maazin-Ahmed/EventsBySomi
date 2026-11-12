@@ -1,0 +1,2960 @@
+{
+  "base": "https://www.eventsbysomia.com",
+  "testedAt": "2026-11-12T17:36:44.024Z",
+  "physicalDevices": false,
+  "results": [
+    {
+      "category": "seating",
+      "width": 390,
+      "height": 844,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "seating:chiavari-chairs",
+          "name": "Chiavari chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/chiavari-chairs-fe7790430ddb.webp",
+          "decoded": true,
+          "naturalWidth": 788,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 595.890625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "seating:banquet-chairs",
+          "name": "Banquet chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/banquet-chairs-d53195641dff.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 788,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "seating:folding-chairs",
+          "name": "Folding chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/folding-chairs-e8c6ed33bbeb.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 938,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "seating:sofas-and-loveseats",
+          "name": "Sofas and loveseats",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/sofas-and-loveseats-b31c3c8eee28.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 995,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 238.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "seating:gaddi-and-floor-mattresses",
+          "name": "Gaddi and floor mattresses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/gaddi-and-floor-mattresses-ada91ad843ee.webp",
+          "decoded": true,
+          "naturalWidth": 1230,
+          "naturalHeight": 737,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "seating:bolsters",
+          "name": "Bolsters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-bb380d1ce001.webp",
+          "decoded": true,
+          "naturalWidth": 1000,
+          "naturalHeight": 750,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 251.546875,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "seating:chowki",
+          "name": "Chowki",
+          "src": null,
+          "decoded": false,
+          "objectFit": null,
+          "placeholder": true,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "seating:jhoola",
+          "name": "Jhoola",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/jhoola-1f109947c08c.webp",
+          "decoded": true,
+          "naturalWidth": 1128,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 416.28125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "cls": 0,
+        "columns": "335.406px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "tables",
+      "width": 390,
+      "height": 844,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "tables:round-60-inch-tables",
+          "name": "Round 60-inch tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/round-60-inch-tables-03f6996fa666.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 935,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "tables:banquet-tables-6ft-and-8ft",
+          "name": "Banquet tables, 6ft and 8ft",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-24138ffb6507.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "tables:buffet-tables",
+          "name": "Buffet tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/buffet-tables-313b6bc21df8.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "tables:cocktail-and-high-tables",
+          "name": "Cocktail and high tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/cocktail-and-high-tables-b28722894a28.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 1122,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 268.796875,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "tables:low-chowki-tables",
+          "name": "Low chowki tables",
+          "src": null,
+          "decoded": false,
+          "objectFit": null,
+          "placeholder": true,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "cls": 0,
+        "columns": "335.406px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "linens",
+      "width": 390,
+      "height": 844,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "linens:tablecloths-and-chadar",
+          "name": "Tablecloths and chadar",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/tablecloths-and-chadar-37355a022720.webp",
+          "decoded": true,
+          "naturalWidth": 1051,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 446.78125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "linens:silk-runners",
+          "name": "Silk runners",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/silk-runners-cc4bb271c4a4.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 402,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "linens:brocade-runners",
+          "name": "Brocade runners",
+          "src": null,
+          "decoded": false,
+          "objectFit": null,
+          "placeholder": true,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "linens:napkins",
+          "name": "Napkins",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/napkins-6639e26919c0.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 503.28125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "linens:chair-covers",
+          "name": "Chair covers",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-covers-716020899155.webp",
+          "decoded": true,
+          "naturalWidth": 1280,
+          "naturalHeight": 960,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 251.546875,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "linens:chair-sashes",
+          "name": "Chair sashes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-sashes-9f0b04ab31bd.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 786,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "linens:ceiling-drapes",
+          "name": "Ceiling drapes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/ceiling-drapes-d53a5e9dbac6.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "linens:wall-drapes-and-parda",
+          "name": "Wall drapes and parda",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/wall-drapes-and-parda-7a4f09cb416c.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "cls": 0,
+        "columns": "335.406px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "mandap-stage",
+      "width": 390,
+      "height": 844,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "mandap-stage:wedding-mandaps",
+          "name": "Wedding mandaps",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/wedding-mandaps-807554eccb79.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "mandap-stage:stage-setups",
+          "name": "Stage setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/stage-setups-e0874fd7c28f.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "mandap-stage:sweetheart-table-setups",
+          "name": "Sweetheart table setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/sweetheart-table-setups-012928fb9c2b.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 1179,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 282.453125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "mandap-stage:pillars-and-stambh",
+          "name": "Pillars and stambh",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/pillars-and-stambh-4033120a8c42.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "mandap-stage:arches",
+          "name": "Arches",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/arches-c03428dc43fa.webp",
+          "decoded": true,
+          "naturalWidth": 935,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 502.203125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "mandap-stage:floral-backdrops",
+          "name": "Floral backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/floral-backdrops-1ec4549f7c80.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 1051,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 251.78125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "mandap-stage:fabric-backdrops",
+          "name": "Fabric backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/fabric-backdrops-f70709d7a16e.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 503.28125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "mandap-stage:frame-backdrops",
+          "name": "Frame backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/frame-backdrops-34a32666d453.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 503.28125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "mandap-stage:tents-canopies-and-shamiyana",
+          "name": "Tents, canopies, and shamiyana",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/tents-canopies-and-shamiyana-97ce5c959ca2.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "cls": 0,
+        "columns": "335.406px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "decor",
+      "width": 390,
+      "height": 844,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "decor:torans",
+          "name": "Torans",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/torans-71900f278f12.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 934,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "decor:diyas",
+          "name": "Diyas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/diyas-3b510f9e7e0e.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 788,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "decor:urlis",
+          "name": "Urlis",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/urlis-2dc945f77170.webp",
+          "decoded": true,
+          "naturalWidth": 1050,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 447.203125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "decor:kalash",
+          "name": "Kalash",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/kalash-5014830e88f2.webp",
+          "decoded": true,
+          "naturalWidth": 787,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 596.65625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "decor:fanoos-and-lanterns",
+          "name": "Fanoos and lanterns",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/fanoos-and-lanterns-4df02b555ead.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "decor:marigold-garlands-and-malas",
+          "name": "Marigold garlands and malas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/marigold-garlands-and-malas-eb983e3da036.webp",
+          "decoded": true,
+          "naturalWidth": 1050,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 447.203125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "decor:rose-garlands",
+          "name": "Rose garlands",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/rose-garlands-653aa42f24d6.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "cls": 0,
+        "columns": "335.406px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "serveware",
+      "width": 390,
+      "height": 844,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "serveware:thaal-and-platters",
+          "name": "Thaal and platters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/thaal-and-platters-8ea2b4e901a3.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 952,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "serveware:handi",
+          "name": "Handi",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/handi-3a22c21b9853.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 503.28125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "serveware:chafing-dishes",
+          "name": "Chafing dishes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-43f0a438c9e4.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "serveware:plates-and-glasses",
+          "name": "Plates and glasses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/plates-and-glasses-3a3ab601d84c.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 503.28125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        },
+        {
+          "id": "serveware:katori",
+          "name": "Katori",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/katori-2f2effb2db82.webp",
+          "decoded": true,
+          "naturalWidth": 1393,
+          "naturalHeight": 1400,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 337.078125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 335.40625,
+          "left": 27.296875,
+          "right": 362.703125,
+          "titleLeft": 51.296875
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "cls": 0,
+        "columns": "335.406px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "seating",
+      "width": 820,
+      "height": 1180,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "seating:chiavari-chairs",
+          "name": "Chiavari chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/chiavari-chairs-fe7790430ddb.webp",
+          "decoded": true,
+          "naturalWidth": 788,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 610.46875,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "seating:banquet-chairs",
+          "name": "Banquet chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/banquet-chairs-d53195641dff.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 788,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "seating:folding-chairs",
+          "name": "Folding chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/folding-chairs-e8c6ed33bbeb.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 938,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230.203125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "seating:sofas-and-loveseats",
+          "name": "Sofas and loveseats",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/sofas-and-loveseats-b31c3c8eee28.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 995,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 244.203125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "seating:gaddi-and-floor-mattresses",
+          "name": "Gaddi and floor mattresses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/gaddi-and-floor-mattresses-ada91ad843ee.webp",
+          "decoded": true,
+          "naturalWidth": 1230,
+          "naturalHeight": 737,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "seating:bolsters",
+          "name": "Bolsters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-bb380d1ce001.webp",
+          "decoded": true,
+          "naturalWidth": 1000,
+          "naturalHeight": 750,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 257.703125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "seating:chowki",
+          "name": "Chowki",
+          "src": null,
+          "decoded": false,
+          "objectFit": null,
+          "placeholder": true,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "seating:jhoola",
+          "name": "Jhoola",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/jhoola-1f109947c08c.webp",
+          "decoded": true,
+          "naturalWidth": 1128,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 426.453125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 820,
+        "documentWidth": 820,
+        "cls": 0,
+        "columns": "343.609px 343.609px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "tables",
+      "width": 820,
+      "height": 1180,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "tables:round-60-inch-tables",
+          "name": "Round 60-inch tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/round-60-inch-tables-03f6996fa666.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 935,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "tables:banquet-tables-6ft-and-8ft",
+          "name": "Banquet tables, 6ft and 8ft",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-24138ffb6507.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "tables:buffet-tables",
+          "name": "Buffet tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/buffet-tables-313b6bc21df8.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "tables:cocktail-and-high-tables",
+          "name": "Cocktail and high tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/cocktail-and-high-tables-b28722894a28.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 1122,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 275.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "tables:low-chowki-tables",
+          "name": "Low chowki tables",
+          "src": null,
+          "decoded": false,
+          "objectFit": null,
+          "placeholder": true,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 820,
+        "documentWidth": 820,
+        "cls": 0,
+        "columns": "343.609px 343.609px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "linens",
+      "width": 820,
+      "height": 1180,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "linens:tablecloths-and-chadar",
+          "name": "Tablecloths and chadar",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/tablecloths-and-chadar-37355a022720.webp",
+          "decoded": true,
+          "naturalWidth": 1051,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 457.703125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "linens:silk-runners",
+          "name": "Silk runners",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/silk-runners-cc4bb271c4a4.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 402,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "linens:brocade-runners",
+          "name": "Brocade runners",
+          "src": null,
+          "decoded": false,
+          "objectFit": null,
+          "placeholder": true,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "linens:napkins",
+          "name": "Napkins",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/napkins-6639e26919c0.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 515.59375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "linens:chair-covers",
+          "name": "Chair covers",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-covers-716020899155.webp",
+          "decoded": true,
+          "naturalWidth": 1280,
+          "naturalHeight": 960,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 257.703125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "linens:chair-sashes",
+          "name": "Chair sashes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-sashes-9f0b04ab31bd.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 786,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "linens:ceiling-drapes",
+          "name": "Ceiling drapes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/ceiling-drapes-d53a5e9dbac6.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "linens:wall-drapes-and-parda",
+          "name": "Wall drapes and parda",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/wall-drapes-and-parda-7a4f09cb416c.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 820,
+        "documentWidth": 820,
+        "cls": 0,
+        "columns": "343.609px 343.609px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "mandap-stage",
+      "width": 820,
+      "height": 1180,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "mandap-stage:wedding-mandaps",
+          "name": "Wedding mandaps",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/wedding-mandaps-807554eccb79.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "mandap-stage:stage-setups",
+          "name": "Stage setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/stage-setups-e0874fd7c28f.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "mandap-stage:sweetheart-table-setups",
+          "name": "Sweetheart table setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/sweetheart-table-setups-012928fb9c2b.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 1179,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 289.359375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "mandap-stage:pillars-and-stambh",
+          "name": "Pillars and stambh",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/pillars-and-stambh-4033120a8c42.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "mandap-stage:arches",
+          "name": "Arches",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/arches-c03428dc43fa.webp",
+          "decoded": true,
+          "naturalWidth": 935,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 514.484375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "mandap-stage:floral-backdrops",
+          "name": "Floral backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/floral-backdrops-1ec4549f7c80.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 1051,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 257.9375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "mandap-stage:fabric-backdrops",
+          "name": "Fabric backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/fabric-backdrops-f70709d7a16e.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 515.59375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "mandap-stage:frame-backdrops",
+          "name": "Frame backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/frame-backdrops-34a32666d453.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 515.59375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "mandap-stage:tents-canopies-and-shamiyana",
+          "name": "Tents, canopies, and shamiyana",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/tents-canopies-and-shamiyana-97ce5c959ca2.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 820,
+        "documentWidth": 820,
+        "cls": 0,
+        "columns": "343.609px 343.609px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "decor",
+      "width": 820,
+      "height": 1180,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "decor:torans",
+          "name": "Torans",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/torans-71900f278f12.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 934,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "decor:diyas",
+          "name": "Diyas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/diyas-3b510f9e7e0e.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 788,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "decor:urlis",
+          "name": "Urlis",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/urlis-2dc945f77170.webp",
+          "decoded": true,
+          "naturalWidth": 1050,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 458.140625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "decor:kalash",
+          "name": "Kalash",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/kalash-5014830e88f2.webp",
+          "decoded": true,
+          "naturalWidth": 787,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 611.234375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "decor:fanoos-and-lanterns",
+          "name": "Fanoos and lanterns",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/fanoos-and-lanterns-4df02b555ead.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "decor:marigold-garlands-and-malas",
+          "name": "Marigold garlands and malas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/marigold-garlands-and-malas-eb983e3da036.webp",
+          "decoded": true,
+          "naturalWidth": 1050,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 458.140625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "decor:rose-garlands",
+          "name": "Rose garlands",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/rose-garlands-653aa42f24d6.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 820,
+        "documentWidth": 820,
+        "cls": 0,
+        "columns": "343.609px 343.609px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "serveware",
+      "width": 820,
+      "height": 1180,
+      "emulation": "Chromium mobile/touch, DPR 2",
+      "products": [
+        {
+          "id": "serveware:thaal-and-platters",
+          "name": "Thaal and platters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/thaal-and-platters-8ea2b4e901a3.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 952,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 233.640625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "serveware:handi",
+          "name": "Handi",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/handi-3a22c21b9853.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 515.59375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "serveware:chafing-dishes",
+          "name": "Chafing dishes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-43f0a438c9e4.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        },
+        {
+          "id": "serveware:plates-and-glasses",
+          "name": "Plates and glasses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/plates-and-glasses-3a3ab601d84c.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 515.59375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 419,
+          "right": 762.609375,
+          "titleLeft": 443
+        },
+        {
+          "id": "serveware:katori",
+          "name": "Katori",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/katori-2f2effb2db82.webp",
+          "decoded": true,
+          "naturalWidth": 1393,
+          "naturalHeight": 1400,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 345.328125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 343.609375,
+          "left": 57.390625,
+          "right": 401,
+          "titleLeft": 81.390625
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 820,
+        "documentWidth": 820,
+        "cls": 0,
+        "columns": "343.609px 343.609px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "seating",
+      "width": 1440,
+      "height": 1080,
+      "emulation": "Chromium desktop, DPR 1",
+      "products": [
+        {
+          "id": "seating:chiavari-chairs",
+          "name": "Chiavari chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/chiavari-chairs-fe7790430ddb.webp",
+          "decoded": true,
+          "naturalWidth": 788,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 686.140625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "seating:banquet-chairs",
+          "name": "Banquet chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/banquet-chairs-d53195641dff.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 788,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        },
+        {
+          "id": "seating:folding-chairs",
+          "name": "Folding chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/folding-chairs-e8c6ed33bbeb.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 938,
+          "renderedWidth": 386.21875,
+          "renderedHeight": 258.765625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.21875,
+          "left": 923.59375,
+          "right": 1309.8125,
+          "titleLeft": 947.59375
+        },
+        {
+          "id": "seating:sofas-and-loveseats",
+          "name": "Sofas and loveseats",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/sofas-and-loveseats-b31c3c8eee28.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 995,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 274.46875,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "seating:gaddi-and-floor-mattresses",
+          "name": "Gaddi and floor mattresses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/gaddi-and-floor-mattresses-ada91ad843ee.webp",
+          "decoded": true,
+          "naturalWidth": 1230,
+          "naturalHeight": 737,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 231.40625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        },
+        {
+          "id": "seating:bolsters",
+          "name": "Bolsters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-bb380d1ce001.webp",
+          "decoded": true,
+          "naturalWidth": 1000,
+          "naturalHeight": 750,
+          "renderedWidth": 386.21875,
+          "renderedHeight": 289.65625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.21875,
+          "left": 923.59375,
+          "right": 1309.8125,
+          "titleLeft": 947.59375
+        },
+        {
+          "id": "seating:chowki",
+          "name": "Chowki",
+          "src": null,
+          "decoded": false,
+          "objectFit": null,
+          "placeholder": true,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "seating:jhoola",
+          "name": "Jhoola",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/jhoola-1f109947c08c.webp",
+          "decoded": true,
+          "naturalWidth": 1128,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 479.328125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1425,
+        "cls": 0,
+        "columns": "386.203px 386.203px 386.219px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "tables",
+      "width": 1440,
+      "height": 1080,
+      "emulation": "Chromium desktop, DPR 1",
+      "products": [
+        {
+          "id": "tables:round-60-inch-tables",
+          "name": "Round 60-inch tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/round-60-inch-tables-03f6996fa666.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 935,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 257.921875,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "tables:banquet-tables-6ft-and-8ft",
+          "name": "Banquet tables, 6ft and 8ft",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-24138ffb6507.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 257.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        },
+        {
+          "id": "tables:buffet-tables",
+          "name": "Buffet tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/buffet-tables-313b6bc21df8.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 386.21875,
+          "renderedHeight": 257.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.21875,
+          "left": 923.59375,
+          "right": 1309.8125,
+          "titleLeft": 947.59375
+        },
+        {
+          "id": "tables:cocktail-and-high-tables",
+          "name": "Cocktail and high tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/cocktail-and-high-tables-b28722894a28.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 1122,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 309.5,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "tables:low-chowki-tables",
+          "name": "Low chowki tables",
+          "src": null,
+          "decoded": false,
+          "objectFit": null,
+          "placeholder": true,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1425,
+        "cls": 0,
+        "columns": "386.203px 386.203px 386.219px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "linens",
+      "width": 1440,
+      "height": 1080,
+      "emulation": "Chromium desktop, DPR 1",
+      "products": [
+        {
+          "id": "linens:tablecloths-and-chadar",
+          "name": "Tablecloths and chadar",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/tablecloths-and-chadar-37355a022720.webp",
+          "decoded": true,
+          "naturalWidth": 1051,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 514.4375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "linens:silk-runners",
+          "name": "Silk runners",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/silk-runners-cc4bb271c4a4.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 402,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        },
+        {
+          "id": "linens:brocade-runners",
+          "name": "Brocade runners",
+          "src": null,
+          "decoded": false,
+          "objectFit": null,
+          "placeholder": true,
+          "cardWidth": 386.21875,
+          "left": 923.59375,
+          "right": 1309.8125,
+          "titleLeft": 947.59375
+        },
+        {
+          "id": "linens:napkins",
+          "name": "Napkins",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/napkins-6639e26919c0.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 579.5,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "linens:chair-covers",
+          "name": "Chair covers",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-covers-716020899155.webp",
+          "decoded": true,
+          "naturalWidth": 1280,
+          "naturalHeight": 960,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 289.640625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        },
+        {
+          "id": "linens:chair-sashes",
+          "name": "Chair sashes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-sashes-9f0b04ab31bd.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 786,
+          "renderedWidth": 386.21875,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.21875,
+          "left": 923.59375,
+          "right": 1309.8125,
+          "titleLeft": 947.59375
+        },
+        {
+          "id": "linens:ceiling-drapes",
+          "name": "Ceiling drapes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/ceiling-drapes-d53a5e9dbac6.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 257.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "linens:wall-drapes-and-parda",
+          "name": "Wall drapes and parda",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/wall-drapes-and-parda-7a4f09cb416c.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 257.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1425,
+        "cls": 0,
+        "columns": "386.203px 386.203px 386.219px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "mandap-stage",
+      "width": 1440,
+      "height": 1080,
+      "emulation": "Chromium desktop, DPR 1",
+      "products": [
+        {
+          "id": "mandap-stage:wedding-mandaps",
+          "name": "Wedding mandaps",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/wedding-mandaps-807554eccb79.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 257.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "mandap-stage:stage-setups",
+          "name": "Stage setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/stage-setups-e0874fd7c28f.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 257.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        },
+        {
+          "id": "mandap-stage:sweetheart-table-setups",
+          "name": "Sweetheart table setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/sweetheart-table-setups-012928fb9c2b.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 1179,
+          "renderedWidth": 386.21875,
+          "renderedHeight": 325.25,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.21875,
+          "left": 923.59375,
+          "right": 1309.8125,
+          "titleLeft": 947.59375
+        },
+        {
+          "id": "mandap-stage:pillars-and-stambh",
+          "name": "Pillars and stambh",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/pillars-and-stambh-4033120a8c42.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 257.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "mandap-stage:arches",
+          "name": "Arches",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/arches-c03428dc43fa.webp",
+          "decoded": true,
+          "naturalWidth": 935,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 578.265625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        },
+        {
+          "id": "mandap-stage:floral-backdrops",
+          "name": "Floral backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/floral-backdrops-1ec4549f7c80.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 1051,
+          "renderedWidth": 386.21875,
+          "renderedHeight": 289.9375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.21875,
+          "left": 923.59375,
+          "right": 1309.8125,
+          "titleLeft": 947.59375
+        },
+        {
+          "id": "mandap-stage:fabric-backdrops",
+          "name": "Fabric backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/fabric-backdrops-f70709d7a16e.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 579.5,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "mandap-stage:frame-backdrops",
+          "name": "Frame backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/frame-backdrops-34a32666d453.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 579.5,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        },
+        {
+          "id": "mandap-stage:tents-canopies-and-shamiyana",
+          "name": "Tents, canopies, and shamiyana",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/tents-canopies-and-shamiyana-97ce5c959ca2.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 386.21875,
+          "renderedHeight": 257.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.21875,
+          "left": 923.59375,
+          "right": 1309.8125,
+          "titleLeft": 947.59375
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1425,
+        "cls": 0,
+        "columns": "386.203px 386.203px 386.219px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "decor",
+      "width": 1440,
+      "height": 1080,
+      "emulation": "Chromium desktop, DPR 1",
+      "products": [
+        {
+          "id": "decor:torans",
+          "name": "Torans",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/torans-71900f278f12.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 934,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 257.640625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "decor:diyas",
+          "name": "Diyas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/diyas-3b510f9e7e0e.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 788,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        },
+        {
+          "id": "decor:urlis",
+          "name": "Urlis",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/urlis-2dc945f77170.webp",
+          "decoded": true,
+          "naturalWidth": 1050,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.21875,
+          "renderedHeight": 514.953125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.21875,
+          "left": 923.59375,
+          "right": 1309.8125,
+          "titleLeft": 947.59375
+        },
+        {
+          "id": "decor:kalash",
+          "name": "Kalash",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/kalash-5014830e88f2.webp",
+          "decoded": true,
+          "naturalWidth": 787,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 687.015625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "decor:fanoos-and-lanterns",
+          "name": "Fanoos and lanterns",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/fanoos-and-lanterns-4df02b555ead.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 257.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        },
+        {
+          "id": "decor:marigold-garlands-and-malas",
+          "name": "Marigold garlands and malas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/marigold-garlands-and-malas-eb983e3da036.webp",
+          "decoded": true,
+          "naturalWidth": 1050,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.21875,
+          "renderedHeight": 514.953125,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.21875,
+          "left": 923.59375,
+          "right": 1309.8125,
+          "titleLeft": 947.59375
+        },
+        {
+          "id": "decor:rose-garlands",
+          "name": "Rose garlands",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/rose-garlands-653aa42f24d6.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 257.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1425,
+        "cls": 0,
+        "columns": "386.203px 386.203px 386.219px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    },
+    {
+      "category": "serveware",
+      "width": 1440,
+      "height": 1080,
+      "emulation": "Chromium desktop, DPR 1",
+      "products": [
+        {
+          "id": "serveware:thaal-and-platters",
+          "name": "Thaal and platters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/thaal-and-platters-8ea2b4e901a3.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 952,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 262.609375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "serveware:handi",
+          "name": "Handi",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/handi-3a22c21b9853.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 579.5,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        },
+        {
+          "id": "serveware:chafing-dishes",
+          "name": "Chafing dishes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-43f0a438c9e4.webp",
+          "decoded": true,
+          "naturalWidth": 1400,
+          "naturalHeight": 933,
+          "renderedWidth": 386.21875,
+          "renderedHeight": 257.375,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.21875,
+          "left": 923.59375,
+          "right": 1309.8125,
+          "titleLeft": 947.59375
+        },
+        {
+          "id": "serveware:plates-and-glasses",
+          "name": "Plates and glasses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/plates-and-glasses-3a3ab601d84c.webp",
+          "decoded": true,
+          "naturalWidth": 933,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 579.5,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 115.1875,
+          "right": 501.390625,
+          "titleLeft": 139.1875
+        },
+        {
+          "id": "serveware:katori",
+          "name": "Katori",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/katori-2f2effb2db82.webp",
+          "decoded": true,
+          "naturalWidth": 1393,
+          "naturalHeight": 1400,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 388.140625,
+          "objectFit": "contain",
+          "placeholder": false,
+          "cardWidth": 386.203125,
+          "left": 519.390625,
+          "right": 905.59375,
+          "titleLeft": 543.390625
+        }
+      ],
+      "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": true,
+          "loading": "lazy"
+        }
+      ],
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1425,
+        "cls": 0,
+        "columns": "386.203px 386.203px 386.219px",
+        "heights": [
+          230,
+          230,
+          230,
+          230,
+          230
+        ],
+        "brokenOtherImages": []
+      },
+      "productRequests": 1,
+      "categoryRequests": 1
+    }
+  ],
+  "errors": []
+}

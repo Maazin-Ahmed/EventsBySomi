@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-11-12T17:24:47.166Z",
+  "verifiedAt": "2026-11-12T17:29:58.131Z",
   "bucket": "rental-product-images",
   "objects": [
     {
@@ -113,6 +113,28 @@
       "sha256": "bcf74b41ffe70a204d80569f915aa2fa8690af0324788e4af7a1ba05d7377c24"
     },
     {
+      "id": "seating:bolsters",
+      "type": "image",
+      "objectPath": "seating/bolsters-bb380d1ce001.webp",
+      "url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-bb380d1ce001.webp",
+      "status": 200,
+      "bytes": 45530,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000",
+      "sha256": "bb380d1ce00103eb1139477fdc917950c05dfadd43d1d82b159629f6ece45d9a"
+    },
+    {
+      "id": "seating:bolsters",
+      "type": "thumbnail",
+      "objectPath": "seating/bolsters-032162a08b47-thumb.webp",
+      "url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-032162a08b47-thumb.webp",
+      "status": 200,
+      "bytes": 11126,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000",
+      "sha256": "032162a08b477fa8883a46b956e96d8311bc0ade60f704be74aeddae03fadda9"
+    },
+    {
       "id": "seating:jhoola",
       "type": "image",
       "objectPath": "seating/jhoola-1f109947c08c.webp",
@@ -155,6 +177,28 @@
       "contentType": "image/webp",
       "cacheControl": "public, max-age=31536000",
       "sha256": "b5b297f80519c7d62e137000f2b63fdd6ac56e9e56d81c71b4234d0bdccff76a"
+    },
+    {
+      "id": "tables:banquet-tables-6ft-and-8ft",
+      "type": "image",
+      "objectPath": "tables/banquet-tables-6ft-and-8ft-24138ffb6507.webp",
+      "url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-24138ffb6507.webp",
+      "status": 200,
+      "bytes": 179228,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000",
+      "sha256": "24138ffb65071ba8f49d019780c677f98dd01eb9f022a44aafec11ad8c2e92f0"
+    },
+    {
+      "id": "tables:banquet-tables-6ft-and-8ft",
+      "type": "thumbnail",
+      "objectPath": "tables/banquet-tables-6ft-and-8ft-dcfe4e6f3175-thumb.webp",
+      "url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-dcfe4e6f3175-thumb.webp",
+      "status": 200,
+      "bytes": 25060,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000",
+      "sha256": "dcfe4e6f31756955e6ff57c61cebd77f832d29d1d495f359b1065fb03ef9b950"
     },
     {
       "id": "tables:buffet-tables",

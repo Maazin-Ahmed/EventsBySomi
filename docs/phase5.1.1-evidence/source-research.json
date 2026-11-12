@@ -73,25 +73,58 @@
         "matchType": "representative",
         "alt": "Long dark buffet tables with visible pedestal supports arranged for event serving",
         "visualReview": "Unlike food close-ups, entire long tabletop and substantial pedestal supports visible. Real event buffet-table arrangement; not exact inventory."
+      },
+      {
+        "category": "tables",
+        "name": "Banquet tables, 6ft and 8ft",
+        "slug": "banquet-table",
+        "provider": "Unsplash",
+        "photoId": "photo-1773005695304-97e7dbf5ff15",
+        "imageUrl": "https://images.unsplash.com/photo-1773005695304-97e7dbf5ff15",
+        "sourcePage": "https://unsplash.com/photos/a-beautifully-decorated-long-table-set-for-a-wedding-reception-3nx3qOwSSLs",
+        "photographer": "Jennifer Kalenberg",
+        "license": "Unsplash License",
+        "licenseUrl": "https://unsplash.com/license",
+        "matchType": "representative",
+        "alt": "Long rectangular wooden banquet table arranged with place settings for a reception",
+        "visualReview": "Clear foreground rectangular banquet tabletop with visible long straight edges; dressed event-table arrangement. Actual 6ft or 8ft dimensions cannot be established from photograph, so representative only. Foreground subject is table setup rather than general wedding scene."
+      },
+      {
+        "category": "seating",
+        "name": "Bolsters",
+        "slug": "bolster",
+        "provider": "Wikimedia Commons",
+        "photoId": "commons-mehrangarh-fort9",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Mehrangarh_fort9.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mehrangarh_fort9.jpg",
+        "photographer": "Shahriar Amin Fahim247",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceWidth": 6840,
+        "sourceHeight": 4560,
+        "originalBytes": 9607738,
+        "matchType": "representative",
+        "alt": "Traditional cylindrical green velvet bolster with red and gold bands on Indian floor seating",
+        "cropSuggestion": {
+          "left": 4400,
+          "top": 3600,
+          "width": 1000,
+          "height": 750
+        },
+        "attributionRequired": true,
+        "changes": "Product-focused crop, resize and WebP conversion; derivative remains CC BY-SA 4.0. Public credits must link source, photographer and license.",
+        "visualReview": "Reviewed native1000×750 crop: clear cylindrical side, rounded end, red bands, gold seams and velvet highlights. Native bolster about500px wide; adequate for230px card region at2x without upscaling. Brighter and clearer than PhulMahal3 crop (rejected). Context is a real Indian heritage floor-seating installation, not exact rental inventory."
       }
     ],
     "pending": [],
     "blockers": [
       {
-        "name": "Bolsters",
-        "reason": "CC0 BolsterPillow.jpg is visibly noisy/blurry. Commons Bolst.JPG, Traversin.jpg, Bantal_Guling.jpg depict domestic bed bolsters and poor light; not approved. Searching traditional cylindrical cushions."
-      },
-      {
         "name": "Chowki",
-        "reason": "Bajot 01/02 are mislabelled hookah detail photographs. Odisha museum table is woven rope, not a solid low wooden chowki. Continuing museum sources."
+        "reason": "Bajot 01/02 are mislabelled hookah detail photographs. Odisha museum table is woven rope, not a solid low wooden chowki. Continuing museum sources. Research checked Pexels/Unsplash, Wikimedia chowki/bajot/Indian stool/low table categories, CEPT/SADACC furniture photographs, Met API20558, LACMA furniture collection. Accurate retailer product image Flickr19313052978 is All Rights Reserved. Museum open collection options were unrelated cabinets/Western-form stools; temple seats poor framing/condition and low native pixel coverage; refusing inaccurate substitution."
       },
       {
         "name": "Low chowki tables",
-        "reason": "No approved distinct photograph yet; traditional furniture researchers' excellent chowki photographs lack reusable license."
-      },
-      {
-        "name": "Banquet tables, 6ft and 8ft",
-        "reason": "LifetimeTable.jpg 469px inadequate resolution; Lifetime Folding Table.jpg 1200px shows partial craft table. Seeking clearer full rectangular banquet table."
+        "reason": "No approved distinct photograph yet; traditional furniture researchers' excellent chowki photographs lack reusable license. Research checked Pexels/Unsplash, Wikimedia chowki/bajot/Indian stool/low table categories, CEPT/SADACC furniture photographs, Met API20558, LACMA furniture collection. Accurate retailer product image Flickr19313052978 is All Rights Reserved. Museum open collection options were unrelated cabinets/Western-form stools; temple seats poor framing/condition and low native pixel coverage; refusing inaccurate substitution."
       }
     ]
   },
@@ -236,14 +269,10 @@
         "originalBytes": 1693503,
         "alt": "Representative silk and metallic thread table runner with orange decorative motifs",
         "matchType": "representative",
-        "review": "Museum professional isolated photograph of a real silk table runner, dated late 19th–early 20th century, Japan. Some historic fading; actual material is verified by museum, but it is not a modern event inventory photograph. Parent should judge suitability before approval."
+        "review": "Museum professional isolated photograph of a real silk table runner, dated late 19th–early 20th century, Japan. Some historic fading; actual material is verified by museum, but it is not a modern event inventory photograph. Parent should judge suitability before approval. Parent has since visually reviewed this photograph and accepted historical representative silk classification."
       }
     ],
     "blockers": [
-      {
-        "name": "Silk runners",
-        "reason": "No modern licensed photograph with independently verified silk material found. Optional public-domain historic museum runner supplied separately, not automatically approved."
-      },
       {
         "name": "Brocade runners",
         "reason": "Searches across Pexels, Unsplash, Pixabay, Wikimedia Commons, museum open collections and commercial product sources did not verify a suitable reuse-cleared brocade table runner photograph. Commercial exact product images have no reuse permission; generic shiny runners do not establish brocade construction. Museum brocade textiles without runner identity are not suitable substitutes.",
@@ -253,6 +282,44 @@
           "https://www.spurlock.illinois.edu/collections/search-collection/details.php?a=1946.01.0003A",
           "https://www.etsy.com/listing/1858406096/hand-woven-thai-silk-table-runner"
         ]
+      }
+    ],
+    "further_museum_research": [
+      {
+        "source": "https://openaccess-api.clevelandart.org/api/artworks/?q=table%20runner&limit=1000",
+        "result": "42 matches inspected; only material-verified, photographed CC0 table runner is accession 1939.145. Other matches are copyrighted lace table-setting components without images."
+      },
+      {
+        "source": "https://openaccess-api.clevelandart.org/api/artworks/?q=brocade&limit=1000",
+        "result": "575 metadata matches inspected for runner/table identity. Three photographed table covers exist, but measurements and museum titles establish covers rather than runners: 1916.1377 (108×72.5cm), 1939.149 (101.6×84.5cm), 1939.152 (170.2×102.2cm). No substitution made."
+      },
+      {
+        "source": "https://collectionapi.metmuseum.org/public/collection/v1.1/search?q=table%20runner&hasImages=true&limit=100",
+        "result": "All 36 search records fetched. Three actual runner titles: object 229482 mixed wool/chenille/metal/silk embroidered runner; 229671 and 229673 linen needle-lace runners. No brocade runner."
+      },
+      {
+        "source": "https://commons.wikimedia.org/wiki/Category:Table_runners",
+        "result": "All 134 bitmap file metadata records fetched and checked for brocade/silk. No brocade runner identified in licensed metadata. Auckland silk AM11338 photograph visually rejected for staining; other silk runner is unusual cross-shaped satin with crocheted pansies; Cleveland 1939.145 remains the best conventional silk runner."
+      },
+      {
+        "source": "https://collections.lacma.org/object/70796",
+        "result": "LACMA table runner search identified a linen plain-weave embroidered runner; not silk/brocade."
+      },
+      {
+        "source": "https://opencollection.brooklynmuseum.org/objects/22810",
+        "result": "Silk table runner photo marked Creative Commons-BY but original image is black and white, inferior to the clear color Cleveland runner. No brocade construction verified."
+      },
+      {
+        "source": "https://dma.org/art/collection/object/4057840",
+        "result": "Dallas Gold, White and Pink Table Runner is open-access, but published object metadata does not identify brocade construction; cannot infer material from name or color."
+      },
+      {
+        "source": "https://www.spurlock.illinois.edu/collections/search-collection/details.php?a=1946.01.0003A",
+        "result": "Explicit silk/brocade table runner or door curtain, but no affirmative commercial reuse license; reproduction marked No."
+      },
+      {
+        "source": "https://art.seattleartmuseum.org/objects/19591/temple-runner",
+        "result": "Explicit satin/brocade temple runner but museum photo credited Beth Mann, no reuse permission verified, and temple use differs from dining rental."
       }
     ]
   },

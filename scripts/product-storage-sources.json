@@ -103,15 +103,31 @@
     "id": "seating:bolsters",
     "category": "seating",
     "name": "Bolsters",
-    "approved": false,
-    "blocker": "CC0 BolsterPillow.jpg is visibly noisy/blurry. Commons Bolst.JPG, Traversin.jpg, Bantal_Guling.jpg depict domestic bed bolsters and poor light; not approved. Searching traditional cylindrical cushions."
+    "approved": true,
+    "provider": "Wikimedia Commons",
+    "photoId": "commons-mehrangarh-fort9",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Mehrangarh_fort9.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mehrangarh_fort9.jpg",
+    "photographer": "Shahriar Amin Fahim247",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "Traditional cylindrical green velvet bolster with red and gold bands on Indian floor seating",
+    "matchType": "representative",
+    "visualReview": "Reviewed native1000×750 crop: clear cylindrical side, rounded end, red bands, gold seams and velvet highlights. Native bolster about500px wide; adequate for230px card region at2x without upscaling. Brighter and clearer than PhulMahal3 crop (rejected). Context is a real Indian heritage floor-seating installation, not exact rental inventory.",
+    "reviewedAt": "2026-11-12",
+    "crop": [
+      0.6432748538011696,
+      0.7894736842105263,
+      0.7894736842105263,
+      0.9539473684210527
+    ]
   },
   {
     "id": "seating:chowki",
     "category": "seating",
     "name": "Chowki",
     "approved": false,
-    "blocker": "Bajot 01/02 are mislabelled hookah detail photographs. Odisha museum table is woven rope, not a solid low wooden chowki. Continuing museum sources."
+    "blocker": "Bajot 01/02 are mislabelled hookah detail photographs. Odisha museum table is woven rope, not a solid low wooden chowki. Continuing museum sources. Research checked Pexels/Unsplash, Wikimedia chowki/bajot/Indian stool/low table categories, CEPT/SADACC furniture photographs, Met API20558, LACMA furniture collection. Accurate retailer product image Flickr19313052978 is All Rights Reserved. Museum open collection options were unrelated cabinets/Western-form stools; temple seats poor framing/condition and low native pixel coverage; refusing inaccurate substitution."
   },
   {
     "id": "seating:jhoola",
@@ -158,8 +174,19 @@
     "id": "tables:banquet-tables-6ft-and-8ft",
     "category": "tables",
     "name": "Banquet tables, 6ft and 8ft",
-    "approved": false,
-    "blocker": "LifetimeTable.jpg 469px inadequate resolution; Lifetime Folding Table.jpg 1200px shows partial craft table. Seeking clearer full rectangular banquet table."
+    "approved": true,
+    "provider": "Unsplash",
+    "photoId": "photo-1773005695304-97e7dbf5ff15",
+    "downloadUrl": "https://images.unsplash.com/photo-1773005695304-97e7dbf5ff15",
+    "sourcePage": "https://unsplash.com/photos/a-beautifully-decorated-long-table-set-for-a-wedding-reception-3nx3qOwSSLs",
+    "photographer": "Jennifer Kalenberg",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "alt": "Long rectangular wooden banquet table arranged with place settings for a reception",
+    "matchType": "representative",
+    "visualReview": "Clear foreground rectangular banquet tabletop with visible long straight edges; dressed event-table arrangement. Actual 6ft or 8ft dimensions cannot be established from photograph, so representative only. Foreground subject is table setup rather than general wedding scene.",
+    "reviewedAt": "2026-11-12",
+    "crop": null
   },
   {
     "id": "tables:buffet-tables",
@@ -207,7 +234,7 @@
     "category": "tables",
     "name": "Low chowki tables",
     "approved": false,
-    "blocker": "No approved distinct photograph yet; traditional furniture researchers' excellent chowki photographs lack reusable license."
+    "blocker": "No approved distinct photograph yet; traditional furniture researchers' excellent chowki photographs lack reusable license. Research checked Pexels/Unsplash, Wikimedia chowki/bajot/Indian stool/low table categories, CEPT/SADACC furniture photographs, Met API20558, LACMA furniture collection. Accurate retailer product image Flickr19313052978 is All Rights Reserved. Museum open collection options were unrelated cabinets/Western-form stools; temple seats poor framing/condition and low native pixel coverage; refusing inaccurate substitution."
   },
   {
     "id": "linens:tablecloths-and-chadar",
@@ -241,7 +268,7 @@
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "alt": "Representative silk and metallic thread table runner with orange decorative motifs",
     "matchType": "representative",
-    "visualReview": "Museum professional isolated photograph of a real silk table runner, dated late 19th–early 20th century, Japan. Some historic fading; actual material is verified by museum, but it is not a modern event inventory photograph. Parent should judge suitability before approval. Approved as explicitly representative historical silk runner. Fading documented; weave and actual type are verified by museum.",
+    "visualReview": "Museum professional isolated photograph of a real silk table runner, dated late 19th–early 20th century, Japan. Some historic fading; actual material is verified by museum, but it is not a modern event inventory photograph. Parent should judge suitability before approval. Parent has since visually reviewed this photograph and accepted historical representative silk classification. Approved as explicitly representative historical silk runner. Fading documented; weave and actual type are verified by museum.",
     "reviewedAt": "2026-11-12",
     "crop": null
   },

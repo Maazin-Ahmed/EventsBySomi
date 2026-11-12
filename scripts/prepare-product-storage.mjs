@@ -10,9 +10,22 @@ const scratch = '/tmp/somia-product-originals'
 await fs.mkdir(directory, { recursive: true })
 await fs.mkdir(scratch, { recursive: true })
 const results = []
+let previous = []
+try { previous = JSON.parse(await fs.readFile(path.join(root, 'scripts/product-storage-manifest.json'), 'utf8')) } catch {}
 for (const source of sources) {
   if (!source.approved) continue
   if (!source.sourcePage || !source.licenseUrl || !source.photographer || !source.visualReview) throw new Error('Incomplete approval: ' + source.id)
+  const existing = previous.find(item => item.id === source.id && item.downloadUrl === source.downloadUrl && JSON.stringify(item.crop) === JSON.stringify(source.crop))
+  if (existing) {
+    let valid = true
+    for (const type of ['image', 'thumbnail']) {
+      try {
+        const bytes = await fs.readFile(path.join(directory, existing[type].objectPath))
+        valid &&= createHash('sha256').update(bytes).digest('hex') === existing[type].sha256
+      } catch { valid = false }
+    }
+    if (valid) { results.push({ ...existing, ...source }); console.log(source.id + ': verified existing optimized files'); continue }
+  }
   const response = await fetch(source.downloadUrl, { signal: AbortSignal.timeout(90000) })
   if (!response.ok) throw new Error(`Download ${source.id}: HTTP ${response.status}`)
   const original = Buffer.from(await response.arrayBuffer())

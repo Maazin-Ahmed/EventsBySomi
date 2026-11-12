@@ -190,6 +190,47 @@
     }
   },
   {
+    "id": "seating:bolsters",
+    "category": "seating",
+    "name": "Bolsters",
+    "approved": true,
+    "provider": "Wikimedia Commons",
+    "photoId": "commons-mehrangarh-fort9",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Mehrangarh_fort9.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Mehrangarh_fort9.jpg",
+    "photographer": "Shahriar Amin Fahim247",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "Traditional cylindrical green velvet bolster with red and gold bands on Indian floor seating",
+    "matchType": "representative",
+    "visualReview": "Reviewed native1000×750 crop: clear cylindrical side, rounded end, red bands, gold seams and velvet highlights. Native bolster about500px wide; adequate for230px card region at2x without upscaling. Brighter and clearer than PhulMahal3 crop (rejected). Context is a real Indian heritage floor-seating installation, not exact rental inventory.",
+    "reviewedAt": "2026-11-12",
+    "crop": [
+      0.6432748538011696,
+      0.7894736842105263,
+      0.7894736842105263,
+      0.9539473684210527
+    ],
+    "originalBytes": 9607738,
+    "originalSha256": "62272f38ad170e87e9db475998af03ba0cd8238239ca5984062f275bc570aff8",
+    "originalWidth": 6840,
+    "originalHeight": 4560,
+    "image": {
+      "objectPath": "seating/bolsters-bb380d1ce001.webp",
+      "sha256": "bb380d1ce00103eb1139477fdc917950c05dfadd43d1d82b159629f6ece45d9a",
+      "bytes": 45530,
+      "width": 1000,
+      "height": 750
+    },
+    "thumbnail": {
+      "objectPath": "seating/bolsters-032162a08b47-thumb.webp",
+      "sha256": "032162a08b477fa8883a46b956e96d8311bc0ade60f704be74aeddae03fadda9",
+      "bytes": 11126,
+      "width": 384,
+      "height": 288
+    }
+  },
+  {
     "id": "seating:jhoola",
     "category": "seating",
     "name": "Jhoola",
@@ -262,6 +303,42 @@
       "objectPath": "tables/round-60-inch-tables-b5b297f80519-thumb.webp",
       "sha256": "b5b297f80519c7d62e137000f2b63fdd6ac56e9e56d81c71b4234d0bdccff76a",
       "bytes": 22424,
+      "width": 384,
+      "height": 256
+    }
+  },
+  {
+    "id": "tables:banquet-tables-6ft-and-8ft",
+    "category": "tables",
+    "name": "Banquet tables, 6ft and 8ft",
+    "approved": true,
+    "provider": "Unsplash",
+    "photoId": "photo-1773005695304-97e7dbf5ff15",
+    "downloadUrl": "https://images.unsplash.com/photo-1773005695304-97e7dbf5ff15",
+    "sourcePage": "https://unsplash.com/photos/a-beautifully-decorated-long-table-set-for-a-wedding-reception-3nx3qOwSSLs",
+    "photographer": "Jennifer Kalenberg",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "alt": "Long rectangular wooden banquet table arranged with place settings for a reception",
+    "matchType": "representative",
+    "visualReview": "Clear foreground rectangular banquet tabletop with visible long straight edges; dressed event-table arrangement. Actual 6ft or 8ft dimensions cannot be established from photograph, so representative only. Foreground subject is table setup rather than general wedding scene.",
+    "reviewedAt": "2026-11-12",
+    "crop": null,
+    "originalBytes": 4483633,
+    "originalSha256": "c26615ddb85e26b05349654a8ba9373e0512e0776cd6d467c060cebe2fab7678",
+    "originalWidth": 5040,
+    "originalHeight": 3360,
+    "image": {
+      "objectPath": "tables/banquet-tables-6ft-and-8ft-24138ffb6507.webp",
+      "sha256": "24138ffb65071ba8f49d019780c677f98dd01eb9f022a44aafec11ad8c2e92f0",
+      "bytes": 179228,
+      "width": 1400,
+      "height": 933
+    },
+    "thumbnail": {
+      "objectPath": "tables/banquet-tables-6ft-and-8ft-dcfe4e6f3175-thumb.webp",
+      "sha256": "dcfe4e6f31756955e6ff57c61cebd77f832d29d1d495f359b1065fb03ef9b950",
+      "bytes": 25060,
       "width": 384,
       "height": 256
     }
@@ -393,7 +470,7 @@
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "alt": "Representative silk and metallic thread table runner with orange decorative motifs",
     "matchType": "representative",
-    "visualReview": "Museum professional isolated photograph of a real silk table runner, dated late 19th–early 20th century, Japan. Some historic fading; actual material is verified by museum, but it is not a modern event inventory photograph. Parent should judge suitability before approval. Approved as explicitly representative historical silk runner. Fading documented; weave and actual type are verified by museum.",
+    "visualReview": "Museum professional isolated photograph of a real silk table runner, dated late 19th–early 20th century, Japan. Some historic fading; actual material is verified by museum, but it is not a modern event inventory photograph. Parent should judge suitability before approval. Parent has since visually reviewed this photograph and accepted historical representative silk classification. Approved as explicitly representative historical silk runner. Fading documented; weave and actual type are verified by museum.",
     "reviewedAt": "2026-11-12",
     "crop": null,
     "originalBytes": 1683405,

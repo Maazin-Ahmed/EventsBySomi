@@ -51,7 +51,7 @@ async function screenshot(filename) {
 }
 const requests = []
 const errors = []
-on('Network.requestWillBeSent', event => requests.push(event.request.url))
+on('Network.requestWillBeSent', event => requests.push({ url: event.request.url, method: event.request.method }))
 on('Runtime.exceptionThrown', event => errors.push(event.exceptionDetails.exception?.description || event.exceptionDetails.text))
 await command('Page.enable')
 await command('Network.enable')
@@ -62,6 +62,7 @@ await command('Page.addScriptToEvaluateOnNewDocument', { source: `
   new PerformanceObserver(list => { for (const entry of list.getEntries()) if (!entry.hadRecentInput) window.__imageQA.cls += entry.value }).observe({ type: 'layout-shift', buffered: true });
 ` })
 const results = []
+const editorialResults = []
 const widths = process.env.QA_WIDTHS ? process.env.QA_WIDTHS.split(',').map(Number) : [320,360,375,390,430,768,820,1024,1280,1366,1440,1920]
 try {
   for (const width of widths) {
@@ -70,7 +71,7 @@ try {
     await command('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: mobile ? 2 : 1, mobile })
     await command('Emulation.setTouchEmulationEnabled', { enabled: mobile })
     await command('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: 'reduce' }] })
-    for (const group of rentalGroups) {
+    for (const group of process.env.QA_EDITORIAL_ONLY ? [] : rentalGroups) {
       requests.length = 0
       await navigate('/collections/' + group.slug)
       await until(`document.querySelectorAll('[data-product-id]').length === ${group.items.length}`)
@@ -83,9 +84,9 @@ try {
         await wait(60)
         products.push(await evaluate(`(async()=>{const card=document.querySelectorAll('[data-product-id]')[${index}];const img=card.querySelector('img');const box=card.getBoundingClientRect();if(img)try{await img.decode()}catch{};const r=img?.getBoundingClientRect();return {id:card.dataset.productId,name:card.querySelector('h3').textContent,src:img?.currentSrc||null,decoded:!!img&&img.complete&&img.naturalWidth>0,naturalWidth:img?.naturalWidth,naturalHeight:img?.naturalHeight,renderedWidth:r?.width,renderedHeight:r?.height,objectFit:img&&getComputedStyle(img).objectFit,placeholder:!!card.querySelector('[role=img]'),cardWidth:box.width,left:box.left,right:box.right,titleLeft:card.querySelector('h3').getBoundingClientRect().left}})()`))
       }
-      const layout = await evaluate(`({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth,cls:window.__imageQA.cls,columns:getComputedStyle(document.querySelector('.inventory-grid')).gridTemplateColumns,heights:[...document.querySelectorAll('.rental-product-image')].map(e=>e.getBoundingClientRect().height),brokenOtherImages:[...document.images].filter(i=>!i.closest('[data-product-id]')&&i.complete&&!i.naturalWidth).map(i=>i.src)})`)
-      const productRequests = requests.filter(url => url.includes('/rest/v1/products?')).length
-      const categoryRequests = requests.filter(url => url.includes('/rest/v1/categories?')).length
+      const layout = await evaluate(`({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth,cls:window.__imageQA.cls,gridTop:document.querySelector('.inventory-grid').getBoundingClientRect().top+scrollY,gridHeight:document.querySelector('.inventory-grid').getBoundingClientRect().height,columns:getComputedStyle(document.querySelector('.inventory-grid')).gridTemplateColumns,heights:[...document.querySelectorAll('.rental-product-image')].map(e=>e.getBoundingClientRect().height),brokenOtherImages:[...document.images].filter(i=>!i.closest('[data-product-id]')&&i.complete&&!i.naturalWidth).map(i=>i.src)})`)
+      const productRequests = requests.filter(request => request.method === 'GET' && request.url.includes('/rest/v1/products?')).length
+      const categoryRequests = requests.filter(request => request.method === 'GET' && request.url.includes('/rest/v1/categories?')).length
       const result = { category: group.slug, width, height, emulation: mobile ? 'Chromium mobile/touch, DPR 2' : 'Chromium desktop, DPR 1', products, beforeScroll, layout, productRequests, categoryRequests }
       results.push(result)
       assert.equal(products.length, group.items.length)
@@ -101,8 +102,18 @@ try {
       }
       console.log(`${width}px ${group.slug}: ${products.filter(p=>p.decoded).length}/${products.length} photos, overflow ${layout.documentWidth-width}px, CLS ${layout.cls.toFixed(4)}, reads ${productRequests}+${categoryRequests}`)
     }
+    if (process.env.QA_EDITORIAL_ONLY) {
+      for (const route of ['/', '/gallery']) {
+        await navigate(route)
+        const images = await evaluate(`(async()=>{const results=[];for(const img of document.images){img.scrollIntoView({block:'center',behavior:'instant'});try{await img.decode()}catch{}results.push({src:img.currentSrc||img.src,decoded:img.complete&&img.naturalWidth>0,naturalWidth:img.naturalWidth,naturalHeight:img.naturalHeight})}return results})()`)
+        assert.ok(images.length > 0 && images.every(image => image.decoded), 'Broken homepage/gallery photograph')
+        editorialResults.push({ route, width, images })
+        console.log(`${width}px ${route}: ${images.length} editorial images decoded`)
+      }
+    }
   }
-  await fs.writeFile(path.join(output, 'responsive-results.json'), JSON.stringify({ base, testedAt: new Date().toISOString(), physicalDevices: false, results, errors }, null, 2) + '\n')
+  if (results.length) await fs.writeFile(path.join(output, 'responsive-results.json'), JSON.stringify({ base, testedAt: new Date().toISOString(), physicalDevices: false, results, errors }, null, 2) + '\n')
+  if (editorialResults.length) await fs.writeFile(path.join(output, 'editorial-results.json'), JSON.stringify({ base, testedAt: new Date().toISOString(), results: editorialResults, errors }, null, 2) + '\n')
   assert.deepEqual(errors, [], 'Browser runtime errors')
 } finally {
   if (results.length) await fs.writeFile(path.join(output, 'responsive-results.json'), JSON.stringify({ base, testedAt: new Date().toISOString(), physicalDevices: false, results, errors }, null, 2) + '\n')

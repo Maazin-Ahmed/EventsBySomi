@@ -18,7 +18,7 @@ ws.addEventListener('message', event => {
 const cmd=(method,params={})=>new Promise((resolve,reject)=>{pending.set(++id,{resolve,reject});ws.send(JSON.stringify({id,method,params}))})
 async function run(expression){const result=await cmd('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(result.exceptionDetails)throw Error(result.exceptionDetails.exception?.description||result.exceptionDetails.text);return result.result.value}
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms))
-async function until(expression){for(let i=0;i<160;i++){if(await run(expression))return;await sleep(150)}throw Error('Timeout: '+expression)}
+async function until(expression){for(let i=0;i<160;i++){if(await run(`Boolean(${expression})`))return;await sleep(150)}throw Error('Timeout: '+expression)}
 async function nav(route,selector){await cmd('Page.navigate',{url:base+route});await until(`document.readyState==='complete'&&location.pathname===${JSON.stringify(route)}&&!!document.querySelector(${JSON.stringify(selector)})`)}
 const allItems=rentalGroups.flatMap(group=>group.items.map(name=>({id:group.slug+':'+name.toLowerCase().replace(/[^a-z0-9]+/g,'-'),category:group.slug,categoryName:group.title,name,quantity:1,image:'/images/rentals/stale-legacy-image.webp'})))
 const results={base,testedAt:new Date().toISOString(),submission:'Mocked in browser; no live customer/request records written',surfaces:[]}
@@ -40,6 +40,9 @@ try {
   assert.ok(rows.filter(row=>row.src).every(row=>row.decoded&&row.src.includes('/storage/v1/object/public/rental-product-images/')))
   assert.equal(await run('document.documentElement.scrollWidth<=innerWidth'),true)
   results.surfaces.push({route,rows})
+  await run(`window.scrollTo({top:0,behavior:'instant'})`)
+  const shot=await cmd('Page.captureScreenshot',{format:'webp',quality:78})
+  await fs.writeFile(`docs/phase5.1.1-evidence/local/${route.slice(1)}-390.webp`,Buffer.from(shot.data,'base64'))
  }
  const selected=allItems.filter(item=>['seating:chiavari-chairs','decor:urlis','serveware:katori'].includes(item.id))
  await run(`localStorage.setItem('somia-rental-cart-v1',${JSON.stringify(JSON.stringify(selected))})`)
@@ -56,6 +59,10 @@ try {
  let payload
  intercept=async event=>{
   if(event.request.url.includes('/functions/v1/submit-rental-request')){
+   if(event.request.method==='OPTIONS') {
+    await cmd('Fetch.fulfillRequest',{requestId:event.requestId,responseCode:204,responseHeaders:[{name:'access-control-allow-origin',value:'*'},{name:'access-control-allow-methods',value:'POST, OPTIONS'},{name:'access-control-allow-headers',value:event.request.headers['Access-Control-Request-Headers']||'authorization, apikey, content-type, x-client-info, x-supabase-api-version'}]})
+    return
+   }
    payload=JSON.parse(event.request.postData)
    await cmd('Fetch.fulfillRequest',{requestId:event.requestId,responseCode:200,responseHeaders:[{name:'content-type',value:'application/json'},{name:'access-control-allow-origin',value:'*'}],body:Buffer.from(JSON.stringify({request_number:'QA-MOCK-IMAGE-001'})).toString('base64')})
   }else await cmd('Fetch.continueRequest',{requestId:event.requestId})

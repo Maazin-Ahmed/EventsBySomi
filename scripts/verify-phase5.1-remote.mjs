@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto'
+import { readFileSync, existsSync } from 'node:fs'
 import { celebrations, rentalGroups, slugify } from '../src/content.js'
 import { galleryImages } from '../src/imageManifest.js'
 import { imageUrl } from '../src/content.js'
@@ -6,6 +7,8 @@ import { productImageFor, rentalProductId } from '../src/rental/productImageMani
 
 const supabaseUrl = process.env.VITE_SUPABASE_URL?.replace(/\/$/, '')
 const anonKey = process.env.VITE_SUPABASE_ANON_KEY
+const storageManifestPath = new URL('./product-storage-manifest.json', import.meta.url)
+const storageImages = existsSync(storageManifestPath) ? new Map(JSON.parse(readFileSync(storageManifestPath, 'utf8')).map(product => [product.id, product])) : null
 if (!supabaseUrl || !anonKey) throw new Error('Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in .env before running this read-only check.')
 
 async function readTable(table, columns) {
@@ -55,14 +58,16 @@ for (const row of categories) {
 
 const expectedProducts = new Map(rentalGroups.flatMap(group => group.items.map((name, sortOrder) => {
   const image = productImageFor(group.slug, name)
+  const storageImage = storageImages?.get(rentalProductId(group.slug, name))
+  const storageBase = `${supabaseUrl}/storage/v1/object/public/rental-product-images/`
   return [rentalProductId(group.slug, name), {
     category_id: group.slug,
     slug: slugify(name),
     name,
-    image_url: image?.image || null,
-    thumbnail_url: image?.thumbnail || null,
-    image_alt: image?.alt || null,
-    image_match_type: image?.matchType || null,
+    image_url: storageImages ? (storageImage ? storageBase + storageImage.image.objectPath : null) : image?.image || null,
+    thumbnail_url: storageImages ? (storageImage ? storageBase + storageImage.thumbnail.objectPath : null) : image?.thumbnail || null,
+    image_alt: storageImages ? storageImage?.alt || null : image?.alt || null,
+    image_match_type: storageImages ? storageImage?.matchType || null : image?.matchType || null,
     sort_order: sortOrder,
   }]
 })))

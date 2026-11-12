@@ -78,7 +78,7 @@ const sourceFiles = readTree(path.join(root, 'src')).filter(file => /\.(js|jsx|t
 const unregisteredReferences = new Set()
 for (const file of sourceFiles) {
   const source = fs.readFileSync(file, 'utf8')
-  for (const match of source.matchAll(/photo-[A-Za-z0-9_-]+/g)) {
+  for (const match of source.matchAll(/photo-\d{13}-[a-f0-9]+/g)) {
     if (!registryIds.includes(match[0]) && !rentalSourceIds.includes(match[0])) unregisteredReferences.add(match[0])
   }
 }
