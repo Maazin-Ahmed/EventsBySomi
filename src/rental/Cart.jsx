@@ -1,4 +1,4 @@
-import { createContext, useContext, useMemo, useState } from 'react'
+import { createContext, useContext, useEffect, useMemo, useState } from 'react'
 import { rentalGroups } from '../content.js'
 import { rentalProductId } from './productIdentity.js'
 import { useCatalogue } from './Catalogue.jsx'
@@ -15,6 +15,13 @@ function read() {
 export function CartProvider({ children }) {
   const { productsById } = useCatalogue()
   const [items, setItems] = useState(read)
+  useEffect(() => {
+    const sync = event => {
+      if (event.storageArea === window.localStorage && (event.key === key || event.key === null)) setItems(read())
+    }
+    window.addEventListener('storage', sync)
+    return () => window.removeEventListener('storage', sync)
+  }, [])
   const save = next => { setItems(next); try { localStorage.setItem(key, JSON.stringify(next)) } catch {} }
   const add = (group, name) => {
     const id = rentalProductId(group.slug, name)

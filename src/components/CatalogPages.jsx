@@ -42,7 +42,7 @@ export function CelebrationPage({ item }) {
 }
 
 export function CollectionPage({ group }) {
-  const { add } = useCart()
+  const { add, items } = useCart()
   const { products, categories, loading, error, retry } = useCatalogue()
   const category = categories.find(item => item.slug === group.slug)
   const categoryProducts = products.filter(product => product.category_id === category?.id)
@@ -59,11 +59,12 @@ export function CollectionPage({ group }) {
         {!loading && !error && !categoryProducts.length && <p>No rental pieces are currently listed in this collection.</p>}
         <div className="inventory-grid inventory-grid--catalogue" aria-busy={loading}>{displayedProducts.map(product => {
           const item = product.name
+          const inCart = items.some(cartItem => cartItem.id === product.id && cartItem.quantity > 0)
           return <article className="inventory-card inventory-card--text rental-item" key={product.id} data-product-id={loading ? undefined : product.id} aria-hidden={loading || undefined} style={loading ? { visibility: 'hidden' } : undefined}>
             <div className="rental-product-image">
               <ProductImage productId={product.id} name={item}/>
             </div>
-            <div><p className="eyebrow eyebrow-dark">{group.title}</p><h3>{item}</h3><p>Ask our team about this piece and how it can fit into your celebration setting.</p><button className="button button-wine" disabled={loading} onClick={() => add(group, item)}>Add to Cart</button></div>
+            <div><p className="eyebrow eyebrow-dark">{group.title}</p><h3>{item}</h3><p>Ask our team about this piece and how it can fit into your celebration setting.</p><button type="button" className="button button-wine" disabled={loading} onClick={() => inCart ? window.location.assign('/cart') : add(group, item)}>{inCart ? 'View Cart' : 'Add to Cart'}</button></div>
           </article>
         })}</div>
       </section>
