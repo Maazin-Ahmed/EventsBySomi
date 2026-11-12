@@ -46,10 +46,12 @@ for (const [file, hash] of Object.entries(baseline.frontendHashes)) assert.equal
 assert.deepEqual(current.counts, baseline.counts, 'Live customer/request counts changed; investigate without deleting records.')
 assert.equal(current.counts.reserved_qa_customer_count, 0, 'Reserved QA customer must never be created.')
 const regression = JSON.parse(await fs.readFile(path.join(root, 'docs/phase5.1.1-evidence/functional-regression.json'), 'utf8'))
-assert.ok(Date.parse(regression.testedAt) >= Date.parse(baseline.capturedAt), 'Closure requires a fresh protected regression run, not historical evidence.')
-assert.equal(regression.submitNetworkRequests, 0)
-assert.deepEqual(regression.surfaces.map(surface => surface.route).sort(), ['/cart', '/request-confirmation', '/request-quote'])
-for (const surface of regression.surfaces) {
+const productionRegression = JSON.parse(await fs.readFile(path.join(root, 'docs/phase5.1.1-evidence/production/functional-regression.json'), 'utf8'))
+for (const run of [regression, productionRegression]) {
+ assert.ok(Date.parse(run.testedAt) >= Date.parse(baseline.capturedAt), 'Closure requires fresh protected regression runs, not historical evidence.')
+ assert.equal(run.submitNetworkRequests, 0)
+ assert.deepEqual(run.surfaces.map(surface => surface.route).sort(), ['/cart', '/request-confirmation', '/request-quote'])
+ for (const surface of run.surfaces) {
   assert.equal(new Set(surface.rows.map(row => row.id)).size, 42, 'Request surface must retain all 42 IDs: ' + surface.route)
   for (const row of surface.rows) {
     const product = byId.get(row.id)
@@ -58,6 +60,7 @@ for (const surface of regression.surfaces) {
     assert.equal(row.src, expected, 'Request surface image differs from its current database record: ' + surface.route + '/' + row.id)
     assert.ok(expected ? row.decoded : row.placeholder, 'Invalid request image state: ' + row.id)
   }
+ }
 }
 const responsive = JSON.parse(await fs.readFile(path.join(root, 'docs/phase5.1.1-evidence/production/responsive-results.json'), 'utf8'))
 assert.ok(Date.parse(responsive.testedAt) >= Date.parse(baseline.capturedAt), 'Production checks must be fresh for this closure.')
@@ -76,6 +79,7 @@ const result = {
   frontendUnchanged: true, nonImageProductDataUnchanged: true,
   requestCountsBefore: baseline.counts, requestCountsAfter: current.counts,
   qaSubmitNetworkRequests: regression.submitNetworkRequests,
+  productionQaSubmitNetworkRequests: productionRegression.submitNetworkRequests,
   requestSurfaceImageConsistency: true, productionImageConsistency: true,
   coverage: `${42 - missing.length}/42`, coveragePercent: Number(((42 - missing.length) / 42 * 100).toFixed(1)), missing,
   imageUpdates: baseline.products.filter(before => targets.has(before.id)).map(before => ({

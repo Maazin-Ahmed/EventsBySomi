@@ -1,0 +1,930 @@
+{
+  "base": "https://www.eventsbysomia.com",
+  "testedAt": "2026-11-12T19:46:15.817Z",
+  "submission": "Page-level fetch mock with network endpoint blocked; no live submission in this run",
+  "surfaces": [
+    {
+      "route": "/cart",
+      "rows": [
+        {
+          "id": "seating:chiavari-chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/chiavari-chairs-a52badf69edc-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:banquet-chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/banquet-chairs-b739ff7b18a3-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:folding-chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/folding-chairs-bc36ff2c8db7-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:sofas-and-loveseats",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/sofas-and-loveseats-e6b576e1f226-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:gaddi-and-floor-mattresses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/gaddi-and-floor-mattresses-bcf74b41ffe7-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:bolsters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-032162a08b47-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:chowki",
+          "src": null,
+          "decoded": false,
+          "placeholder": true
+        },
+        {
+          "id": "seating:jhoola",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/jhoola-de25fa9acd64-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:round-60-inch-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/round-60-inch-tables-b5b297f80519-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:banquet-tables-6ft-and-8ft",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-dcfe4e6f3175-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:buffet-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/buffet-tables-801a1c4067da-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:cocktail-and-high-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/cocktail-and-high-tables-5788a17c05c0-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:low-chowki-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:tablecloths-and-chadar",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/tablecloths-and-chadar-0290dea61ad0-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:silk-runners",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/silk-runners-7cbd3790baf1-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:brocade-runners",
+          "src": null,
+          "decoded": false,
+          "placeholder": true
+        },
+        {
+          "id": "linens:napkins",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/napkins-4f6f1bdf43ff-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:chair-covers",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-covers-dfa230134708-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:chair-sashes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-sashes-2d925713aada-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:ceiling-drapes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/ceiling-drapes-738a201afb10-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:wall-drapes-and-parda",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/wall-drapes-and-parda-a3222eff8ee3-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:wedding-mandaps",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/wedding-mandaps-be0ee813b8a5-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:stage-setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/stage-setups-ce988f89f500-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:sweetheart-table-setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/sweetheart-table-setups-166a278fe23e-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:pillars-and-stambh",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/pillars-and-stambh-88433ae20b02-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:arches",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/arches-edd33503e6e1-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:floral-backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/floral-backdrops-2c09a00d3155-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:fabric-backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/fabric-backdrops-f66b73f428a2-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:frame-backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/frame-backdrops-cebea300698d-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:tents-canopies-and-shamiyana",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/tents-canopies-and-shamiyana-a6831c6d1ede-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:torans",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/torans-c219a764a812-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:diyas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/diyas-97f375c9eee7-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:urlis",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/urlis-b8b860ddc6a9-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:kalash",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/kalash-a3d1d49a929d-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:fanoos-and-lanterns",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/fanoos-and-lanterns-b773111edbc2-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:marigold-garlands-and-malas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/marigold-garlands-and-malas-77fa20beae11-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:rose-garlands",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/rose-garlands-23ccf8f605af-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:thaal-and-platters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/thaal-and-platters-7cd1096cd7dc-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:handi",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/handi-d53f2cdc7c64-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:chafing-dishes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-b6c9ff6f742e-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:plates-and-glasses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/plates-and-glasses-0a120bb62e6d-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:katori",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/katori-5a1928ccb5c0-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        }
+      ]
+    },
+    {
+      "route": "/request-quote",
+      "rows": [
+        {
+          "id": "seating:chiavari-chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/chiavari-chairs-a52badf69edc-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:banquet-chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/banquet-chairs-b739ff7b18a3-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:folding-chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/folding-chairs-bc36ff2c8db7-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:sofas-and-loveseats",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/sofas-and-loveseats-e6b576e1f226-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:gaddi-and-floor-mattresses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/gaddi-and-floor-mattresses-bcf74b41ffe7-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:bolsters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-032162a08b47-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:chowki",
+          "src": null,
+          "decoded": false,
+          "placeholder": true
+        },
+        {
+          "id": "seating:jhoola",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/jhoola-de25fa9acd64-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:round-60-inch-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/round-60-inch-tables-b5b297f80519-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:banquet-tables-6ft-and-8ft",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-dcfe4e6f3175-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:buffet-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/buffet-tables-801a1c4067da-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:cocktail-and-high-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/cocktail-and-high-tables-5788a17c05c0-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:low-chowki-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:tablecloths-and-chadar",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/tablecloths-and-chadar-0290dea61ad0-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:silk-runners",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/silk-runners-7cbd3790baf1-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:brocade-runners",
+          "src": null,
+          "decoded": false,
+          "placeholder": true
+        },
+        {
+          "id": "linens:napkins",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/napkins-4f6f1bdf43ff-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:chair-covers",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-covers-dfa230134708-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:chair-sashes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-sashes-2d925713aada-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:ceiling-drapes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/ceiling-drapes-738a201afb10-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:wall-drapes-and-parda",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/wall-drapes-and-parda-a3222eff8ee3-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:wedding-mandaps",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/wedding-mandaps-be0ee813b8a5-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:stage-setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/stage-setups-ce988f89f500-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:sweetheart-table-setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/sweetheart-table-setups-166a278fe23e-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:pillars-and-stambh",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/pillars-and-stambh-88433ae20b02-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:arches",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/arches-edd33503e6e1-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:floral-backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/floral-backdrops-2c09a00d3155-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:fabric-backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/fabric-backdrops-f66b73f428a2-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:frame-backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/frame-backdrops-cebea300698d-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:tents-canopies-and-shamiyana",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/tents-canopies-and-shamiyana-a6831c6d1ede-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:torans",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/torans-c219a764a812-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:diyas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/diyas-97f375c9eee7-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:urlis",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/urlis-b8b860ddc6a9-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:kalash",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/kalash-a3d1d49a929d-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:fanoos-and-lanterns",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/fanoos-and-lanterns-b773111edbc2-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:marigold-garlands-and-malas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/marigold-garlands-and-malas-77fa20beae11-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:rose-garlands",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/rose-garlands-23ccf8f605af-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:thaal-and-platters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/thaal-and-platters-7cd1096cd7dc-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:handi",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/handi-d53f2cdc7c64-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:chafing-dishes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-b6c9ff6f742e-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:plates-and-glasses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/plates-and-glasses-0a120bb62e6d-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:katori",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/katori-5a1928ccb5c0-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        }
+      ]
+    },
+    {
+      "route": "/request-confirmation",
+      "rows": [
+        {
+          "id": "seating:chiavari-chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/chiavari-chairs-a52badf69edc-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:banquet-chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/banquet-chairs-b739ff7b18a3-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:folding-chairs",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/folding-chairs-bc36ff2c8db7-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:sofas-and-loveseats",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/sofas-and-loveseats-e6b576e1f226-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:gaddi-and-floor-mattresses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/gaddi-and-floor-mattresses-bcf74b41ffe7-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:bolsters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-032162a08b47-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "seating:chowki",
+          "src": null,
+          "decoded": false,
+          "placeholder": true
+        },
+        {
+          "id": "seating:jhoola",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/jhoola-de25fa9acd64-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:round-60-inch-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/round-60-inch-tables-b5b297f80519-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:banquet-tables-6ft-and-8ft",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-dcfe4e6f3175-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:buffet-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/buffet-tables-801a1c4067da-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:cocktail-and-high-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/cocktail-and-high-tables-5788a17c05c0-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "tables:low-chowki-tables",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:tablecloths-and-chadar",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/tablecloths-and-chadar-0290dea61ad0-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:silk-runners",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/silk-runners-7cbd3790baf1-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:brocade-runners",
+          "src": null,
+          "decoded": false,
+          "placeholder": true
+        },
+        {
+          "id": "linens:napkins",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/napkins-4f6f1bdf43ff-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:chair-covers",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-covers-dfa230134708-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:chair-sashes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-sashes-2d925713aada-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:ceiling-drapes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/ceiling-drapes-738a201afb10-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "linens:wall-drapes-and-parda",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/wall-drapes-and-parda-a3222eff8ee3-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:wedding-mandaps",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/wedding-mandaps-be0ee813b8a5-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:stage-setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/stage-setups-ce988f89f500-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:sweetheart-table-setups",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/sweetheart-table-setups-166a278fe23e-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:pillars-and-stambh",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/pillars-and-stambh-88433ae20b02-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:arches",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/arches-edd33503e6e1-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:floral-backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/floral-backdrops-2c09a00d3155-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:fabric-backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/fabric-backdrops-f66b73f428a2-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:frame-backdrops",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/frame-backdrops-cebea300698d-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "mandap-stage:tents-canopies-and-shamiyana",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/tents-canopies-and-shamiyana-a6831c6d1ede-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:torans",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/torans-c219a764a812-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:diyas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/diyas-97f375c9eee7-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:urlis",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/urlis-b8b860ddc6a9-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:kalash",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/kalash-a3d1d49a929d-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:fanoos-and-lanterns",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/fanoos-and-lanterns-b773111edbc2-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:marigold-garlands-and-malas",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/marigold-garlands-and-malas-77fa20beae11-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "decor:rose-garlands",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/rose-garlands-23ccf8f605af-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:thaal-and-platters",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/thaal-and-platters-7cd1096cd7dc-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:handi",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/handi-d53f2cdc7c64-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:chafing-dishes",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-b6c9ff6f742e-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:plates-and-glasses",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/plates-and-glasses-0a120bb62e6d-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        },
+        {
+          "id": "serveware:katori",
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/katori-5a1928ccb5c0-thumb.webp",
+          "decoded": true,
+          "placeholder": false
+        }
+      ]
+    }
+  ],
+  "cartQuantityAndLegacyCompatibility": "PASS",
+  "requiredFieldValidation": "PASS",
+  "submitNetworkRequests": 0,
+  "requestPayloadAndMockedConfirmation": "PASS",
+  "cdnFailureFallback": "PASS",
+  "catalogueErrorAndRetry": "PASS",
+  "loadingGridReservation": [
+    {
+      "category": "seating",
+      "width": 390,
+      "before": {
+        "height": 3992.921875,
+        "relatedTop": 5119.140625
+      },
+      "after": {
+        "height": 3992.921875,
+        "relatedTop": 5119.140625
+      }
+    },
+    {
+      "category": "tables",
+      "width": 390,
+      "before": {
+        "height": 2497.28125,
+        "relatedTop": 3623.5
+      },
+      "after": {
+        "height": 2497.28125,
+        "relatedTop": 3623.5
+      }
+    },
+    {
+      "category": "linens",
+      "width": 390,
+      "before": {
+        "height": 3965.375,
+        "relatedTop": 5091.59375
+      },
+      "after": {
+        "height": 3965.375,
+        "relatedTop": 5091.59375
+      }
+    },
+    {
+      "category": "mandap-stage",
+      "width": 390,
+      "before": {
+        "height": 4491.46875,
+        "relatedTop": 5617.6875
+      },
+      "after": {
+        "height": 4491.46875,
+        "relatedTop": 5617.6875
+      }
+    },
+    {
+      "category": "decor",
+      "width": 390,
+      "before": {
+        "height": 3494.375,
+        "relatedTop": 4620.59375
+      },
+      "after": {
+        "height": 3494.375,
+        "relatedTop": 4620.59375
+      }
+    },
+    {
+      "category": "serveware",
+      "width": 390,
+      "before": {
+        "height": 2469.734375,
+        "relatedTop": 3595.953125
+      },
+      "after": {
+        "height": 2469.734375,
+        "relatedTop": 3595.953125
+      }
+    },
+    {
+      "category": "seating",
+      "width": 1440,
+      "before": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      },
+      "after": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      }
+    },
+    {
+      "category": "tables",
+      "width": 1440,
+      "before": {
+        "height": 932.09375,
+        "relatedTop": 2312.1875
+      },
+      "after": {
+        "height": 932.09375,
+        "relatedTop": 2312.1875
+      }
+    },
+    {
+      "category": "linens",
+      "width": 1440,
+      "before": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      },
+      "after": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      }
+    },
+    {
+      "category": "mandap-stage",
+      "width": 1440,
+      "before": {
+        "height": 1437.1875,
+        "relatedTop": 2817.28125
+      },
+      "after": {
+        "height": 1437.1875,
+        "relatedTop": 2817.28125
+      }
+    },
+    {
+      "category": "decor",
+      "width": 1440,
+      "before": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      },
+      "after": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      }
+    },
+    {
+      "category": "serveware",
+      "width": 1440,
+      "before": {
+        "height": 932.09375,
+        "relatedTop": 2312.1875
+      },
+      "after": {
+        "height": 932.09375,
+        "relatedTop": 2312.1875
+      }
+    }
+  ]
+}

@@ -17,6 +17,8 @@ Live customer/request counts remained unchanged; reserved QA customers remained 
 
 Chowki seating and Brocade runners remain blocked. Commercial-license-filtered furniture photographs were reviewed at native resolution; accurate retailer furniture photos lacked grants and reusable scenes were dark, clipped or too small. Brocade runner follow-ups found no image satisfying both documented brocade construction and commercial image rights. The new detailed approval/rejection record is [research.json](phase5.1.1-evidence/final-closure/research.json). These two records retain null image fields, rather than inheriting unrelated images.
 
+Deployment verification: Vercel reported **success** for image commit `dfe700d`. The production credits HTML matches the generated file byte-for-byte, lists 40 photographs, and the production bundle matches the validated local build. See [deployment-verification.json](phase5.1.1-evidence/final-closure/deployment-verification.json).
+
 ## Coverage and initial findings
 
 | Category | Products | Before | Approved now | Unresolved |
@@ -506,6 +508,8 @@ Production rendered verification: **72 cases** across the same six categories; w
 Unrelated production imagery: all 22 homepage images and all 49 gallery images decoded successfully at both 390px and 1440px, with no browser runtime errors. See [production/editorial-results.json](phase5.1.1-evidence/production/editorial-results.json).
 
 Functional regression: **PASS**. All 42 items were inspected in cart, request review and confirmation; each surface decoded 40 current database thumbnails and showed 2 unavailable states. Legacy localStorage image paths, quantity +/- controls, required-field validation, request payload shape, confirmation session storage/cart clearing, CDN failure fallback and catalogue error/retry passed. The final run uses a page-level fetch mock plus a blocked live endpoint and asserts **0 submission network requests**. See [functional-regression.json](phase5.1.1-evidence/functional-regression.json).
+
+The same protected regression also passed directly against **production**: all 42 IDs on each of the three surfaces, 40 decoded thumbnails per surface and **0 submission network requests**. Production screenshots and [functional-regression.json](phase5.1.1-evidence/production/functional-regression.json) are retained under production/.
 
 Delayed-response regression: **12 cases passed** across all six categories at 390px and 1440px. The products GET was paused, loading grid dimensions and related-section positions measured, then the response released. Loading and loaded geometry matched exactly, removing the observed catalogue-insertion shift.
 

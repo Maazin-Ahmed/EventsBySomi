@@ -1,0 +1,28 @@
+{
+  "verifiedAt": "2026-11-12T19:46:39.008Z",
+  "deployment": {
+    "sha": "dfe700dfcb3feb1ce91cf3e6b2c4d9266eb5565d",
+    "state": "success",
+    "statuses": [
+      {
+        "context": "Vercel – events-by-somi",
+        "state": "success",
+        "target_url": "https://vercel.com/maazinahmeddev-3408s-projects/events-by-somi/26Eonmx6LUdAXD4wryGXGKEzZ69N"
+      }
+    ]
+  },
+  "creditsUrl": "https://www.eventsbysomia.com/rental-photo-credits.html",
+  "creditsHttpStatus": 200,
+  "verifiedCredits": 40,
+  "creditsSha256": "210cc8a9ce6b4e5be0799ce485a2429c50b266d40f50ef627e645ae820c3a518",
+  "productionBundleAssets": [
+    "/assets/index-DSuozgy7.js",
+    "/assets/index-B36-dk-I.css"
+  ],
+  "bundleMatchesLocalBuild": true,
+  "coverage": "40/42",
+  "remainingBlockers": [
+    "seating:chowki",
+    "linens:brocade-runners"
+  ]
+}
