@@ -127,7 +127,8 @@
     "category": "seating",
     "name": "Chowki",
     "approved": false,
-    "blocker": "Bajot 01/02 are mislabelled hookah detail photographs. Odisha museum table is woven rope, not a solid low wooden chowki. Continuing museum sources. Research checked Pexels/Unsplash, Wikimedia chowki/bajot/Indian stool/low table categories, CEPT/SADACC furniture photographs, Met API20558, LACMA furniture collection. Accurate retailer product image Flickr19313052978 is All Rights Reserved. Museum open collection options were unrelated cabinets/Western-form stools; temple seats poor framing/condition and low native pixel coverage; refusing inaccurate substitution."
+    "blocker": "Accurate isolated retailer/CEPT furniture photographs lack a commercial reuse grant. Newly reviewed commercially licensed scenes do not provide a distinct, sharp, complete high-resolution seating chowki photograph. The approved low-table photograph is not reused or relabelled as seating.",
+    "reviewedAt": "2026-11-13"
   },
   {
     "id": "seating:jhoola",
@@ -233,8 +234,26 @@
     "id": "tables:low-chowki-tables",
     "category": "tables",
     "name": "Low chowki tables",
-    "approved": false,
-    "blocker": "No approved distinct photograph yet; traditional furniture researchers' excellent chowki photographs lack reusable license. Research checked Pexels/Unsplash, Wikimedia chowki/bajot/Indian stool/low table categories, CEPT/SADACC furniture photographs, Met API20558, LACMA furniture collection. Accurate retailer product image Flickr19313052978 is All Rights Reserved. Museum open collection options were unrelated cabinets/Western-form stools; temple seats poor framing/condition and low native pixel coverage; refusing inaccurate substitution."
+    "approved": true,
+    "provider": "Flickr",
+    "photoId": "flickr-54350044704",
+    "downloadUrl": "https://live.staticflickr.com/65535/54350044704_3cd9cc6117_o.jpg",
+    "sourcePage": "https://www.flickr.com/photos/mustangjoe/54350044704/",
+    "sourceTitle": "Phool Mahal of Mehrangarh Fort",
+    "photographer": "Mustang Joe",
+    "license": "CC0 1.0 Universal",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licenseEvidence": "Flickr photo-model license9 = Public Domain Dedication (CC0); license model in captured photo metadata.",
+    "alt": "Representative ornate low wooden chowki table with carved trim and short legs in a traditional Indian palace interior",
+    "matchType": "representative",
+    "visualReview": "Entire square wooden low platform table visible including top, front carved trim, and all visible legs; dominant foreground product (~730 native pixels wide) within1300x866 crop. Clear enough for catalogue cards. Background cushions establish floor-seating scale. Actual rental inventory not asserted.",
+    "reviewedAt": "2026-11-13",
+    "crop": [
+      0.6173928382430763,
+      0.774067310200887,
+      0.8467101781619333,
+      1
+    ]
   },
   {
     "id": "linens:tablecloths-and-chadar",
@@ -277,7 +296,8 @@
     "category": "linens",
     "name": "Brocade runners",
     "approved": false,
-    "blocker": "Searches across Pexels, Unsplash, Pixabay, Wikimedia Commons, museum open collections and commercial product sources did not verify a suitable reuse-cleared brocade table runner photograph. Commercial exact product images have no reuse permission; generic shiny runners do not establish brocade construction. Museum brocade textiles without runner identity are not suitable substitutes."
+    "blocker": "No researched photograph simultaneously establishes an actual brocade table runner, suitable clear product framing/resolution, and affirmative commercial reuse rights. Public-domain actual runner photos lack documented brocade construction and/or usable photography; documented contemporary brocade runner photos do not grant commercial reuse. No image inferred from appearance or unrelated textile assigned.",
+    "reviewedAt": "2026-11-13"
   },
   {
     "id": "linens:napkins",

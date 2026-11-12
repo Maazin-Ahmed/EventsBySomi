@@ -1,0 +1,76 @@
+{
+  "verifiedAt": "2026-11-12T19:44:02.115Z",
+  "products": 42,
+  "preservedOriginalIds": true,
+  "preservedApprovedAssignments": 39,
+  "originalObjectsUnchanged": 78,
+  "currentObjectCount": 80,
+  "frontendUnchanged": true,
+  "nonImageProductDataUnchanged": true,
+  "requestCountsBefore": {
+    "customer_count": 2,
+    "request_count": 2,
+    "reserved_qa_customer_count": 0
+  },
+  "requestCountsAfter": {
+    "customer_count": 2,
+    "request_count": 2,
+    "reserved_qa_customer_count": 0
+  },
+  "qaSubmitNetworkRequests": 0,
+  "requestSurfaceImageConsistency": true,
+  "productionImageConsistency": true,
+  "coverage": "40/42",
+  "coveragePercent": 95.2,
+  "missing": [
+    "linens:brocade-runners",
+    "seating:chowki"
+  ],
+  "imageUpdates": [
+    {
+      "id": "linens:brocade-runners",
+      "before": {
+        "image_url": null,
+        "thumbnail_url": null,
+        "image_alt": null,
+        "image_match_type": null
+      },
+      "after": {
+        "image_url": null,
+        "thumbnail_url": null,
+        "image_alt": null,
+        "image_match_type": null
+      }
+    },
+    {
+      "id": "seating:chowki",
+      "before": {
+        "image_url": null,
+        "thumbnail_url": null,
+        "image_alt": null,
+        "image_match_type": null
+      },
+      "after": {
+        "image_url": null,
+        "thumbnail_url": null,
+        "image_alt": null,
+        "image_match_type": null
+      }
+    },
+    {
+      "id": "tables:low-chowki-tables",
+      "before": {
+        "image_url": null,
+        "thumbnail_url": null,
+        "image_alt": null,
+        "image_match_type": null
+      },
+      "after": {
+        "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+        "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp",
+        "image_alt": "Representative ornate low wooden chowki table with carved trim and short legs in a traditional Indian palace interior",
+        "image_match_type": "representative"
+      }
+    }
+  ]
+}

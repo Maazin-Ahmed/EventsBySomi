@@ -1,6 +1,6 @@
 {
   "base": "http://127.0.0.1:4173",
-  "testedAt": "2026-11-12T18:22:59.518Z",
+  "testedAt": "2026-11-12T19:38:56.926Z",
   "submission": "Page-level fetch mock with network endpoint blocked; no live submission in this run",
   "surfaces": [
     {
@@ -80,9 +80,9 @@
         },
         {
           "id": "tables:low-chowki-tables",
-          "src": null,
-          "decoded": false,
-          "placeholder": true
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp",
+          "decoded": true,
+          "placeholder": false
         },
         {
           "id": "linens:tablecloths-and-chadar",
@@ -337,9 +337,9 @@
         },
         {
           "id": "tables:low-chowki-tables",
-          "src": null,
-          "decoded": false,
-          "placeholder": true
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp",
+          "decoded": true,
+          "placeholder": false
         },
         {
           "id": "linens:tablecloths-and-chadar",
@@ -594,9 +594,9 @@
         },
         {
           "id": "tables:low-chowki-tables",
-          "src": null,
-          "decoded": false,
-          "placeholder": true
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp",
+          "decoded": true,
+          "placeholder": false
         },
         {
           "id": "linens:tablecloths-and-chadar",

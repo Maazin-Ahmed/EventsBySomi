@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-11-12T17:29:58.131Z",
+  "verifiedAt": "2026-11-12T19:33:17.596Z",
   "bucket": "rental-product-images",
   "objects": [
     {
@@ -243,6 +243,28 @@
       "contentType": "image/webp",
       "cacheControl": "public, max-age=31536000",
       "sha256": "5788a17c05c04889d8169b5088ab1c685ed2dddad962ab82e4c33ff097674817"
+    },
+    {
+      "id": "tables:low-chowki-tables",
+      "type": "image",
+      "objectPath": "tables/low-chowki-tables-5998f5e56689.webp",
+      "url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+      "status": 200,
+      "bytes": 99958,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000",
+      "sha256": "5998f5e5668901104b6381a538c6aab60bb62e7d05aa6804f67b013b64ef1630"
+    },
+    {
+      "id": "tables:low-chowki-tables",
+      "type": "thumbnail",
+      "objectPath": "tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp",
+      "url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp",
+      "status": 200,
+      "bytes": 16770,
+      "contentType": "image/webp",
+      "cacheControl": "public, max-age=31536000",
+      "sha256": "ec6a1dc56a7f4e9f983272620e7e9ba382961d43323b93910a61b71a3fbe43d8"
     },
     {
       "id": "linens:tablecloths-and-chadar",

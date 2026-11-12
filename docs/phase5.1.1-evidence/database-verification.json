@@ -1,14 +1,13 @@
 {
-  "verifiedAt": "2026-11-12T17:40:44.896Z",
+  "verifiedAt": "2026-11-12T19:43:16.263Z",
   "products": 42,
   "categories": 6,
-  "approved": 39,
-  "coveragePercent": 92.9,
+  "approved": 40,
+  "coveragePercent": 95.2,
   "duplicateAssignments": 0,
   "preservedFields": true,
   "missing": [
     "linens:brocade-runners",
-    "tables:low-chowki-tables",
     "seating:chowki"
   ],
   "checks": [
@@ -125,12 +124,9 @@
       "image_match_type": "representative"
     },
     {
-      "id": "serveware:chafing-dishes",
-      "status": "PASS",
-      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-43f0a438c9e4.webp",
-      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-b6c9ff6f742e-thumb.webp",
-      "image_alt": "A stainless steel chafing dish filled with food",
-      "image_match_type": "representative"
+      "id": "linens:brocade-runners",
+      "status": "BLOCKED",
+      "image_url": null
     },
     {
       "id": "mandap-stage:sweetheart-table-setups",
@@ -149,9 +145,12 @@
       "image_match_type": "representative"
     },
     {
-      "id": "linens:brocade-runners",
-      "status": "BLOCKED",
-      "image_url": null
+      "id": "serveware:chafing-dishes",
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-43f0a438c9e4.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-b6c9ff6f742e-thumb.webp",
+      "image_alt": "A stainless steel chafing dish filled with food",
+      "image_match_type": "representative"
     },
     {
       "id": "linens:napkins",
@@ -203,8 +202,11 @@
     },
     {
       "id": "tables:low-chowki-tables",
-      "status": "BLOCKED",
-      "image_url": null
+      "status": "PASS",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp",
+      "image_alt": "Representative ornate low wooden chowki table with carved trim and short legs in a traditional Indian palace interior",
+      "image_match_type": "representative"
     },
     {
       "id": "mandap-stage:arches",

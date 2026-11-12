@@ -210,19 +210,19 @@
     "updated_at": "2026-11-12T17:30:43.105024+00:00"
   },
   {
-    "id": "serveware:chafing-dishes",
-    "category_id": "serveware",
-    "name": "Chafing dishes",
-    "slug": "chafing-dishes",
+    "id": "linens:brocade-runners",
+    "category_id": "linens",
+    "name": "Brocade runners",
+    "slug": "brocade-runners",
     "description": null,
-    "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-43f0a438c9e4.webp",
-    "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-b6c9ff6f742e-thumb.webp",
-    "image_alt": "A stainless steel chafing dish filled with food",
-    "image_match_type": "representative",
+    "image_url": null,
+    "thumbnail_url": null,
+    "image_alt": null,
+    "image_match_type": null,
     "is_active": true,
     "sort_order": 2,
     "created_at": "2026-11-12T16:05:19.880852+00:00",
-    "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    "updated_at": "2026-11-12T16:05:19.880852+00:00"
   },
   {
     "id": "mandap-stage:sweetheart-table-setups",
@@ -255,19 +255,19 @@
     "updated_at": "2026-11-12T17:30:43.105024+00:00"
   },
   {
-    "id": "linens:brocade-runners",
-    "category_id": "linens",
-    "name": "Brocade runners",
-    "slug": "brocade-runners",
+    "id": "serveware:chafing-dishes",
+    "category_id": "serveware",
+    "name": "Chafing dishes",
+    "slug": "chafing-dishes",
     "description": null,
-    "image_url": null,
-    "thumbnail_url": null,
-    "image_alt": null,
-    "image_match_type": null,
+    "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-43f0a438c9e4.webp",
+    "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-b6c9ff6f742e-thumb.webp",
+    "image_alt": "A stainless steel chafing dish filled with food",
+    "image_match_type": "representative",
     "is_active": true,
     "sort_order": 2,
     "created_at": "2026-11-12T16:05:19.880852+00:00",
-    "updated_at": "2026-11-12T16:05:19.880852+00:00"
+    "updated_at": "2026-11-12T17:30:43.105024+00:00"
   },
   {
     "id": "linens:napkins",
@@ -365,14 +365,14 @@
     "name": "Low chowki tables",
     "slug": "low-chowki-tables",
     "description": null,
-    "image_url": null,
-    "thumbnail_url": null,
-    "image_alt": null,
-    "image_match_type": null,
+    "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+    "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp",
+    "image_alt": "Representative ornate low wooden chowki table with carved trim and short legs in a traditional Indian palace interior",
+    "image_match_type": "representative",
     "is_active": true,
     "sort_order": 4,
     "created_at": "2026-11-12T16:05:19.880852+00:00",
-    "updated_at": "2026-11-12T16:05:19.880852+00:00"
+    "updated_at": "2026-11-12T19:34:47.783999+00:00"
   },
   {
     "id": "mandap-stage:arches",

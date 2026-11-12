@@ -1,6 +1,6 @@
 {
   "base": "https://www.eventsbysomia.com",
-  "testedAt": "2026-11-12T18:16:53.747Z",
+  "testedAt": "2026-11-12T19:43:18.141Z",
   "physicalDevices": false,
   "results": [
     {
@@ -260,10 +260,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 275.21875,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 275.21875,
           "left": 22.390625,
           "right": 297.609375,
@@ -277,6 +281,10 @@
         },
         {
           "complete": true,
+          "loading": "lazy"
+        },
+        {
+          "complete": false,
           "loading": "lazy"
         },
         {
@@ -441,11 +449,11 @@
       ],
       "beforeScroll": [
         {
-          "complete": true,
+          "complete": false,
           "loading": "lazy"
         },
         {
-          "complete": true,
+          "complete": false,
           "loading": "lazy"
         },
         {
@@ -1262,10 +1270,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 309.625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 309.625,
           "left": 25.1875,
           "right": 334.8125,
@@ -1273,6 +1285,10 @@
         }
       ],
       "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
         {
           "complete": true,
           "loading": "lazy"
@@ -2264,10 +2280,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 322.5,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 322.5,
           "left": 26.25,
           "right": 348.75,
@@ -2275,6 +2295,10 @@
         }
       ],
       "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
         {
           "complete": true,
           "loading": "lazy"
@@ -3266,10 +3290,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 335.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 335.40625,
           "left": 27.296875,
           "right": 362.703125,
@@ -3277,6 +3305,10 @@
         }
       ],
       "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
         {
           "complete": true,
           "loading": "lazy"
@@ -4268,10 +4300,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 369.8125,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 369.8125,
           "left": 30.09375,
           "right": 399.90625,
@@ -4279,6 +4315,10 @@
         }
       ],
       "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
         {
           "complete": true,
           "loading": "lazy"
@@ -5270,10 +5310,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 321.25,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 321.25,
           "left": 53.75,
           "right": 375,
@@ -5281,6 +5325,10 @@
         }
       ],
       "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
         {
           "complete": true,
           "loading": "lazy"
@@ -6272,10 +6320,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 343.609375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 343.609375,
           "left": 57.390625,
           "right": 401,
@@ -6283,6 +6335,10 @@
         }
       ],
       "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
         {
           "complete": true,
           "loading": "lazy"
@@ -7274,10 +7330,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 274.734375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 274.734375,
           "left": 374.625,
           "right": 649.359375,
@@ -7285,6 +7345,10 @@
         }
       ],
       "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
         {
           "complete": true,
           "loading": "lazy"
@@ -8276,10 +8340,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 341.40625,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 341.40625,
           "left": 461.796875,
           "right": 803.203125,
@@ -8287,6 +8355,10 @@
         }
       ],
       "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
         {
           "complete": true,
           "loading": "lazy"
@@ -9278,10 +9350,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 365.484375,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 365.484375,
           "left": 492.75,
           "right": 858.234375,
@@ -9289,6 +9365,10 @@
         }
       ],
       "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
         {
           "complete": true,
           "loading": "lazy"
@@ -10280,10 +10360,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 386.203125,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 386.203125,
           "left": 519.390625,
           "right": 905.59375,
@@ -10291,6 +10375,10 @@
         }
       ],
       "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
         {
           "complete": true,
           "loading": "lazy"
@@ -11282,10 +11370,14 @@
         {
           "id": "tables:low-chowki-tables",
           "name": "Low chowki tables",
-          "src": null,
-          "decoded": false,
-          "objectFit": null,
-          "placeholder": true,
+          "src": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp",
+          "decoded": true,
+          "naturalWidth": 1300,
+          "naturalHeight": 866,
+          "renderedWidth": 543,
+          "renderedHeight": 230,
+          "objectFit": "contain",
+          "placeholder": false,
           "cardWidth": 543,
           "left": 681,
           "right": 1224,
@@ -11293,6 +11385,10 @@
         }
       ],
       "beforeScroll": [
+        {
+          "complete": true,
+          "loading": "lazy"
+        },
         {
           "complete": true,
           "loading": "lazy"

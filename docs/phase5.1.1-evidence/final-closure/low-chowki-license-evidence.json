@@ -1,0 +1,28 @@
+{
+  "sourcePage": "https://www.flickr.com/photos/mustangjoe/54350044704/",
+  "title": "Phool Mahal of Mehrangarh Fort",
+  "photographer": "Mustang Joe",
+  "flickrLicenseId": 9,
+  "license": "CC0 1.0 Universal",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "explicitLicenseLinkPresent": true,
+  "sourceOriginal": "https://live.staticflickr.com/65535/54350044704_3cd9cc6117_o.jpg",
+  "dimensions": [
+    5669,
+    3833
+  ],
+  "originalBytes": 19690508,
+  "originalSha256": "476c9704a096798f0beac81c60f9d725c7a9ffeabf9af7a5d3e1e272c2ffcf0a",
+  "reviewedCropPixels": [
+    3500,
+    2967,
+    4800,
+    3833
+  ],
+  "reviewedCropDimensions": [
+    1300,
+    866
+  ],
+  "matchType": "representative",
+  "reviewedAt": "2026-11-12T19:29:28.623Z"
+}

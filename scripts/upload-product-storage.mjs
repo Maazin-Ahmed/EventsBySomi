@@ -12,6 +12,12 @@ const root = path.resolve(import.meta.dirname, '..')
 const version = process.argv.find(argument => argument.startsWith('--migration-version='))?.split('=')[1] || '20261112000002'
 if (!/^\d{14}$/.test(version) || version < '20261112000002') throw new Error('Invalid image migration version.')
 const manifest = JSON.parse(await fs.readFile(path.join(root, 'scripts/product-storage-manifest.json'), 'utf8'))
+const onlyArgument = process.argv.find(argument => argument.startsWith('--only='))
+const selectedIds = onlyArgument ? new Set(onlyArgument.slice('--only='.length).split(',')) : null
+if (selectedIds) for (const id of selectedIds) {
+  if (!manifest.some(product => product.id === id)) throw new Error('Unknown selected product: ' + id)
+}
+const productsForUpdate = selectedIds ? manifest.filter(product => selectedIds.has(product.id)) : manifest
 let secret = process.env.SUPABASE_SERVICE_ROLE_KEY
 if (!secret) {
   // The already-authenticated CLI returns keys into this process's memory only.
@@ -28,6 +34,7 @@ const admin = createClient(base, secret, { auth: { persistSession: false, autoRe
 const { data: buckets, error: bucketError } = await admin.storage.listBuckets()
 if (bucketError) throw new Error('Could not inspect Storage buckets: ' + bucketError.message)
 const existing = buckets.find(item => item.id === bucket)
+if (selectedIds && !existing) throw new Error('A scoped image update requires the existing rental bucket; refusing to create a replacement.')
 if (existing && !existing.public) throw new Error('Existing rental bucket is private; inspect before changing access.')
 if (!existing) {
   const { error } = await admin.storage.createBucket(bucket, { public: true, allowedMimeTypes: ['image/webp'], fileSizeLimit: 2 * 1024 * 1024 })
@@ -42,8 +49,10 @@ for (const product of manifest) {
   for (const type of ['image', 'thumbnail']) {
     const asset = product[type]
     const bytes = await fs.readFile(path.join(root, 'public/images/rental-product-images', asset.objectPath))
-    const { error } = await admin.storage.from(bucket).upload(asset.objectPath, bytes, { contentType: 'image/webp', cacheControl: '31536000', upsert: false })
-    if (error && !['409', '400'].includes(String(error.statusCode))) throw new Error(`Upload ${asset.objectPath}: ${error.message}`)
+    if (!selectedIds || selectedIds.has(product.id)) {
+      const { error } = await admin.storage.from(bucket).upload(asset.objectPath, bytes, { contentType: 'image/webp', cacheControl: '31536000', upsert: false })
+      if (error && !['409', '400'].includes(String(error.statusCode))) throw new Error(`Upload ${asset.objectPath}: ${error.message}`)
+    }
     const url = `${base}/storage/v1/object/public/${bucket}/${asset.objectPath}`
     const response = await fetch(url, { signal: AbortSignal.timeout(45000) })
     if (!response.ok || !response.headers.get('content-type')?.startsWith('image/webp')) throw new Error('Object verification failed: ' + asset.objectPath)
@@ -57,11 +66,11 @@ await fs.mkdir(path.join(root, 'docs/phase5.1.1-evidence'), { recursive: true })
 await fs.writeFile(path.join(root, 'docs/phase5.1.1-evidence/storage-verification.json'), JSON.stringify({ verifiedAt: new Date().toISOString(), bucket, objects: verified }, null, 2) + '\n')
 
 const quote = value => "'" + value.replaceAll("'", "''") + "'"
-const values = manifest.map(product => `  (${[product.id, product.name, product.id.split(':')[0], `${base}/storage/v1/object/public/${bucket}/${product.image.objectPath}`, `${base}/storage/v1/object/public/${bucket}/${product.thumbnail.objectPath}`, product.alt, product.matchType].map(quote).join(', ')})`).join(',\n')
+const values = productsForUpdate.map(product => `  (${[product.id, product.name, product.id.split(':')[0], `${base}/storage/v1/object/public/${bucket}/${product.image.objectPath}`, `${base}/storage/v1/object/public/${bucket}/${product.thumbnail.objectPath}`, product.alt, product.matchType].map(quote).join(', ')})`).join(',\n')
 const sql = `-- Phase 5.1.1: only product image metadata; generated after CDN hash verification.\n-- Run the uploader first. Product identity, descriptions and workflow tables are untouched.\nBEGIN;\nCREATE TEMP TABLE approved_product_images (id text PRIMARY KEY, name text, category_id text, image_url text, thumbnail_url text, image_alt text, image_match_type text) ON COMMIT DROP;\nINSERT INTO approved_product_images VALUES\n${values};\nDO $$\nBEGIN\n  IF (SELECT count(*) FROM public.products) <> 42 THEN RAISE EXCEPTION 'Expected 42 existing products; review catalogue drift'; END IF;\n  IF EXISTS (SELECT 1 FROM approved_product_images a LEFT JOIN public.products p ON p.id=a.id AND p.name=a.name AND p.category_id=a.category_id WHERE p.id IS NULL) THEN RAISE EXCEPTION 'Approved product identity mismatch'; END IF;\n  IF EXISTS (SELECT image_url FROM approved_product_images GROUP BY image_url HAVING count(*)>1) THEN RAISE EXCEPTION 'Duplicate product image'; END IF;\nEND $$;\nUPDATE public.products p SET image_url=a.image_url, thumbnail_url=a.thumbnail_url, image_alt=a.image_alt, image_match_type=a.image_match_type FROM approved_product_images a WHERE p.id=a.id AND (p.image_url,p.thumbnail_url,p.image_alt,p.image_match_type) IS DISTINCT FROM (a.image_url,a.thumbnail_url,a.image_alt,a.image_match_type);\nCOMMIT;\n`
 const migrationPath = path.join(root, `supabase/migrations/${version}_product_storage_images.sql`)
 let previousSql
 try { previousSql = await fs.readFile(migrationPath, 'utf8') } catch {}
 if (previousSql && previousSql !== sql) throw new Error('Refusing to overwrite an existing image migration. Pass --migration-version=<new 14-digit timestamp> for a changed image set.')
 await fs.writeFile(migrationPath, sql)
-console.log(`Verified ${verified.length} objects. Generated image-only migration; database changes have NOT been applied.`)
+console.log(`Verified ${verified.length} objects. Generated image-only migration for ${productsForUpdate.length} selected products; database changes have NOT been applied.`)

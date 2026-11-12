@@ -1,0 +1,3055 @@
+{
+  "capturedAt": "2026-11-12T19:04:16.705Z",
+  "sourceCommit": "19255822fc1a3fdc8f2b7ab91099ba983c906e63",
+  "products": [
+    {
+      "category_id": "decor",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "decor:diyas",
+      "image_alt": "A single lit diya placed beside flowers at dusk",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/diyas-3b510f9e7e0e.webp",
+      "is_active": true,
+      "name": "Diyas",
+      "slug": "diyas",
+      "sort_order": 1,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/diyas-97f375c9eee7-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "decor",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "decor:fanoos-and-lanterns",
+      "image_alt": "Colorful hanging fanoos lanterns displayed for Diwali",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/fanoos-and-lanterns-4df02b555ead.webp",
+      "is_active": true,
+      "name": "Fanoos and lanterns",
+      "slug": "fanoos-and-lanterns",
+      "sort_order": 4,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/fanoos-and-lanterns-b773111edbc2-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "decor",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "decor:kalash",
+      "image_alt": "A ceremonial kalash with coconut, flowers, and traditional offerings",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/kalash-5014830e88f2.webp",
+      "is_active": true,
+      "name": "Kalash",
+      "slug": "kalash",
+      "sort_order": 3,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/kalash-a3d1d49a929d-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "decor",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "decor:marigold-garlands-and-malas",
+      "image_alt": "Orange marigold malas arranged together in close-up",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/marigold-garlands-and-malas-eb983e3da036.webp",
+      "is_active": true,
+      "name": "Marigold garlands and malas",
+      "slug": "marigold-garlands-and-malas",
+      "sort_order": 5,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/marigold-garlands-and-malas-77fa20beae11-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "decor",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "decor:rose-garlands",
+      "image_alt": "Traditional floral garlands with red roses, jasmine, and other flowers",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/rose-garlands-653aa42f24d6.webp",
+      "is_active": true,
+      "name": "Rose garlands",
+      "slug": "rose-garlands",
+      "sort_order": 6,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/rose-garlands-23ccf8f605af-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "decor",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "decor:torans",
+      "image_alt": "A marigold toran welcoming guests above a doorway",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/torans-71900f278f12.webp",
+      "is_active": true,
+      "name": "Torans",
+      "slug": "torans",
+      "sort_order": 0,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/torans-c219a764a812-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "decor",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "decor:urlis",
+      "image_alt": "A shallow copper-colored decorative urli filled with water and floating flowers",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/urlis-2dc945f77170.webp",
+      "is_active": true,
+      "name": "Urlis",
+      "slug": "urlis",
+      "sort_order": 2,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/decor/urlis-b8b860ddc6a9-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "linens",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "linens:brocade-runners",
+      "image_alt": null,
+      "image_match_type": null,
+      "image_url": null,
+      "is_active": true,
+      "name": "Brocade runners",
+      "slug": "brocade-runners",
+      "sort_order": 2,
+      "thumbnail_url": null,
+      "updated_at": "2026-11-12T16:05:19.880852+00:00"
+    },
+    {
+      "category_id": "linens",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "linens:ceiling-drapes",
+      "image_alt": "Pink and cream fabric drapes suspended in swags overhead",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/ceiling-drapes-d53a5e9dbac6.webp",
+      "is_active": true,
+      "name": "Ceiling drapes",
+      "slug": "ceiling-drapes",
+      "sort_order": 6,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/ceiling-drapes-738a201afb10-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "linens",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "linens:chair-covers",
+      "image_alt": "White fitted chair covers with ties around a reception table",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-covers-716020899155.webp",
+      "is_active": true,
+      "name": "Chair covers",
+      "slug": "chair-covers",
+      "sort_order": 4,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-covers-dfa230134708-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "linens",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "linens:chair-sashes",
+      "image_alt": "Black fabric sashes tied in bows around white event chairs",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-sashes-9f0b04ab31bd.webp",
+      "is_active": true,
+      "name": "Chair sashes",
+      "slug": "chair-sashes",
+      "sort_order": 5,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/chair-sashes-2d925713aada-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "linens",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "linens:napkins",
+      "image_alt": "Folded navy cloth napkins with silver cutlery on a white tablecloth",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/napkins-6639e26919c0.webp",
+      "is_active": true,
+      "name": "Napkins",
+      "slug": "napkins",
+      "sort_order": 3,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/napkins-4f6f1bdf43ff-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "linens",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "linens:silk-runners",
+      "image_alt": "Representative silk and metallic thread table runner with orange decorative motifs",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/silk-runners-cc4bb271c4a4.webp",
+      "is_active": true,
+      "name": "Silk runners",
+      "slug": "silk-runners",
+      "sort_order": 1,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/silk-runners-7cbd3790baf1-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "linens",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "linens:tablecloths-and-chadar",
+      "image_alt": "Red tablecloth draped over a round reception table",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/tablecloths-and-chadar-37355a022720.webp",
+      "is_active": true,
+      "name": "Tablecloths and chadar",
+      "slug": "tablecloths-and-chadar",
+      "sort_order": 0,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/tablecloths-and-chadar-0290dea61ad0-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "linens",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "linens:wall-drapes-and-parda",
+      "image_alt": "Red fabric curtain with clearly defined vertical pleats",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/wall-drapes-and-parda-7a4f09cb416c.webp",
+      "is_active": true,
+      "name": "Wall drapes and parda",
+      "slug": "wall-drapes-and-parda",
+      "sort_order": 7,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/linens/wall-drapes-and-parda-a3222eff8ee3-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "mandap-stage",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "mandap-stage:arches",
+      "image_alt": "A freestanding outdoor wedding arch covered with white and blush flowers",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/arches-c03428dc43fa.webp",
+      "is_active": true,
+      "name": "Arches",
+      "slug": "arches",
+      "sort_order": 4,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/arches-edd33503e6e1-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "mandap-stage",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "mandap-stage:fabric-backdrops",
+      "image_alt": "An ivory fabric event backdrop with crossed drapes and warm decorative lights",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/fabric-backdrops-f70709d7a16e.webp",
+      "is_active": true,
+      "name": "Fabric backdrops",
+      "slug": "fabric-backdrops",
+      "sort_order": 6,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/fabric-backdrops-f66b73f428a2-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "mandap-stage",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "mandap-stage:floral-backdrops",
+      "image_alt": "A white flower wall forming a wedding backdrop behind a reception table",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/floral-backdrops-1ec4549f7c80.webp",
+      "is_active": true,
+      "name": "Floral backdrops",
+      "slug": "floral-backdrops",
+      "sort_order": 5,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/floral-backdrops-2c09a00d3155-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "mandap-stage",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "mandap-stage:frame-backdrops",
+      "image_alt": "A black freestanding event backdrop frame hung with white fabric and greenery",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/frame-backdrops-34a32666d453.webp",
+      "is_active": true,
+      "name": "Frame backdrops",
+      "slug": "frame-backdrops",
+      "sort_order": 7,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/frame-backdrops-cebea300698d-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "mandap-stage",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "mandap-stage:pillars-and-stambh",
+      "image_alt": "Carved golden ceremonial pillars supporting a flower-decorated Indian wedding mandap",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/pillars-and-stambh-4033120a8c42.webp",
+      "is_active": true,
+      "name": "Pillars and stambh",
+      "slug": "pillars-and-stambh",
+      "sort_order": 3,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/pillars-and-stambh-88433ae20b02-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "mandap-stage",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "mandap-stage:stage-setups",
+      "image_alt": "A white and blush wedding stage with an ornate loveseat, floral pedestals and hanging flowers",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/stage-setups-e0874fd7c28f.webp",
+      "is_active": true,
+      "name": "Stage setups",
+      "slug": "stage-setups",
+      "sort_order": 1,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/stage-setups-ce988f89f500-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "mandap-stage",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "mandap-stage:sweetheart-table-setups",
+      "image_alt": "A decorated sweetheart table for two with floral garland and candles in an outdoor setting",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/sweetheart-table-setups-012928fb9c2b.webp",
+      "is_active": true,
+      "name": "Sweetheart table setups",
+      "slug": "sweetheart-table-setups",
+      "sort_order": 2,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/sweetheart-table-setups-166a278fe23e-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "mandap-stage",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "mandap-stage:tents-canopies-and-shamiyana",
+      "image_alt": "A large white event marquee tent with peaked roof and clear side panels",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/tents-canopies-and-shamiyana-97ce5c959ca2.webp",
+      "is_active": true,
+      "name": "Tents, canopies, and shamiyana",
+      "slug": "tents-canopies-and-shamiyana",
+      "sort_order": 8,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/tents-canopies-and-shamiyana-a6831c6d1ede-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "mandap-stage",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "mandap-stage:wedding-mandaps",
+      "image_alt": "A South Asian wedding ceremony beneath a flower-decorated mandap",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/wedding-mandaps-807554eccb79.webp",
+      "is_active": true,
+      "name": "Wedding mandaps",
+      "slug": "wedding-mandaps",
+      "sort_order": 0,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/mandap-stage/wedding-mandaps-be0ee813b8a5-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "seating",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "seating:banquet-chairs",
+      "image_alt": "Red upholstered metal-frame banquet chairs arranged around event tables",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/banquet-chairs-d53195641dff.webp",
+      "is_active": true,
+      "name": "Banquet chairs",
+      "slug": "banquet-chairs",
+      "sort_order": 1,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/banquet-chairs-b739ff7b18a3-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "seating",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "seating:bolsters",
+      "image_alt": "Traditional cylindrical green velvet bolster with red and gold bands on Indian floor seating",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-bb380d1ce001.webp",
+      "is_active": true,
+      "name": "Bolsters",
+      "slug": "bolsters",
+      "sort_order": 5,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/bolsters-032162a08b47-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "seating",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "seating:chiavari-chairs",
+      "image_alt": "White Chiavari chairs arranged on a lawn for an outdoor event",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/chiavari-chairs-fe7790430ddb.webp",
+      "is_active": true,
+      "name": "Chiavari chairs",
+      "slug": "chiavari-chairs",
+      "sort_order": 0,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/chiavari-chairs-a52badf69edc-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "seating",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "seating:chowki",
+      "image_alt": null,
+      "image_match_type": null,
+      "image_url": null,
+      "is_active": true,
+      "name": "Chowki",
+      "slug": "chowki",
+      "sort_order": 6,
+      "thumbnail_url": null,
+      "updated_at": "2026-11-12T16:05:19.880852+00:00"
+    },
+    {
+      "category_id": "seating",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "seating:folding-chairs",
+      "image_alt": "A group of white metal folding chairs arranged in rows",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/folding-chairs-e8c6ed33bbeb.webp",
+      "is_active": true,
+      "name": "Folding chairs",
+      "slug": "folding-chairs",
+      "sort_order": 2,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/folding-chairs-bc36ff2c8db7-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "seating",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "seating:gaddi-and-floor-mattresses",
+      "image_alt": "Traditional magenta Indian gaddi floor mattress with cushions in Jaipur",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/gaddi-and-floor-mattresses-ada91ad843ee.webp",
+      "is_active": true,
+      "name": "Gaddi and floor mattresses",
+      "slug": "gaddi-and-floor-mattresses",
+      "sort_order": 4,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/gaddi-and-floor-mattresses-bcf74b41ffe7-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "seating",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "seating:jhoola",
+      "image_alt": "A traditional decorative jhoola swing in an ornate Indian interior",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/jhoola-1f109947c08c.webp",
+      "is_active": true,
+      "name": "Jhoola",
+      "slug": "jhoola",
+      "sort_order": 7,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/jhoola-de25fa9acd64-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "seating",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "seating:sofas-and-loveseats",
+      "image_alt": "An ornate ivory event loveseat with a tufted back and carved wooden frame",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/sofas-and-loveseats-b31c3c8eee28.webp",
+      "is_active": true,
+      "name": "Sofas and loveseats",
+      "slug": "sofas-and-loveseats",
+      "sort_order": 3,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/seating/sofas-and-loveseats-e6b576e1f226-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "serveware",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "serveware:chafing-dishes",
+      "image_alt": "A stainless steel chafing dish filled with food",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-43f0a438c9e4.webp",
+      "is_active": true,
+      "name": "Chafing dishes",
+      "slug": "chafing-dishes",
+      "sort_order": 2,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/chafing-dishes-b6c9ff6f742e-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "serveware",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "serveware:handi",
+      "image_alt": "An Indian dish cooking in a brass pot",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/handi-3a22c21b9853.webp",
+      "is_active": true,
+      "name": "Handi",
+      "slug": "handi",
+      "sort_order": 1,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/handi-d53f2cdc7c64-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "serveware",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "serveware:katori",
+      "image_alt": "Small stainless steel katori bowls serving an Indian meal on a round tray",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/katori-2f2effb2db82.webp",
+      "is_active": true,
+      "name": "Katori",
+      "slug": "katori",
+      "sort_order": 4,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/katori-5a1928ccb5c0-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "serveware",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "serveware:plates-and-glasses",
+      "image_alt": "Dinner plates and drinking glasses arranged on a dining table",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/plates-and-glasses-3a3ab601d84c.webp",
+      "is_active": true,
+      "name": "Plates and glasses",
+      "slug": "plates-and-glasses",
+      "sort_order": 3,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/plates-and-glasses-0a120bb62e6d-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "serveware",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "serveware:thaal-and-platters",
+      "image_alt": "A traditional Indian metal thaal arranged with a shared meal",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/thaal-and-platters-8ea2b4e901a3.webp",
+      "is_active": true,
+      "name": "Thaal and platters",
+      "slug": "thaal-and-platters",
+      "sort_order": 0,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/serveware/thaal-and-platters-7cd1096cd7dc-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "tables",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "tables:banquet-tables-6ft-and-8ft",
+      "image_alt": "Long rectangular wooden banquet table arranged with place settings for a reception",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-24138ffb6507.webp",
+      "is_active": true,
+      "name": "Banquet tables, 6ft and 8ft",
+      "slug": "banquet-tables-6ft-and-8ft",
+      "sort_order": 1,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/banquet-tables-6ft-and-8ft-dcfe4e6f3175-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "tables",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "tables:buffet-tables",
+      "image_alt": "Long dark buffet tables with visible pedestal supports arranged for event serving",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/buffet-tables-313b6bc21df8.webp",
+      "is_active": true,
+      "name": "Buffet tables",
+      "slug": "buffet-tables",
+      "sort_order": 2,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/buffet-tables-801a1c4067da-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "tables",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "tables:cocktail-and-high-tables",
+      "image_alt": "Tall round cocktail tables dressed in white and blue cloth for an event",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/cocktail-and-high-tables-b28722894a28.webp",
+      "is_active": true,
+      "name": "Cocktail and high tables",
+      "slug": "cocktail-and-high-tables",
+      "sort_order": 3,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/cocktail-and-high-tables-5788a17c05c0-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    },
+    {
+      "category_id": "tables",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "tables:low-chowki-tables",
+      "image_alt": null,
+      "image_match_type": null,
+      "image_url": null,
+      "is_active": true,
+      "name": "Low chowki tables",
+      "slug": "low-chowki-tables",
+      "sort_order": 4,
+      "thumbnail_url": null,
+      "updated_at": "2026-11-12T16:05:19.880852+00:00"
+    },
+    {
+      "category_id": "tables",
+      "created_at": "2026-11-12T16:05:19.880852+00:00",
+      "description": null,
+      "id": "tables:round-60-inch-tables",
+      "image_alt": "Round reception tables arranged for a celebration",
+      "image_match_type": "representative",
+      "image_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/round-60-inch-tables-03f6996fa666.webp",
+      "is_active": true,
+      "name": "Round 60-inch tables",
+      "slug": "round-60-inch-tables",
+      "sort_order": 0,
+      "thumbnail_url": "https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/round-60-inch-tables-b5b297f80519-thumb.webp",
+      "updated_at": "2026-11-12T17:30:43.105024+00:00"
+    }
+  ],
+  "objects": [
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 47304,
+        "eTag": "\"f59ba869c122bddc24f025bf51a54fb7\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:49.000Z",
+        "mimetype": "image/webp",
+        "size": 47304
+      },
+      "name": "decor/diyas-3b510f9e7e0e.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 7566,
+        "eTag": "\"8214eb246801926bfd0e159211fcf164\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:51.000Z",
+        "mimetype": "image/webp",
+        "size": 7566
+      },
+      "name": "decor/diyas-97f375c9eee7-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 168330,
+        "eTag": "\"a7fd9287197e4ae067bc564dacfc03de\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:04.000Z",
+        "mimetype": "image/webp",
+        "size": 168330
+      },
+      "name": "decor/fanoos-and-lanterns-4df02b555ead.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 18730,
+        "eTag": "\"1801b5b70434a8e9f08182060e8d99da\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:07.000Z",
+        "mimetype": "image/webp",
+        "size": 18730
+      },
+      "name": "decor/fanoos-and-lanterns-b773111edbc2-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 195400,
+        "eTag": "\"bd19d9d5db92f424ae061bce887bd391\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:59.000Z",
+        "mimetype": "image/webp",
+        "size": 195400
+      },
+      "name": "decor/kalash-5014830e88f2.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 25856,
+        "eTag": "\"6d0e0d90450e1ecf3d044ac3a1a80845\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:02.000Z",
+        "mimetype": "image/webp",
+        "size": 25856
+      },
+      "name": "decor/kalash-a3d1d49a929d-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 48094,
+        "eTag": "\"21523610546cef4993cba25c61779ba1\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:14.000Z",
+        "mimetype": "image/webp",
+        "size": 48094
+      },
+      "name": "decor/marigold-garlands-and-malas-77fa20beae11-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 485158,
+        "eTag": "\"799e207b63a6f15e58a2f7bb6e02dc76\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:11.000Z",
+        "mimetype": "image/webp",
+        "size": 485158
+      },
+      "name": "decor/marigold-garlands-and-malas-eb983e3da036.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 19054,
+        "eTag": "\"89c9143c534b9aae5b8b946fe6e3171f\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:20.000Z",
+        "mimetype": "image/webp",
+        "size": 19054
+      },
+      "name": "decor/rose-garlands-23ccf8f605af-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 157340,
+        "eTag": "\"6afa2d5faddc40c9f4b074236a0173b2\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:17.000Z",
+        "mimetype": "image/webp",
+        "size": 157340
+      },
+      "name": "decor/rose-garlands-653aa42f24d6.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 195894,
+        "eTag": "\"426e887b7b12866ed65649df42d89a6a\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:42.000Z",
+        "mimetype": "image/webp",
+        "size": 195894
+      },
+      "name": "decor/torans-71900f278f12.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 20872,
+        "eTag": "\"43edee9b0742e95fc7692ceaf9e32b9e\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:45.000Z",
+        "mimetype": "image/webp",
+        "size": 20872
+      },
+      "name": "decor/torans-c219a764a812-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 331334,
+        "eTag": "\"c2b7abfa0abde34cc5350d477d1d7310\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:54.000Z",
+        "mimetype": "image/webp",
+        "size": 331334
+      },
+      "name": "decor/urlis-2dc945f77170.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 29716,
+        "eTag": "\"e9057e81aad7f1e607db8ae2454c488f\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:57.000Z",
+        "mimetype": "image/webp",
+        "size": 29716
+      },
+      "name": "decor/urlis-b8b860ddc6a9-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 9852,
+        "eTag": "\"94c891193e3b5eb160ca6621006d5805\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:39.000Z",
+        "mimetype": "image/webp",
+        "size": 9852
+      },
+      "name": "linens/ceiling-drapes-738a201afb10-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 120326,
+        "eTag": "\"091c980bd3042a496cbdcf151b268892\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:36.000Z",
+        "mimetype": "image/webp",
+        "size": 120326
+      },
+      "name": "linens/ceiling-drapes-d53a5e9dbac6.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 151186,
+        "eTag": "\"d89fe4751e376928bacc4351ed53d4af\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:25.000Z",
+        "mimetype": "image/webp",
+        "size": 151186
+      },
+      "name": "linens/chair-covers-716020899155.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 20118,
+        "eTag": "\"77f66549848197eb028b92b7ae4129e2\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:28.000Z",
+        "mimetype": "image/webp",
+        "size": 20118
+      },
+      "name": "linens/chair-covers-dfa230134708-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 14270,
+        "eTag": "\"59e6cd19d5e340644140169810fd0e6b\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:33.000Z",
+        "mimetype": "image/webp",
+        "size": 14270
+      },
+      "name": "linens/chair-sashes-2d925713aada-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 77078,
+        "eTag": "\"50698080e165d5d8fedff1fa91563574\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:31.000Z",
+        "mimetype": "image/webp",
+        "size": 77078
+      },
+      "name": "linens/chair-sashes-9f0b04ab31bd.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 7524,
+        "eTag": "\"9aac8b42857b7e291c152558a11e1249\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:22.000Z",
+        "mimetype": "image/webp",
+        "size": 7524
+      },
+      "name": "linens/napkins-4f6f1bdf43ff-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 42838,
+        "eTag": "\"d7968bfd5c99fac8d189461ed06fb5f6\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:20.000Z",
+        "mimetype": "image/webp",
+        "size": 42838
+      },
+      "name": "linens/napkins-6639e26919c0.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 11440,
+        "eTag": "\"ad5ee723b00a2fb20a44002b8c319fca\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:17.000Z",
+        "mimetype": "image/webp",
+        "size": 11440
+      },
+      "name": "linens/silk-runners-7cbd3790baf1-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 174592,
+        "eTag": "\"d05182bd1edceb3e17ab493493222b78\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:14.000Z",
+        "mimetype": "image/webp",
+        "size": 174592
+      },
+      "name": "linens/silk-runners-cc4bb271c4a4.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 17734,
+        "eTag": "\"c27ceed884a08e0903d9646c5cbca146\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:10.000Z",
+        "mimetype": "image/webp",
+        "size": 17734
+      },
+      "name": "linens/tablecloths-and-chadar-0290dea61ad0-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 127692,
+        "eTag": "\"a6cc1e67850ca32af15b9312e5a2bb14\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:07.000Z",
+        "mimetype": "image/webp",
+        "size": 127692
+      },
+      "name": "linens/tablecloths-and-chadar-37355a022720.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 152112,
+        "eTag": "\"b7893d10f43212fd6c6e07e73bcb9202\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:41.000Z",
+        "mimetype": "image/webp",
+        "size": 152112
+      },
+      "name": "linens/wall-drapes-and-parda-7a4f09cb416c.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 7076,
+        "eTag": "\"0016073ab2496ee2d7a065a6e2bafa99\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:45.000Z",
+        "mimetype": "image/webp",
+        "size": 7076
+      },
+      "name": "linens/wall-drapes-and-parda-a3222eff8ee3-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 178996,
+        "eTag": "\"fca20e7a0ee50934ff4cba6b3db7af47\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:12.000Z",
+        "mimetype": "image/webp",
+        "size": 178996
+      },
+      "name": "mandap-stage/arches-c03428dc43fa.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 21862,
+        "eTag": "\"53e7c912e6f0a08b08a113eb3455770a\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:16.000Z",
+        "mimetype": "image/webp",
+        "size": 21862
+      },
+      "name": "mandap-stage/arches-edd33503e6e1-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 21318,
+        "eTag": "\"fcaa074de1e154d59e78f8f8606f8b83\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:27.000Z",
+        "mimetype": "image/webp",
+        "size": 21318
+      },
+      "name": "mandap-stage/fabric-backdrops-f66b73f428a2-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 161810,
+        "eTag": "\"159cbe3fcfe375d59c7f1fdd41aac1b7\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:25.000Z",
+        "mimetype": "image/webp",
+        "size": 161810
+      },
+      "name": "mandap-stage/fabric-backdrops-f70709d7a16e.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 239776,
+        "eTag": "\"39a0a0b7a4d156caa7c486d0f06c2070\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:19.000Z",
+        "mimetype": "image/webp",
+        "size": 239776
+      },
+      "name": "mandap-stage/floral-backdrops-1ec4549f7c80.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 28920,
+        "eTag": "\"8353bf3fb7135d377c52be81bab57422\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:22.000Z",
+        "mimetype": "image/webp",
+        "size": 28920
+      },
+      "name": "mandap-stage/floral-backdrops-2c09a00d3155-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 234918,
+        "eTag": "\"ee5f4928445bfabddd8b0ad99eb88dca\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:30.000Z",
+        "mimetype": "image/webp",
+        "size": 234918
+      },
+      "name": "mandap-stage/frame-backdrops-34a32666d453.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 21378,
+        "eTag": "\"beaa7c7c6a8339407aec9f4f29f92ed8\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:33.000Z",
+        "mimetype": "image/webp",
+        "size": 21378
+      },
+      "name": "mandap-stage/frame-backdrops-cebea300698d-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 266012,
+        "eTag": "\"a34852a267774d283aca2f34ef78ec58\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:06.000Z",
+        "mimetype": "image/webp",
+        "size": 266012
+      },
+      "name": "mandap-stage/pillars-and-stambh-4033120a8c42.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 25616,
+        "eTag": "\"f104d1808d8d3eaa0602fcb78eeb13b7\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:09.000Z",
+        "mimetype": "image/webp",
+        "size": 25616
+      },
+      "name": "mandap-stage/pillars-and-stambh-88433ae20b02-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 23760,
+        "eTag": "\"24efbcb367d1dbb9b3a0276494558662\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:57.000Z",
+        "mimetype": "image/webp",
+        "size": 23760
+      },
+      "name": "mandap-stage/stage-setups-ce988f89f500-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 224058,
+        "eTag": "\"51180fd65dd8e80e72e9b6490d3edd4a\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:54.000Z",
+        "mimetype": "image/webp",
+        "size": 224058
+      },
+      "name": "mandap-stage/stage-setups-e0874fd7c28f.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 293466,
+        "eTag": "\"4aba0cef8edb73ee59554d30a3c1fa42\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:00.000Z",
+        "mimetype": "image/webp",
+        "size": 293466
+      },
+      "name": "mandap-stage/sweetheart-table-setups-012928fb9c2b.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 30008,
+        "eTag": "\"f38ec47b46e90f97b506d53e8a32a598\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:03.000Z",
+        "mimetype": "image/webp",
+        "size": 30008
+      },
+      "name": "mandap-stage/sweetheart-table-setups-166a278fe23e-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 112884,
+        "eTag": "\"1ba8b984fe25d924d282d3670a1ac756\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:36.000Z",
+        "mimetype": "image/webp",
+        "size": 112884
+      },
+      "name": "mandap-stage/tents-canopies-and-shamiyana-97ce5c959ca2.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 11656,
+        "eTag": "\"0dc2a7123a8a17d9f64e1a6166a9b597\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:23:39.000Z",
+        "mimetype": "image/webp",
+        "size": 11656
+      },
+      "name": "mandap-stage/tents-canopies-and-shamiyana-a6831c6d1ede-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 205898,
+        "eTag": "\"3a63b8e4c310e73c1ecdda4c2b4e055f\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:48.000Z",
+        "mimetype": "image/webp",
+        "size": 205898
+      },
+      "name": "mandap-stage/wedding-mandaps-807554eccb79.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 21286,
+        "eTag": "\"cecd3f2e329031d91c24575de73da62b\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:51.000Z",
+        "mimetype": "image/webp",
+        "size": 21286
+      },
+      "name": "mandap-stage/wedding-mandaps-be0ee813b8a5-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 22036,
+        "eTag": "\"3295080bc354b11b753e3c6b05197f7b\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:21.000Z",
+        "mimetype": "image/webp",
+        "size": 22036
+      },
+      "name": "seating/banquet-chairs-b739ff7b18a3-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 183938,
+        "eTag": "\"294ea63220302b5b9b2e7dc6a3384d4f\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:18.000Z",
+        "mimetype": "image/webp",
+        "size": 183938
+      },
+      "name": "seating/banquet-chairs-d53195641dff.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 11126,
+        "eTag": "\"c5b154f1e63d1a974f5c863a92a549fd\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:28:27.000Z",
+        "mimetype": "image/webp",
+        "size": 11126
+      },
+      "name": "seating/bolsters-032162a08b47-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 45530,
+        "eTag": "\"7e42707b2b6a1c2e84f3fa3c69d6de83\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:28:25.000Z",
+        "mimetype": "image/webp",
+        "size": 45530
+      },
+      "name": "seating/bolsters-bb380d1ce001.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 22110,
+        "eTag": "\"bf370f434c9f9cb025e9bb487d43c497\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:15.000Z",
+        "mimetype": "image/webp",
+        "size": 22110
+      },
+      "name": "seating/chiavari-chairs-a52badf69edc-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 189164,
+        "eTag": "\"af38b1c6278e40f2888e8159c2b89cba\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:12.000Z",
+        "mimetype": "image/webp",
+        "size": 189164
+      },
+      "name": "seating/chiavari-chairs-fe7790430ddb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 23588,
+        "eTag": "\"73bfb4430a3e1e7fd58b19dd6542fcea\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:28.000Z",
+        "mimetype": "image/webp",
+        "size": 23588
+      },
+      "name": "seating/folding-chairs-bc36ff2c8db7-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 162358,
+        "eTag": "\"2f29a3c3622115e1992c5d34b16fb506\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:24.000Z",
+        "mimetype": "image/webp",
+        "size": 162358
+      },
+      "name": "seating/folding-chairs-e8c6ed33bbeb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 117028,
+        "eTag": "\"d7c1fbd249fef7c1d8614e2671433210\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:37.000Z",
+        "mimetype": "image/webp",
+        "size": 117028
+      },
+      "name": "seating/gaddi-and-floor-mattresses-ada91ad843ee.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 18978,
+        "eTag": "\"0c37bc3b45921988e6d54c69184967c6\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:40.000Z",
+        "mimetype": "image/webp",
+        "size": 18978
+      },
+      "name": "seating/gaddi-and-floor-mattresses-bcf74b41ffe7-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 257860,
+        "eTag": "\"7fb3f2737f050a4804f6aa50c1a51110\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:43.000Z",
+        "mimetype": "image/webp",
+        "size": 257860
+      },
+      "name": "seating/jhoola-1f109947c08c.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 24604,
+        "eTag": "\"514406e2f57aa44d976b6acaed2a0c22\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:46.000Z",
+        "mimetype": "image/webp",
+        "size": 24604
+      },
+      "name": "seating/jhoola-de25fa9acd64-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 106326,
+        "eTag": "\"2a011e509f9a32de34b07c9120b77969\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:31.000Z",
+        "mimetype": "image/webp",
+        "size": 106326
+      },
+      "name": "seating/sofas-and-loveseats-b31c3c8eee28.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 10930,
+        "eTag": "\"56fd7cf665033cad3b70a2e9a65f0864\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:34.000Z",
+        "mimetype": "image/webp",
+        "size": 10930
+      },
+      "name": "seating/sofas-and-loveseats-e6b576e1f226-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 111060,
+        "eTag": "\"0e26c113262ea578d1a660900a0eff86\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:34.000Z",
+        "mimetype": "image/webp",
+        "size": 111060
+      },
+      "name": "serveware/chafing-dishes-43f0a438c9e4.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 18390,
+        "eTag": "\"b9e76ec7cf4c9d7db52af1f8bb16156c\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:36.000Z",
+        "mimetype": "image/webp",
+        "size": 18390
+      },
+      "name": "serveware/chafing-dishes-b6c9ff6f742e-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 225800,
+        "eTag": "\"4a51684479b925de1977cf04b9e6d8da\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:28.000Z",
+        "mimetype": "image/webp",
+        "size": 225800
+      },
+      "name": "serveware/handi-3a22c21b9853.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 22220,
+        "eTag": "\"3c5911dcf3c67c26ba7c5ed2815416a8\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:32.000Z",
+        "mimetype": "image/webp",
+        "size": 22220
+      },
+      "name": "serveware/handi-d53f2cdc7c64-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 208336,
+        "eTag": "\"fed61e021fe3d6cbb5aa8b1afe75fa10\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:44.000Z",
+        "mimetype": "image/webp",
+        "size": 208336
+      },
+      "name": "serveware/katori-2f2effb2db82.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 24152,
+        "eTag": "\"100f29f348af5487f33d8a90f3a035de\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:46.000Z",
+        "mimetype": "image/webp",
+        "size": 24152
+      },
+      "name": "serveware/katori-5a1928ccb5c0-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 12848,
+        "eTag": "\"e38698f77a85cc196ad15dff82d5a8fc\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:41.000Z",
+        "mimetype": "image/webp",
+        "size": 12848
+      },
+      "name": "serveware/plates-and-glasses-0a120bb62e6d-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 92242,
+        "eTag": "\"88568d25579b0293613ea30e1590baf7\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:39.000Z",
+        "mimetype": "image/webp",
+        "size": 92242
+      },
+      "name": "serveware/plates-and-glasses-3a3ab601d84c.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 16848,
+        "eTag": "\"5f049e9c3b09a44ef842141e2efd29d6\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:25.000Z",
+        "mimetype": "image/webp",
+        "size": 16848
+      },
+      "name": "serveware/thaal-and-platters-7cd1096cd7dc-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 164054,
+        "eTag": "\"1b472af69818bf42e168727b1b526453\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:24:22.000Z",
+        "mimetype": "image/webp",
+        "size": 164054
+      },
+      "name": "serveware/thaal-and-platters-8ea2b4e901a3.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 179228,
+        "eTag": "\"ffc216b8b86624a5bf4717c48300731f\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:28:33.000Z",
+        "mimetype": "image/webp",
+        "size": 179228
+      },
+      "name": "tables/banquet-tables-6ft-and-8ft-24138ffb6507.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 25060,
+        "eTag": "\"b4a889afb4965eea6a0b06c76bbc8c36\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:28:36.000Z",
+        "mimetype": "image/webp",
+        "size": 25060
+      },
+      "name": "tables/banquet-tables-6ft-and-8ft-dcfe4e6f3175-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 242240,
+        "eTag": "\"77b17dd3fd6824c3fec796d928a0e63e\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:56.000Z",
+        "mimetype": "image/webp",
+        "size": 242240
+      },
+      "name": "tables/buffet-tables-313b6bc21df8.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 24468,
+        "eTag": "\"c7240f469c3770fdbfa702528e25ca02\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:59.000Z",
+        "mimetype": "image/webp",
+        "size": 24468
+      },
+      "name": "tables/buffet-tables-801a1c4067da-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 9698,
+        "eTag": "\"d23a980e2f78f01b5f713bc05ac97eca\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:04.000Z",
+        "mimetype": "image/webp",
+        "size": 9698
+      },
+      "name": "tables/cocktail-and-high-tables-5788a17c05c0-thumb.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 118710,
+        "eTag": "\"ea3e746f170129836a2455b7b5c8be43\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:22:02.000Z",
+        "mimetype": "image/webp",
+        "size": 118710
+      },
+      "name": "tables/cocktail-and-high-tables-b28722894a28.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 133600,
+        "eTag": "\"5678e81d87736572d26317864c07f9dc\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:50.000Z",
+        "mimetype": "image/webp",
+        "size": 133600
+      },
+      "name": "tables/round-60-inch-tables-03f6996fa666.webp"
+    },
+    {
+      "metadata": {
+        "cacheControl": "max-age=31536000",
+        "contentLength": 22424,
+        "eTag": "\"50dd2c241118171369e3ff6d0329a2f9\"",
+        "httpStatusCode": 200,
+        "lastModified": "2026-11-12T17:21:53.000Z",
+        "mimetype": "image/webp",
+        "size": 22424
+      },
+      "name": "tables/round-60-inch-tables-b5b297f80519-thumb.webp"
+    }
+  ],
+  "counts": {
+    "customer_count": 2,
+    "request_count": 2,
+    "reserved_qa_customer_count": 0
+  },
+  "approvedImages": [
+    {
+      "id": "seating:chiavari-chairs",
+      "category": "seating",
+      "name": "Chiavari chairs",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-17027528",
+      "downloadUrl": "https://images.pexels.com/photos/17027528/pexels-photo-17027528.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/white-chairs-in-the-garden-17027528/",
+      "photographer": "Beyzaa Yurtkuran",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "White Chiavari chairs arranged on a lawn for an outdoor event",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 3264332,
+      "originalSha256": "2e1122a57d5fc23663111ffdc32f7cc5050bfcc4b1169b1f85e972ef3702eb28",
+      "originalWidth": 3512,
+      "originalHeight": 6240,
+      "image": {
+        "objectPath": "seating/chiavari-chairs-fe7790430ddb.webp",
+        "sha256": "fe7790430ddb73771702188653da46c8d2e2e4e7ef2fa7d61c3a889c1c1ac913",
+        "bytes": 189164,
+        "width": 788,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "seating/chiavari-chairs-a52badf69edc-thumb.webp",
+        "sha256": "a52badf69edc8bb65c0d0a7c89207e4f92fc0b511d421d5bfd1b11a1c9d1a235",
+        "bytes": 22110,
+        "width": 216,
+        "height": 384
+      }
+    },
+    {
+      "id": "seating:banquet-chairs",
+      "category": "seating",
+      "name": "Banquet chairs",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1759477274116-e3cb02d2b9d8",
+      "downloadUrl": "https://images.unsplash.com/photo-1759477274116-e3cb02d2b9d8",
+      "sourcePage": "https://unsplash.com/photos/empty-banquet-hall-with-red-chairs-and-round-tables-S3Qh6mNZbLc",
+      "photographer": "SR Engineers and Consultants",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "Red upholstered metal-frame banquet chairs arranged around event tables",
+      "matchType": "representative",
+      "visualReview": "Sharp foreground upholstered banquet chairs are clearly identifiable. Event venue background; not the business's exact stock. Use lower central crop focusing the complete foreground chair if useful.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 1163881,
+      "originalSha256": "b8b56f1f9c4fed6af10b0795a867abedf5d69ef70ce81e79fb8b117e14e1e2f5",
+      "originalWidth": 4000,
+      "originalHeight": 2252,
+      "image": {
+        "objectPath": "seating/banquet-chairs-d53195641dff.webp",
+        "sha256": "d53195641dfff36e0837b7040366913c9b174ea3487abf2bd917454eb4c1d234",
+        "bytes": 183938,
+        "width": 1400,
+        "height": 788
+      },
+      "thumbnail": {
+        "objectPath": "seating/banquet-chairs-b739ff7b18a3-thumb.webp",
+        "sha256": "b739ff7b18a35fe37102ed36fc45a22d0a43cf2eeba000039cb7283496ffdae6",
+        "bytes": 22036,
+        "width": 384,
+        "height": 216
+      }
+    },
+    {
+      "id": "seating:folding-chairs",
+      "category": "seating",
+      "name": "Folding chairs",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1553110503-b4388ef57dbe",
+      "downloadUrl": "https://images.unsplash.com/photo-1553110503-b4388ef57dbe",
+      "sourcePage": "https://unsplash.com/photos/pile-of-white-metal-folding-chairs-WBN9zHXKeig",
+      "photographer": "chuck cunningham",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "A group of white metal folding chairs arranged in rows",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 2112256,
+      "originalSha256": "605a26c8ca79d08b57462efb6a3af00e49ed84387f5e9e351d74e4b089e81ce2",
+      "originalWidth": 4565,
+      "originalHeight": 3059,
+      "image": {
+        "objectPath": "seating/folding-chairs-e8c6ed33bbeb.webp",
+        "sha256": "e8c6ed33bbeb0374f1522f4fa5f902a0962b35bb5d3277a3df7ae9aa212ae6c6",
+        "bytes": 162358,
+        "width": 1400,
+        "height": 938
+      },
+      "thumbnail": {
+        "objectPath": "seating/folding-chairs-bc36ff2c8db7-thumb.webp",
+        "sha256": "bc36ff2c8db74e641a49dbfae8be8ace5e277b6d95708dc961503e86bf904aef",
+        "bytes": 23588,
+        "width": 384,
+        "height": 257
+      }
+    },
+    {
+      "id": "seating:sofas-and-loveseats",
+      "category": "seating",
+      "name": "Sofas and loveseats",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-6272063",
+      "downloadUrl": "https://images.pexels.com/photos/6272063/pexels-photo-6272063.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/a-white-leather-couch-on-a-stage-6272063/",
+      "photographer": "Mushtaq Hussain",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "An ornate ivory event loveseat with a tufted back and carved wooden frame",
+      "matchType": "representative",
+      "visualReview": "Real event-sofa photograph visually reviewed. Crop removes empty ceiling and foreground while retaining full back, arms and feet. Replaces studio furniture image with uncertain photographic provenance.",
+      "reviewedAt": "2026-11-12",
+      "crop": [
+        0,
+        0.46,
+        1,
+        0.86
+      ],
+      "originalBytes": 2323421,
+      "originalSha256": "804b154dd2f1addebb4cda90b8136368acf72d799816808ca2b5b403ba75386a",
+      "originalWidth": 3376,
+      "originalHeight": 6000,
+      "image": {
+        "objectPath": "seating/sofas-and-loveseats-b31c3c8eee28.webp",
+        "sha256": "b31c3c8eee287b86cf02f054da72da6817e77e363ccda301a91124fb9b26fe1e",
+        "bytes": 106326,
+        "width": 1400,
+        "height": 995
+      },
+      "thumbnail": {
+        "objectPath": "seating/sofas-and-loveseats-e6b576e1f226-thumb.webp",
+        "sha256": "e6b576e1f226db465ad5255d1a88ab6804005cbe3f96ef8f2828c27aa1cbefef",
+        "bytes": 10930,
+        "width": 384,
+        "height": 273
+      }
+    },
+    {
+      "id": "seating:gaddi-and-floor-mattresses",
+      "category": "seating",
+      "name": "Gaddi and floor mattresses",
+      "approved": true,
+      "provider": "Wikimedia Commons",
+      "photoId": "commons-jaipur-city-palace-interior",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Jaipur_city_palace_interior%2C_Rajasthan.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jaipur_city_palace_interior,_Rajasthan.jpg",
+      "photographer": "snikrap",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "alt": "Traditional magenta Indian gaddi floor mattress with cushions in Jaipur",
+      "matchType": "representative",
+      "visualReview": "Real traditional Indian floor mattress and backrest, with visible textile detail. Crop lower portion to make mattress subject prominent and remove ornate ceiling. Representative heritage arrangement, not exact rental inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": [
+        0,
+        0.6309464196294442,
+        0.8631578947368421,
+        1
+      ],
+      "originalBytes": 2357344,
+      "originalSha256": "6f9052962ac68443f2bcd132d641e34d8d3aa94ab281a99fcfcbced3c6ef9c33",
+      "originalWidth": 1425,
+      "originalHeight": 1997,
+      "image": {
+        "objectPath": "seating/gaddi-and-floor-mattresses-ada91ad843ee.webp",
+        "sha256": "ada91ad843eeb34a57ce71ede7361b1d6906213f249ddb8482fd18fb2a0fa072",
+        "bytes": 117028,
+        "width": 1230,
+        "height": 737
+      },
+      "thumbnail": {
+        "objectPath": "seating/gaddi-and-floor-mattresses-bcf74b41ffe7-thumb.webp",
+        "sha256": "bcf74b41ffe70a204d80569f915aa2fa8690af0324788e4af7a1ba05d7377c24",
+        "bytes": 18978,
+        "width": 384,
+        "height": 230
+      }
+    },
+    {
+      "id": "seating:bolsters",
+      "category": "seating",
+      "name": "Bolsters",
+      "approved": true,
+      "provider": "Wikimedia Commons",
+      "photoId": "commons-mehrangarh-fort9",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Mehrangarh_fort9.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mehrangarh_fort9.jpg",
+      "photographer": "Shahriar Amin Fahim247",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "alt": "Traditional cylindrical green velvet bolster with red and gold bands on Indian floor seating",
+      "matchType": "representative",
+      "visualReview": "Reviewed native1000×750 crop: clear cylindrical side, rounded end, red bands, gold seams and velvet highlights. Native bolster about500px wide; adequate for230px card region at2x without upscaling. Brighter and clearer than PhulMahal3 crop (rejected). Context is a real Indian heritage floor-seating installation, not exact rental inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": [
+        0.6432748538011696,
+        0.7894736842105263,
+        0.7894736842105263,
+        0.9539473684210527
+      ],
+      "originalBytes": 9607738,
+      "originalSha256": "62272f38ad170e87e9db475998af03ba0cd8238239ca5984062f275bc570aff8",
+      "originalWidth": 6840,
+      "originalHeight": 4560,
+      "image": {
+        "objectPath": "seating/bolsters-bb380d1ce001.webp",
+        "sha256": "bb380d1ce00103eb1139477fdc917950c05dfadd43d1d82b159629f6ece45d9a",
+        "bytes": 45530,
+        "width": 1000,
+        "height": 750
+      },
+      "thumbnail": {
+        "objectPath": "seating/bolsters-032162a08b47-thumb.webp",
+        "sha256": "032162a08b477fa8883a46b956e96d8311bc0ade60f704be74aeddae03fadda9",
+        "bytes": 11126,
+        "width": 384,
+        "height": 288
+      }
+    },
+    {
+      "id": "seating:jhoola",
+      "category": "seating",
+      "name": "Jhoola",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-37026460",
+      "downloadUrl": "https://images.pexels.com/photos/37026460/pexels-photo-37026460.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/colorful-traditional-indian-interior-with-swing-37026460/",
+      "photographer": "Mehul Soni",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "A traditional decorative jhoola swing in an ornate Indian interior",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": [
+        0.22,
+        0.37,
+        0.8,
+        0.91
+      ],
+      "originalBytes": 2316815,
+      "originalSha256": "f28fc95aec3f767882b75a830f913aa4b7a5f1d00ef3d6de024a5658ef81f992",
+      "originalWidth": 3072,
+      "originalHeight": 4096,
+      "image": {
+        "objectPath": "seating/jhoola-1f109947c08c.webp",
+        "sha256": "1f109947c08cb39b841d816a4e1860edfc27f0757d0364ab0ff6f434d15c633e",
+        "bytes": 257860,
+        "width": 1128,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "seating/jhoola-de25fa9acd64-thumb.webp",
+        "sha256": "de25fa9acd644fd8682a628c3d32014968e0669c2d1e2a054274aa963594391d",
+        "bytes": 24604,
+        "width": 309,
+        "height": 384
+      }
+    },
+    {
+      "id": "tables:round-60-inch-tables",
+      "category": "tables",
+      "name": "Round 60-inch tables",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1464366400600-7168b8af9bc3",
+      "downloadUrl": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3",
+      "sourcePage": "https://unsplash.com/photos/party-dish-arrangement-tbaoryUol_E",
+      "photographer": "Mitchell Lawler",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "Round reception tables arranged for a celebration",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 4751946,
+      "originalSha256": "68f71347773b04b5677e68ce452471b2f9edc74efce1b630c8ebb9eb66986652",
+      "originalWidth": 6016,
+      "originalHeight": 4016,
+      "image": {
+        "objectPath": "tables/round-60-inch-tables-03f6996fa666.webp",
+        "sha256": "03f6996fa6661aa55070d8a39f10cbdd77c8267dca06d5f04d7594605c1956c7",
+        "bytes": 133600,
+        "width": 1400,
+        "height": 935
+      },
+      "thumbnail": {
+        "objectPath": "tables/round-60-inch-tables-b5b297f80519-thumb.webp",
+        "sha256": "b5b297f80519c7d62e137000f2b63fdd6ac56e9e56d81c71b4234d0bdccff76a",
+        "bytes": 22424,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "tables:banquet-tables-6ft-and-8ft",
+      "category": "tables",
+      "name": "Banquet tables, 6ft and 8ft",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1773005695304-97e7dbf5ff15",
+      "downloadUrl": "https://images.unsplash.com/photo-1773005695304-97e7dbf5ff15",
+      "sourcePage": "https://unsplash.com/photos/a-beautifully-decorated-long-table-set-for-a-wedding-reception-3nx3qOwSSLs",
+      "photographer": "Jennifer Kalenberg",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "Long rectangular wooden banquet table arranged with place settings for a reception",
+      "matchType": "representative",
+      "visualReview": "Clear foreground rectangular banquet tabletop with visible long straight edges; dressed event-table arrangement. Actual 6ft or 8ft dimensions cannot be established from photograph, so representative only. Foreground subject is table setup rather than general wedding scene.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 4483633,
+      "originalSha256": "c26615ddb85e26b05349654a8ba9373e0512e0776cd6d467c060cebe2fab7678",
+      "originalWidth": 5040,
+      "originalHeight": 3360,
+      "image": {
+        "objectPath": "tables/banquet-tables-6ft-and-8ft-24138ffb6507.webp",
+        "sha256": "24138ffb65071ba8f49d019780c677f98dd01eb9f022a44aafec11ad8c2e92f0",
+        "bytes": 179228,
+        "width": 1400,
+        "height": 933
+      },
+      "thumbnail": {
+        "objectPath": "tables/banquet-tables-6ft-and-8ft-dcfe4e6f3175-thumb.webp",
+        "sha256": "dcfe4e6f31756955e6ff57c61cebd77f832d29d1d495f359b1065fb03ef9b950",
+        "bytes": 25060,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "tables:buffet-tables",
+      "category": "tables",
+      "name": "Buffet tables",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-14646750",
+      "downloadUrl": "https://images.pexels.com/photos/14646750/pexels-photo-14646750.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/a-buffet-table-at-a-private-event-14646750/",
+      "photographer": "Vidal Balielo Jr.",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Long dark buffet tables with visible pedestal supports arranged for event serving",
+      "matchType": "representative",
+      "visualReview": "Unlike food close-ups, entire long tabletop and substantial pedestal supports visible. Real event buffet-table arrangement; not exact inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 3164251,
+      "originalSha256": "f36a805ff7a46d54e2bead1a9dc6426911c7e1a3a100dbbe259ec64880d51aa3",
+      "originalWidth": 5472,
+      "originalHeight": 3648,
+      "image": {
+        "objectPath": "tables/buffet-tables-313b6bc21df8.webp",
+        "sha256": "313b6bc21df8f70ca3702042ac211f6bb9ccb57277cbd0052e0619c78f5f1c2a",
+        "bytes": 242240,
+        "width": 1400,
+        "height": 933
+      },
+      "thumbnail": {
+        "objectPath": "tables/buffet-tables-801a1c4067da-thumb.webp",
+        "sha256": "801a1c4067daa7872fd145c741f0f76d220c7d000eeba19ed271980df956805d",
+        "bytes": 24468,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "tables:cocktail-and-high-tables",
+      "category": "tables",
+      "name": "Cocktail and high tables",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1768851244529-39180171a168",
+      "downloadUrl": "https://images.unsplash.com/photo-1768851244529-39180171a168",
+      "sourcePage": "https://unsplash.com/photos/empty-event-space-with-decorated-high-top-tables-4PEkh4rvyMQ",
+      "photographer": "Matt Benson",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "Tall round cocktail tables dressed in white and blue cloth for an event",
+      "matchType": "representative",
+      "visualReview": "Sharp real photograph with five complete high-top tables clearly visible. Suitable representative event setup. Crop left 80% removes incidental person while retaining four full tables.",
+      "reviewedAt": "2026-11-12",
+      "crop": [
+        0,
+        0,
+        0.83,
+        1
+      ],
+      "originalBytes": 4806900,
+      "originalSha256": "28af5ddc371de80d7b4158a383ff8a3eea40389c4c13ab619405f41cfc3e08ff",
+      "originalWidth": 6048,
+      "originalHeight": 4024,
+      "image": {
+        "objectPath": "tables/cocktail-and-high-tables-b28722894a28.webp",
+        "sha256": "b28722894a2868a920e24ae4c0d25dc4461ee3573915fbfcd69ed8257ae86beb",
+        "bytes": 118710,
+        "width": 1400,
+        "height": 1122
+      },
+      "thumbnail": {
+        "objectPath": "tables/cocktail-and-high-tables-5788a17c05c0-thumb.webp",
+        "sha256": "5788a17c05c04889d8169b5088ab1c685ed2dddad962ab82e4c33ff097674817",
+        "bytes": 9698,
+        "width": 384,
+        "height": 308
+      }
+    },
+    {
+      "id": "linens:tablecloths-and-chadar",
+      "category": "linens",
+      "name": "Tablecloths and chadar",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-37298349",
+      "downloadUrl": "https://images.pexels.com/photos/37298349/pexels-photo-37298349.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/elegant-table-setting-with-red-tablecloth-37298349/",
+      "photographer": "Taylor Thompson",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Red tablecloth draped over a round reception table",
+      "matchType": "representative",
+      "visualReview": "Clear red tablecloth covers most of frame, hem and edge visible; styled event context. Not an assertion of rental inventory or chadar material.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 1095311,
+      "originalSha256": "69650d71a6dceb4cb6ed7dbdf2b1bb41edc1274a7187acb95bf97a736d62d590",
+      "originalWidth": 2695,
+      "originalHeight": 3591,
+      "image": {
+        "objectPath": "linens/tablecloths-and-chadar-37355a022720.webp",
+        "sha256": "37355a0227206345690a5e3c87bb2c5a3cca9690a1ec857edbfa6a3e7d8abc78",
+        "bytes": 127692,
+        "width": 1051,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "linens/tablecloths-and-chadar-0290dea61ad0-thumb.webp",
+        "sha256": "0290dea61ad0b73de0bde4e2bfd09ae30a47e6647c690668a2d7e87ca89bd658",
+        "bytes": 17734,
+        "width": 288,
+        "height": 384
+      }
+    },
+    {
+      "id": "linens:silk-runners",
+      "category": "linens",
+      "name": "Silk runners",
+      "approved": true,
+      "provider": "Cleveland Museum of Art",
+      "photoId": "cma-1939.145",
+      "downloadUrl": "https://openaccess-cdn.clevelandart.org/1939.145/1939.145_print.jpg",
+      "sourcePage": "https://www.clevelandart.org/art/1939.145",
+      "photographer": "The Cleveland Museum of Art",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "alt": "Representative silk and metallic thread table runner with orange decorative motifs",
+      "matchType": "representative",
+      "visualReview": "Museum professional isolated photograph of a real silk table runner, dated late 19th–early 20th century, Japan. Some historic fading; actual material is verified by museum, but it is not a modern event inventory photograph. Parent should judge suitability before approval. Parent has since visually reviewed this photograph and accepted historical representative silk classification. Approved as explicitly representative historical silk runner. Fading documented; weave and actual type are verified by museum.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 1683405,
+      "originalSha256": "00be3b01b143c300a54f96e79f96e37cd8508552ebb4efe597f645d3d65dde0a",
+      "originalWidth": 3400,
+      "originalHeight": 976,
+      "image": {
+        "objectPath": "linens/silk-runners-cc4bb271c4a4.webp",
+        "sha256": "cc4bb271c4a4b769b27408f92350ac1812bee743c870b1e4b5a5a84fadbf2e33",
+        "bytes": 174592,
+        "width": 1400,
+        "height": 402
+      },
+      "thumbnail": {
+        "objectPath": "linens/silk-runners-7cbd3790baf1-thumb.webp",
+        "sha256": "7cbd3790baf19b797d4e5d9b878d36c25eccfd07193f229767aea11fbd2bcc17",
+        "bytes": 11440,
+        "width": 384,
+        "height": 110
+      }
+    },
+    {
+      "id": "linens:napkins",
+      "category": "linens",
+      "name": "Napkins",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-37936110",
+      "downloadUrl": "https://images.pexels.com/photos/37936110/pexels-photo-37936110.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/elegant-table-setting-with-silver-cutlery-37936110/",
+      "photographer": "Taylor Thompson",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Folded navy cloth napkins with silver cutlery on a white tablecloth",
+      "matchType": "representative",
+      "visualReview": "Two folded navy cloth napkins clearly visible and sharp in a simple table setting; material not asserted.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 693412,
+      "originalSha256": "7df091b11789d7d9e8d81e9e494aaf39cafca308e927b8a0dbd6f45b80658794",
+      "originalWidth": 2634,
+      "originalHeight": 3951,
+      "image": {
+        "objectPath": "linens/napkins-6639e26919c0.webp",
+        "sha256": "6639e26919c027fb333222d93ae537f3f85043413039c810683ad3b9c6e3b79f",
+        "bytes": 42838,
+        "width": 933,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "linens/napkins-4f6f1bdf43ff-thumb.webp",
+        "sha256": "4f6f1bdf43ffb9a73add07f5a993adfb5900db4866e66dcb8c2f469ed13f5c0b",
+        "bytes": 7524,
+        "width": 256,
+        "height": 384
+      }
+    },
+    {
+      "id": "linens:chair-covers",
+      "category": "linens",
+      "name": "Chair covers",
+      "approved": true,
+      "provider": "Pixabay",
+      "photoId": "pixabay-1174141",
+      "downloadUrl": "https://cdn.pixabay.com/photo/2016/02/01/18/27/wedding-table-1174141_1280.jpg",
+      "sourcePage": "https://pixabay.com/photos/wedding-table-ballroom-room-1174141/",
+      "photographer": "Hans",
+      "license": "Pixabay Content License",
+      "licenseUrl": "https://pixabay.com/service/license-summary/",
+      "alt": "White fitted chair covers with ties around a reception table",
+      "matchType": "representative",
+      "visualReview": "Foreground chairs are fully visible wearing white fabric covers to the floor; useful event context, not tiny background objects. Original image 4608×3456; selected licensed 1280×960 downloadable derivative.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 318956,
+      "originalSha256": "74c7c36589f8d5cafd4c91583bf04d1a3ffaf826e54be6692bb57618e1fbd3ee",
+      "originalWidth": 1280,
+      "originalHeight": 960,
+      "image": {
+        "objectPath": "linens/chair-covers-716020899155.webp",
+        "sha256": "7160208991554b29eff3c5d111042ffbc44c32f6827ac58d3f26c2f8ea3229f3",
+        "bytes": 151186,
+        "width": 1280,
+        "height": 960
+      },
+      "thumbnail": {
+        "objectPath": "linens/chair-covers-dfa230134708-thumb.webp",
+        "sha256": "dfa230134708a07a24d52eeee433fe5b6de4985a2be9b49bf605b30627118d2d",
+        "bytes": 20118,
+        "width": 384,
+        "height": 288
+      }
+    },
+    {
+      "id": "linens:chair-sashes",
+      "category": "linens",
+      "name": "Chair sashes",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-33802945",
+      "downloadUrl": "https://images.pexels.com/photos/33802945/pexels-photo-33802945.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/elegant-beachside-wedding-chairs-with-black-bows-33802945/",
+      "photographer": "Kader Azra Namuslu",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Black fabric sashes tied in bows around white event chairs",
+      "matchType": "representative",
+      "visualReview": "Black fabric sashes prominent and clearly distinguishable against white chairs; beach background subdued; entire sash length visible.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 1140089,
+      "originalSha256": "133510f32c25fb5ab0e217d8681d8869111ba69b5c0cbbf99a63d0d6a52a387f",
+      "originalWidth": 6000,
+      "originalHeight": 3368,
+      "image": {
+        "objectPath": "linens/chair-sashes-9f0b04ab31bd.webp",
+        "sha256": "9f0b04ab31bdd9023705863456813c880b734a86bd8f6f4c421b98e2f8a88d86",
+        "bytes": 77078,
+        "width": 1400,
+        "height": 786
+      },
+      "thumbnail": {
+        "objectPath": "linens/chair-sashes-2d925713aada-thumb.webp",
+        "sha256": "2d925713aada6e5559aa4b8c77982fe20d1a8962cd058729e382aa40f3a73fd9",
+        "bytes": 14270,
+        "width": 384,
+        "height": 216
+      }
+    },
+    {
+      "id": "linens:ceiling-drapes",
+      "category": "linens",
+      "name": "Ceiling drapes",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1684052937823-fcd21d6c54c4",
+      "downloadUrl": "https://images.unsplash.com/photo-1684052937823-fcd21d6c54c4",
+      "sourcePage": "https://unsplash.com/photos/a-group-of-pink-and-white-drapes-hanging-from-a-ceiling-TJMLQSIS5rc",
+      "photographer": "Patrick Shaun",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "Pink and cream fabric drapes suspended in swags overhead",
+      "matchType": "representative",
+      "visualReview": "Low-angle photograph with fabric ceiling swags as dominant subject; no people or generic wedding scene. Downloaded preview 1100×733; original dimensions not yet obtained.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 7168893,
+      "originalSha256": "22e746868908ea90c77bd2af5586606258718cbf8ef630406e81a9aed6689993",
+      "originalWidth": 6000,
+      "originalHeight": 4000,
+      "image": {
+        "objectPath": "linens/ceiling-drapes-d53a5e9dbac6.webp",
+        "sha256": "d53a5e9dbac65d49d91a578ca37959b273d08e47cc41ca6b206c0d5854145b20",
+        "bytes": 120326,
+        "width": 1400,
+        "height": 933
+      },
+      "thumbnail": {
+        "objectPath": "linens/ceiling-drapes-738a201afb10-thumb.webp",
+        "sha256": "738a201afb10881c5bf1a1d88712274ef5cc850f2e909e05c7938433afc66378",
+        "bytes": 9852,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "linens:wall-drapes-and-parda",
+      "category": "linens",
+      "name": "Wall drapes and parda",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-35836715",
+      "downloadUrl": "https://images.pexels.com/photos/35836715/pexels-photo-35836715.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/elegant-red-curtains-in-soft-lighting-35836715/",
+      "photographer": "Fandy Much",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Red fabric curtain with clearly defined vertical pleats",
+      "matchType": "representative",
+      "visualReview": "Curtain is sole subject; real textured fabric and crisp pleats. Does not establish specific event installation or rental inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 710906,
+      "originalSha256": "2bb2b970ededac1fb292b8b08b7dce0c94982a6e42d1f1975188df5d077d3d82",
+      "originalWidth": 3000,
+      "originalHeight": 2000,
+      "image": {
+        "objectPath": "linens/wall-drapes-and-parda-7a4f09cb416c.webp",
+        "sha256": "7a4f09cb416c03ad6d5ac8a18c5580df4be2606eb674c682d5158ca1f490b1e2",
+        "bytes": 152112,
+        "width": 1400,
+        "height": 933
+      },
+      "thumbnail": {
+        "objectPath": "linens/wall-drapes-and-parda-a3222eff8ee3-thumb.webp",
+        "sha256": "a3222eff8ee3b1bfdd6fde032187442cb8e1f5e516621e8481a05fd97c3acd1f",
+        "bytes": 7076,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "mandap-stage:wedding-mandaps",
+      "category": "mandap-stage",
+      "name": "Wedding mandaps",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1587271636175-90d58cdad458",
+      "downloadUrl": "https://images.unsplash.com/photo-1587271636175-90d58cdad458",
+      "sourcePage": "https://unsplash.com/photos/wedding-ceremony-under-floral-canopy-7O422yG_b80",
+      "photographer": "AMISH THAKKAR",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "A South Asian wedding ceremony beneath a flower-decorated mandap",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 2834214,
+      "originalSha256": "9f385d3c4d959993f9356941639c2c471037c329552a3772ecc5c598612417fc",
+      "originalWidth": 5184,
+      "originalHeight": 3456,
+      "image": {
+        "objectPath": "mandap-stage/wedding-mandaps-807554eccb79.webp",
+        "sha256": "807554eccb7997600f4714064b5187cdc1562a201cf65e971680ac291a92952b",
+        "bytes": 205898,
+        "width": 1400,
+        "height": 933
+      },
+      "thumbnail": {
+        "objectPath": "mandap-stage/wedding-mandaps-be0ee813b8a5-thumb.webp",
+        "sha256": "be0ee813b8a59855afb01244158bcac483a9014a9840185dae7fe2c7bb71dfda",
+        "bytes": 21286,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "mandap-stage:stage-setups",
+      "category": "mandap-stage",
+      "name": "Stage setups",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-33485972",
+      "downloadUrl": "https://images.pexels.com/photos/33485972/pexels-photo-33485972.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/elegant-wedding-stage-with-floral-decor-33485972/",
+      "photographer": "The Visionary Vows",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "A white and blush wedding stage with an ornate loveseat, floral pedestals and hanging flowers",
+      "matchType": "representative",
+      "visualReview": "Complete raised event stage and seating installation is the main subject; genuine camera capture with source EXIF.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "licenseEvidence": "https://www.pexels.com/photo/elegant-wedding-stage-with-floral-decor-33485972/",
+      "originalBytes": 2352952,
+      "originalSha256": "1a3f2fc55687b72f24f6cb71b2be021676614cde0bef3760f4318e8865173835",
+      "originalWidth": 5760,
+      "originalHeight": 3840,
+      "image": {
+        "objectPath": "mandap-stage/stage-setups-e0874fd7c28f.webp",
+        "sha256": "e0874fd7c28f36d8cf68ccdbb2678ed48f9c5db170e5901a5dc15fb2e51a803f",
+        "bytes": 224058,
+        "width": 1400,
+        "height": 933
+      },
+      "thumbnail": {
+        "objectPath": "mandap-stage/stage-setups-ce988f89f500-thumb.webp",
+        "sha256": "ce988f89f5000a5728f226fed23b9dc660fd89dad75362256808de5352639c06",
+        "bytes": 23760,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "mandap-stage:sweetheart-table-setups",
+      "category": "mandap-stage",
+      "name": "Sweetheart table setups",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1773370812452-7f1bb79f6d75",
+      "downloadUrl": "https://images.unsplash.com/photo-1773370812452-7f1bb79f6d75",
+      "sourcePage": "https://unsplash.com/photos/a-decorated-table-set-for-a-wedding-in-a-forest-uOO5D8UPuMw",
+      "photographer": "Jen Vazquez",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "A decorated sweetheart table for two with floral garland and candles in an outdoor setting",
+      "matchType": "representative",
+      "visualReview": "Clearly two-person sweetheart table. Original is portrait with substantial empty woods above; crop around table and both chair backs.",
+      "reviewedAt": "2026-11-12",
+      "crop": [
+        0,
+        0.4,
+        1,
+        0.96
+      ],
+      "licenseEvidence": "https://unsplash.com/photos/a-decorated-table-set-for-a-wedding-in-a-forest-uOO5D8UPuMw",
+      "originalBytes": 2361718,
+      "originalSha256": "9fb95c39efb857bc24d7d9a0d8262c01c19e10fbca9b081b1b057f56a4ef2fc2",
+      "originalWidth": 2832,
+      "originalHeight": 4256,
+      "image": {
+        "objectPath": "mandap-stage/sweetheart-table-setups-012928fb9c2b.webp",
+        "sha256": "012928fb9c2bfa5e17fc21a862bfa93333b3267d1bf416afef7323828719dad5",
+        "bytes": 293466,
+        "width": 1400,
+        "height": 1179
+      },
+      "thumbnail": {
+        "objectPath": "mandap-stage/sweetheart-table-setups-166a278fe23e-thumb.webp",
+        "sha256": "166a278fe23efc68ddcf01d4adbd7a1717c853942d92d52340dd2c20f8f43b4a",
+        "bytes": 30008,
+        "width": 384,
+        "height": 323
+      }
+    },
+    {
+      "id": "mandap-stage:pillars-and-stambh",
+      "category": "mandap-stage",
+      "name": "Pillars and stambh",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-14395559",
+      "downloadUrl": "https://images.pexels.com/photos/14395559/pexels-photo-14395559.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/golden-columns-and-colorful-flowers-on-stage-14395559/",
+      "photographer": "BANU FILM ADS",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Carved golden ceremonial pillars supporting a flower-decorated Indian wedding mandap",
+      "matchType": "representative",
+      "visualReview": "Four decorated golden stambh are clearly visible in ceremonial installation. Representative installed pillars rather than isolated freestanding inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "licenseEvidence": "https://www.pexels.com/photo/golden-columns-and-colorful-flowers-on-stage-14395559/",
+      "originalBytes": 3650487,
+      "originalSha256": "fbeefa6e01dcc7c47ee81d5f22ebaaf339c217a8e691da3d9ffa76a99eab2640",
+      "originalWidth": 6720,
+      "originalHeight": 4480,
+      "image": {
+        "objectPath": "mandap-stage/pillars-and-stambh-4033120a8c42.webp",
+        "sha256": "4033120a8c42eae65adfcfae5e3641ccf1378115894368ce510b2b4185c56a0c",
+        "bytes": 266012,
+        "width": 1400,
+        "height": 933
+      },
+      "thumbnail": {
+        "objectPath": "mandap-stage/pillars-and-stambh-88433ae20b02-thumb.webp",
+        "sha256": "88433ae20b02a9f25493f7c0cb812eff5672ea60c02a646d2b80a3290da79aa8",
+        "bytes": 25616,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "mandap-stage:arches",
+      "category": "mandap-stage",
+      "name": "Arches",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-5039336",
+      "downloadUrl": "https://images.pexels.com/photos/5039336/pexels-photo-5039336.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/a-wedding-arch-with-blooming-flowers-5039336/",
+      "photographer": "Leeloo The First",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "A freestanding outdoor wedding arch covered with white and blush flowers",
+      "matchType": "representative",
+      "visualReview": "Entire floral arch, both legs and curve visible. Bright high-key exposure; product details remain legible.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "licenseEvidence": "https://www.pexels.com/photo/a-wedding-arch-with-blooming-flowers-5039336/",
+      "originalBytes": 3819942,
+      "originalSha256": "388061d278619fc5f15dbab0ffabefc79522ad6ed0f2cba736d66c2a36c9d500",
+      "originalWidth": 4016,
+      "originalHeight": 6016,
+      "image": {
+        "objectPath": "mandap-stage/arches-c03428dc43fa.webp",
+        "sha256": "c03428dc43fa1557d37803a9b62812cef997984da104a6c77ddfdf1f90541e4f",
+        "bytes": 178996,
+        "width": 935,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "mandap-stage/arches-edd33503e6e1-thumb.webp",
+        "sha256": "edd33503e6e198772f42f0090d73ae7ec4ba4fb4f3b0aa8762ac1b6371ef1c27",
+        "bytes": 21862,
+        "width": 256,
+        "height": 384
+      }
+    },
+    {
+      "id": "mandap-stage:floral-backdrops",
+      "category": "mandap-stage",
+      "name": "Floral backdrops",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-32435252",
+      "downloadUrl": "https://images.pexels.com/photos/32435252/pexels-photo-32435252.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/elegant-rustic-wedding-decor-with-floral-backdrop-32435252/",
+      "photographer": "Rafaela Freire",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "A white flower wall forming a wedding backdrop behind a reception table",
+      "matchType": "representative",
+      "visualReview": "Clearly installed floral backdrop spans most of photograph. Foreground flowers are intentionally out of focus; backdrop itself is sharp.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "licenseEvidence": "https://www.pexels.com/photo/elegant-rustic-wedding-decor-with-floral-backdrop-32435252/",
+      "originalBytes": 5258466,
+      "originalSha256": "ab17890f41ebec3072b03d195a5991f4fd0d224ed02152054479d353e53783ce",
+      "originalWidth": 6224,
+      "originalHeight": 4672,
+      "image": {
+        "objectPath": "mandap-stage/floral-backdrops-1ec4549f7c80.webp",
+        "sha256": "1ec4549f7c803919dbb5d5b029ebae11c1deece2763716633ca78a4143a0ca34",
+        "bytes": 239776,
+        "width": 1400,
+        "height": 1051
+      },
+      "thumbnail": {
+        "objectPath": "mandap-stage/floral-backdrops-2c09a00d3155-thumb.webp",
+        "sha256": "2c09a00d3155cd7eba8ae5d6ba330617fd27a1bdfc141c6598d0e71dbfec7353",
+        "bytes": 28920,
+        "width": 384,
+        "height": 288
+      }
+    },
+    {
+      "id": "mandap-stage:fabric-backdrops",
+      "category": "mandap-stage",
+      "name": "Fabric backdrops",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-36230880",
+      "downloadUrl": "https://images.pexels.com/photos/36230880/pexels-photo-36230880.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/elegant-wedding-backdrop-with-floral-decor-36230880/",
+      "photographer": "Kadir Altıntaş",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "An ivory fabric event backdrop with crossed drapes and warm decorative lights",
+      "matchType": "representative",
+      "visualReview": "Full fabric backdrop installation main subject with two small seats in foreground; use contain to retain fabric arrangement.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "licenseEvidence": "https://www.pexels.com/photo/elegant-wedding-backdrop-with-floral-decor-36230880/",
+      "originalBytes": 4071914,
+      "originalSha256": "f11140009ab68462dfff5f38ea458de9f0daa28ec66029361897d9a36f79c38d",
+      "originalWidth": 4000,
+      "originalHeight": 6000,
+      "image": {
+        "objectPath": "mandap-stage/fabric-backdrops-f70709d7a16e.webp",
+        "sha256": "f70709d7a16e1381c43443f672e0b6fb3d531151c5ba35c08189c87421d91d74",
+        "bytes": 161810,
+        "width": 933,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "mandap-stage/fabric-backdrops-f66b73f428a2-thumb.webp",
+        "sha256": "f66b73f428a2defc5c1917a11127401b4146dabc22f134c7e106d6c08d0e8a0d",
+        "bytes": 21318,
+        "width": 256,
+        "height": 384
+      }
+    },
+    {
+      "id": "mandap-stage:frame-backdrops",
+      "category": "mandap-stage",
+      "name": "Frame backdrops",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1792545409769-252a09d39fd7",
+      "downloadUrl": "https://images.unsplash.com/photo-1792545409769-252a09d39fd7",
+      "sourcePage": "https://unsplash.com/photos/wedding-arch-with-white-fabric-dnpbqu89lr8",
+      "photographer": "jason hu",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "A black freestanding event backdrop frame hung with white fabric and greenery",
+      "matchType": "representative",
+      "visualReview": "Black rectangular support frame is clearly visible along top and right side. Draped wedding/event backdrop installation; frame is prominent and no people.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "licenseEvidence": "https://unsplash.com/photos/wedding-arch-with-white-fabric-dnpbqu89lr8",
+      "originalBytes": 5554485,
+      "originalSha256": "099eb15d1884e01376a2d2b40ec7c33d106a3dccf682a9de00dcfe24e3590a73",
+      "originalWidth": 3832,
+      "originalHeight": 5748,
+      "image": {
+        "objectPath": "mandap-stage/frame-backdrops-34a32666d453.webp",
+        "sha256": "34a32666d4538ce8a59aae84a8999fc7223814799eaf19baf16b78ab03a1cc38",
+        "bytes": 234918,
+        "width": 933,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "mandap-stage/frame-backdrops-cebea300698d-thumb.webp",
+        "sha256": "cebea300698d410b84007701e5fbe0594ec61c9400c4d273e369b79789fc88f7",
+        "bytes": 21378,
+        "width": 256,
+        "height": 384
+      }
+    },
+    {
+      "id": "mandap-stage:tents-canopies-and-shamiyana",
+      "category": "mandap-stage",
+      "name": "Tents, canopies, and shamiyana",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-28937190",
+      "downloadUrl": "https://images.pexels.com/photos/28937190/pexels-photo-28937190.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/elegant-white-event-tent-against-blue-sky-28937190/",
+      "photographer": "Sydney Sang",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "A large white event marquee tent with peaked roof and clear side panels",
+      "matchType": "representative",
+      "visualReview": "Tent is dominant subject. Representative event marquee, does not establish traditional shamiyana or offered inventory. No camping-tent substitution.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "licenseEvidence": "https://www.pexels.com/photo/elegant-white-event-tent-against-blue-sky-28937190/",
+      "originalBytes": 1861391,
+      "originalSha256": "73825c25995ccccecea860a90486187bcccf9a5f553cb426e65bd4099adadc36",
+      "originalWidth": 6240,
+      "originalHeight": 4160,
+      "image": {
+        "objectPath": "mandap-stage/tents-canopies-and-shamiyana-97ce5c959ca2.webp",
+        "sha256": "97ce5c959ca2481a3262997f869bb0cd7acda691daa8452e6269bff71303143f",
+        "bytes": 112884,
+        "width": 1400,
+        "height": 933
+      },
+      "thumbnail": {
+        "objectPath": "mandap-stage/tents-canopies-and-shamiyana-a6831c6d1ede-thumb.webp",
+        "sha256": "a6831c6d1ede2b040feae3791e6f55df4eb98ac37ba1102819b1a7a8e273b6d5",
+        "bytes": 11656,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "decor:torans",
+      "category": "decor",
+      "name": "Torans",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1786821443562-401f9b5055f7",
+      "downloadUrl": "https://images.unsplash.com/photo-1786821443562-401f9b5055f7",
+      "sourcePage": "https://unsplash.com/photos/blue-door-with-marigold-garland-ZNbUnGhdwag",
+      "photographer": "Phil Hearing",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "A marigold toran welcoming guests above a doorway",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 4329861,
+      "originalSha256": "d72cff9c57c8d8e81b5cd371c5a39044f913a906b6897ca32bd78c1a9f1bbc1d",
+      "originalWidth": 7564,
+      "originalHeight": 5045,
+      "image": {
+        "objectPath": "decor/torans-71900f278f12.webp",
+        "sha256": "71900f278f1293bbd108908c5900ff2bd4494785f407fbabbd1a80700693f7a5",
+        "bytes": 195894,
+        "width": 1400,
+        "height": 934
+      },
+      "thumbnail": {
+        "objectPath": "decor/torans-c219a764a812-thumb.webp",
+        "sha256": "c219a764a8128bd21cec9755ee6c16aa232f429f4f40c7dcd7dbd6b5450a4e55",
+        "bytes": 20872,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "decor:diyas",
+      "category": "decor",
+      "name": "Diyas",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1667031232580-13bee9c42e86",
+      "downloadUrl": "https://images.unsplash.com/photo-1667031232580-13bee9c42e86",
+      "sourcePage": "https://unsplash.com/photos/a-candle-burning-in-a-bowl-ZIshy6iNMJY",
+      "photographer": "Div",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "A single lit diya placed beside flowers at dusk",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 732739,
+      "originalSha256": "fec9f3868be75ec005b21241ec62d9609f3f06e11f680b9a4c7a1da3aef2081d",
+      "originalWidth": 4032,
+      "originalHeight": 2268,
+      "image": {
+        "objectPath": "decor/diyas-3b510f9e7e0e.webp",
+        "sha256": "3b510f9e7e0ec3bc81f4529171bc0327a7d47b0521001480e1e812f5ba958a5b",
+        "bytes": 47304,
+        "width": 1400,
+        "height": 788
+      },
+      "thumbnail": {
+        "objectPath": "decor/diyas-97f375c9eee7-thumb.webp",
+        "sha256": "97f375c9eee7627e11002733d2da7d7accd2d34b67f4384ba88e942912f2a816",
+        "bytes": 7566,
+        "width": 384,
+        "height": 216
+      }
+    },
+    {
+      "id": "decor:urlis",
+      "category": "decor",
+      "name": "Urlis",
+      "approved": true,
+      "provider": "WordPress Photo Directory",
+      "photoId": "wordpress-55967b08b2",
+      "downloadUrl": "https://pd.w.org/2025/02/55967b08b2c3f4ad0.93326686-rotated.jpeg",
+      "sourcePage": "https://wordpress.org/photos/photo/55967b08b2/",
+      "photographer": "Yam B Chhetri",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "alt": "A shallow copper-colored decorative urli filled with water and floating flowers",
+      "matchType": "representative",
+      "visualReview": "Clearly shallow decorative metal basin with floating flowers, photographed overhead. Real visible texture and aged rim, no AI. Source labels decorative brass bowl.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "licenseEvidence": "https://wordpress.org/photos/license/",
+      "originalBytes": 2707630,
+      "originalSha256": "e61cd1185cb449343e7108224d261cd1e7a7c1d7091e87209fba37c9875598f1",
+      "originalWidth": 3024,
+      "originalHeight": 4032,
+      "image": {
+        "objectPath": "decor/urlis-2dc945f77170.webp",
+        "sha256": "2dc945f77170b2ceb6b3a8e02f1dc00fae5dfa1c4bf7aee1e8def65ca702f6b3",
+        "bytes": 331334,
+        "width": 1050,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "decor/urlis-b8b860ddc6a9-thumb.webp",
+        "sha256": "b8b860ddc6a99ba3a0e064b729efb4351774d256c2465514a285c403fec8c9e5",
+        "bytes": 29716,
+        "width": 288,
+        "height": 384
+      }
+    },
+    {
+      "id": "decor:kalash",
+      "category": "decor",
+      "name": "Kalash",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1764304589223-30bfbfdaa9ef",
+      "downloadUrl": "https://images.unsplash.com/photo-1764304589223-30bfbfdaa9ef",
+      "sourcePage": "https://unsplash.com/photos/a-religious-offering-with-a-coconut-and-ganesha-idol-GEs6tCVt7P0",
+      "photographer": "Pranav Shirali",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "A ceremonial kalash with coconut, flowers, and traditional offerings",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 1535426,
+      "originalSha256": "3d1f57ca4d2e49df8dcf9ae4b6f2794b3af8aa6615d16ed34e4b7f6faeaadbe0",
+      "originalWidth": 2268,
+      "originalHeight": 4032,
+      "image": {
+        "objectPath": "decor/kalash-5014830e88f2.webp",
+        "sha256": "5014830e88f295e1e361fb782070640d10240fb11cf0b3aa478c21a16c9e84c8",
+        "bytes": 195400,
+        "width": 787,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "decor/kalash-a3d1d49a929d-thumb.webp",
+        "sha256": "a3d1d49a929d3d121094ad7dc768bd2b68d8c6dd0e516baefe397af0b1c48485",
+        "bytes": 25856,
+        "width": 216,
+        "height": 384
+      }
+    },
+    {
+      "id": "decor:fanoos-and-lanterns",
+      "category": "decor",
+      "name": "Fanoos and lanterns",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1700196798611-d27af6d9c566",
+      "downloadUrl": "https://images.unsplash.com/photo-1700196798611-d27af6d9c566",
+      "sourcePage": "https://unsplash.com/photos/a-bunch-of-lights-that-are-hanging-from-a-ceiling-f-n-igyuMRg",
+      "photographer": "Sonika Agarwal",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "Colorful hanging fanoos lanterns displayed for Diwali",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 2939930,
+      "originalSha256": "a698bacd47aac627cec38d278cbcd7f17d72c9eb955deb28739deb44c3923e18",
+      "originalWidth": 5400,
+      "originalHeight": 3600,
+      "image": {
+        "objectPath": "decor/fanoos-and-lanterns-4df02b555ead.webp",
+        "sha256": "4df02b555ead846b65c20abd2f5c512a43b382b14aa7ca0d6e6e3ffdd2f52b34",
+        "bytes": 168330,
+        "width": 1400,
+        "height": 933
+      },
+      "thumbnail": {
+        "objectPath": "decor/fanoos-and-lanterns-b773111edbc2-thumb.webp",
+        "sha256": "b773111edbc272e9219d0beb8e8fcb4a4dbd3e4c588e092f72ca119ce6b473cf",
+        "bytes": 18730,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "decor:marigold-garlands-and-malas",
+      "category": "decor",
+      "name": "Marigold garlands and malas",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-35124359",
+      "downloadUrl": "https://images.pexels.com/photos/35124359/pexels-photo-35124359.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/bright-orange-marigold-garlands-in-close-up-35124359/",
+      "photographer": "Sunannya Das",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Orange marigold malas arranged together in close-up",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 2332046,
+      "originalSha256": "a72ced676e5e07961ff7e0fb5f70fb0c9b056abd4b7dfe8e101563ea907dd4ce",
+      "originalWidth": 3072,
+      "originalHeight": 4096,
+      "image": {
+        "objectPath": "decor/marigold-garlands-and-malas-eb983e3da036.webp",
+        "sha256": "eb983e3da036359c17f8bf494ec588bd0995301df345017a7cdf9608c003c46d",
+        "bytes": 485158,
+        "width": 1050,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "decor/marigold-garlands-and-malas-77fa20beae11-thumb.webp",
+        "sha256": "77fa20beae1136796b5be9a772cf51d55ac49cb17b9488fbbbdb135ba662a6b0",
+        "bytes": 48094,
+        "width": 288,
+        "height": 384
+      }
+    },
+    {
+      "id": "decor:rose-garlands",
+      "category": "decor",
+      "name": "Rose garlands",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-34071580",
+      "downloadUrl": "https://images.pexels.com/photos/34071580/pexels-photo-34071580.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/vibrant-floral-garland-display-with-roses-and-chrysanthemums-34071580/",
+      "photographer": "Nomadic Journey (VikramSingh Valera)",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Traditional floral garlands with red roses, jasmine, and other flowers",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 2745287,
+      "originalSha256": "c2d6b1aa58cff00cb7a561dd4c5e79976010d69d4b8fece13e8d069792b2964f",
+      "originalWidth": 5568,
+      "originalHeight": 3712,
+      "image": {
+        "objectPath": "decor/rose-garlands-653aa42f24d6.webp",
+        "sha256": "653aa42f24d675f4360cac971dabc1aba142064ef1a8f02a4a62228c54d598c8",
+        "bytes": 157340,
+        "width": 1400,
+        "height": 933
+      },
+      "thumbnail": {
+        "objectPath": "decor/rose-garlands-23ccf8f605af-thumb.webp",
+        "sha256": "23ccf8f605afbcaa57fc356e45d675c9896d89c822320856d95723b6a5d69d12",
+        "bytes": 19054,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "serveware:thaal-and-platters",
+      "category": "serveware",
+      "name": "Thaal and platters",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1711153419402-336ee48f2138",
+      "downloadUrl": "https://images.unsplash.com/photo-1711153419402-336ee48f2138",
+      "sourcePage": "https://unsplash.com/photos/a-metal-tray-topped-with-different-types-of-food-bKmSUcAGrvI",
+      "photographer": "fuseviews",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "A traditional Indian metal thaal arranged with a shared meal",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 3661545,
+      "originalSha256": "7ec9f87037cd6f483e765b630a24ae3b134c42b74353d595d2ba8d91dad513da",
+      "originalWidth": 5590,
+      "originalHeight": 3802,
+      "image": {
+        "objectPath": "serveware/thaal-and-platters-8ea2b4e901a3.webp",
+        "sha256": "8ea2b4e901a3d440fcc14d652f84177c45b7238deddac9543a243dc4de5c58be",
+        "bytes": 164054,
+        "width": 1400,
+        "height": 952
+      },
+      "thumbnail": {
+        "objectPath": "serveware/thaal-and-platters-7cd1096cd7dc-thumb.webp",
+        "sha256": "7cd1096cd7dcaafa1d0c863936a4d11090b2142d54eaa67cffaa6f0f0d8888b2",
+        "bytes": 16848,
+        "width": 384,
+        "height": 261
+      }
+    },
+    {
+      "id": "serveware:handi",
+      "category": "serveware",
+      "name": "Handi",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-37173431",
+      "downloadUrl": "https://images.pexels.com/photos/37173431/pexels-photo-37173431.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/traditional-indian-dish-cooking-outdoors-37173431/",
+      "photographer": "Narasimhan AVPL",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "An Indian dish cooking in a brass pot",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 2930802,
+      "originalSha256": "1f37f5bd4984f474da3ac29cbc214f8e013b09afd945ae0b15d3ec7702710ea9",
+      "originalWidth": 4000,
+      "originalHeight": 6000,
+      "image": {
+        "objectPath": "serveware/handi-3a22c21b9853.webp",
+        "sha256": "3a22c21b98539eb808f73f97fa0fb020d90ff2b5af66f2ac8ac7bffd6780160e",
+        "bytes": 225800,
+        "width": 933,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "serveware/handi-d53f2cdc7c64-thumb.webp",
+        "sha256": "d53f2cdc7c644d8e731dff7a5902236fa90ee168413366441d25fef58d5956c1",
+        "bytes": 22220,
+        "width": 256,
+        "height": 384
+      }
+    },
+    {
+      "id": "serveware:chafing-dishes",
+      "category": "serveware",
+      "name": "Chafing dishes",
+      "approved": true,
+      "provider": "Unsplash",
+      "photoId": "photo-1768701544932-03984e192380",
+      "downloadUrl": "https://images.unsplash.com/photo-1768701544932-03984e192380",
+      "sourcePage": "https://unsplash.com/photos/a-chafing-dish-filled-with-cooked-vegetables-gfo8ESLIaCA",
+      "photographer": "You Le",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "alt": "A stainless steel chafing dish filled with food",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 3481198,
+      "originalSha256": "68826dbb4379eba9802fdbc6d0e06ae8b7f17b580f1cb8b22238726743775600",
+      "originalWidth": 6000,
+      "originalHeight": 4000,
+      "image": {
+        "objectPath": "serveware/chafing-dishes-43f0a438c9e4.webp",
+        "sha256": "43f0a438c9e49e02987b3171195aef5611f66cf07c357049f6e8383d52fe9a1c",
+        "bytes": 111060,
+        "width": 1400,
+        "height": 933
+      },
+      "thumbnail": {
+        "objectPath": "serveware/chafing-dishes-b6c9ff6f742e-thumb.webp",
+        "sha256": "b6c9ff6f742e1f8db2567dabaad906abf8ecd405ac5fec0a15552a7a761221a2",
+        "bytes": 18390,
+        "width": 384,
+        "height": 256
+      }
+    },
+    {
+      "id": "serveware:plates-and-glasses",
+      "category": "serveware",
+      "name": "Plates and glasses",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-5829931",
+      "downloadUrl": "https://images.pexels.com/photos/5829931/pexels-photo-5829931.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/plates-with-dishes-and-drinking-glasses-on-a-table-5829931/",
+      "photographer": "Mister Mister",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Dinner plates and drinking glasses arranged on a dining table",
+      "matchType": "representative",
+      "visualReview": "Reviewed original and 900px local variant. The named product type is identifiable; preserve full framing. Stock photograph represents the type, not verified business inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": null,
+      "originalBytes": 2463825,
+      "originalSha256": "60cd75353791a828554a04bcd2fd323fae166ca5c8e82007afb51fca9a040151",
+      "originalWidth": 4000,
+      "originalHeight": 6000,
+      "image": {
+        "objectPath": "serveware/plates-and-glasses-3a3ab601d84c.webp",
+        "sha256": "3a3ab601d84c53af68684029e5d47332214481b90075c658d55396d9ece1dd2f",
+        "bytes": 92242,
+        "width": 933,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "serveware/plates-and-glasses-0a120bb62e6d-thumb.webp",
+        "sha256": "0a120bb62e6dd5813a286daafcb1e5e8b576d1e80fdc1c18207452fbb691ea58",
+        "bytes": 12848,
+        "width": 256,
+        "height": 384
+      }
+    },
+    {
+      "id": "serveware:katori",
+      "category": "serveware",
+      "name": "Katori",
+      "approved": true,
+      "provider": "Pexels",
+      "photoId": "pexels-9345658",
+      "downloadUrl": "https://images.pexels.com/photos/9345658/pexels-photo-9345658.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/person-holding-stainless-steel-bowl-with-brown-beans-9345658/",
+      "photographer": "Anna Pou",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Small stainless steel katori bowls serving an Indian meal on a round tray",
+      "matchType": "representative",
+      "visualReview": "Three metal katori bowls clearly visible close-up; genuine Indian serving context. Some filled bowls in foreground have intentional depth of field; bowl shape legible. Representative filled serving vessels, not exact inventory.",
+      "reviewedAt": "2026-11-12",
+      "crop": [
+        0,
+        0.33,
+        1,
+        1
+      ],
+      "licenseEvidence": "https://www.pexels.com/photo/person-holding-stainless-steel-bowl-with-brown-beans-9345658/",
+      "originalBytes": 4685821,
+      "originalSha256": "15fe1aaab73519003c9b89d670eff78080360aae6792b9f6780c3ea69b7624e9",
+      "originalWidth": 4000,
+      "originalHeight": 6000,
+      "image": {
+        "objectPath": "serveware/katori-2f2effb2db82.webp",
+        "sha256": "2f2effb2db825b4eb68cfb03904d12bd73d50209597df69772f0bd208fa783b7",
+        "bytes": 208336,
+        "width": 1393,
+        "height": 1400
+      },
+      "thumbnail": {
+        "objectPath": "serveware/katori-5a1928ccb5c0-thumb.webp",
+        "sha256": "5a1928ccb5c080f163bd99b00f5f3e8cfbae5ac4f31ee1f38eb3ea7db1f798e7",
+        "bytes": 24152,
+        "width": 382,
+        "height": 384
+      }
+    }
+  ],
+  "frontendHashes": {
+    "src/App.jsx": "774a60891dc0eb84082994f5c30754cf2b4aebd10553ddfe1663b8632db71b25",
+    "src/components/CatalogPages.jsx": "e6c78b426e26f2449858137e5f3e643e8db163de0dae0c5c210b1029406a2b8c",
+    "src/components/Celebrations.jsx": "a1fe433c5f86b12a125c87d3afb3779bdd5dc7c8cbba6a0231e5315fb172e677",
+    "src/components/Enquiry.jsx": "427b76e1e5f7b3ca807cab0b3801aa9036247544a5cca01537934d23acd930ea",
+    "src/components/GalleryPage.jsx": "0a44c9846b663f035bcd8a84d9043b4f37b5987fd11c0ff77cefa12c263cf49c",
+    "src/components/Hero.jsx": "44774298d876bc44174a716dbe2b749c23b66e4f830a631208a840fd8020f185",
+    "src/components/InfoPages.jsx": "47f2849a089b3dfc5bc48b995cdfbbd71f2e118d71b4efc51f710dbcdfeb3b70",
+    "src/components/Navigation.jsx": "f077e1b19d639da8a4f6cf2ebe763632519dbf14b9b40eec40c7c9c6feacd736",
+    "src/components/Showcases.jsx": "ba6725193d48e50d72272c7ebbd4b081f23c9752b1461d9b8c71156e0106ea0e",
+    "src/components/StorySections.jsx": "888112ae92cc61d8d4254dafab9c5597478913e852b96ad450bffc4ac5d3607a",
+    "src/content.js": "45054fe6dce8eb83806b5e91099fa36fce6db7b04f1b470c41f3f35e69fc59de",
+    "src/imageManifest.js": "1c05286d65cf46c517331ef67e3977168414864923c69e4cbdf6944536a3e048",
+    "src/main.jsx": "7532da7962214d9387b1899e911275c6c63445c67e75eced30bbc286df0f45c9",
+    "src/pageContent.js": "978126e1c8cb3d926e7e5ed2fd5575ba476d6f9b5e3806da7090a7dcd8de4ff7",
+    "src/rental/Cart.jsx": "2d16be423c0aa8e5d7554491bf19f6e4ec948ed19f9ea1ac9d63c1bfdc5c5e44",
+    "src/rental/Catalogue.jsx": "0e613d41ff37884b027526a1b8db2981ed2d6a34f5c7042c367583b7acba6326",
+    "src/rental/Pages.jsx": "bc72eaf7aec4b7668e8ad6f21365aad3a738077c08bca095f15d2da238ffc16e",
+    "src/rental/ProductImage.jsx": "ff9600a74784d83dae7e5b648c8ef739188afbf54a762aea549730b1fd46f6b4",
+    "src/rental/productIdentity.js": "6a149952f1112113321e7469ef9e08181a6f9963cdbde6d19c08accfdc202e3e",
+    "src/rental/productImageManifest.js": "c1f69a8b98060b49c74012f8c27305568006c533b02e07754e671a41d83d9b2e",
+    "src/seo.js": "2be1e0cdecece98285bff9bd3ee88dc5063d6bd2ba60a979d59643dc81cf5678",
+    "src/styles.css": "c2f9adf9ba598711a5da6cf723acf283a512dbf7f851bdde153e4b40d97e4c51",
+    "src/supabase.js": "a153c0450ee7ecd84ec47e0189dfd642033dadca4c39e08f6d72bd2754cac611"
+  }
+}

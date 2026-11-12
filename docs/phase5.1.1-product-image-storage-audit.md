@@ -1,16 +1,28 @@
 # Phase 5.1.1 — Product image Storage audit
 
-**Status: implemented with 3 unresolved sourcing blockers; acceptance is NOT complete.**
-**Coverage: 39/42 (92.9%).** All 42 records and all six rendered categories were audited. Only 39 products have approved photography; missing photographs are never counted as passing images.
+**Status: implemented with 2 unresolved sourcing blockers; acceptance is NOT complete.**
+**Coverage: 40/42 (95.2%).** All 42 records and all six rendered categories were audited. Only 40 products have approved photography; missing photographs are never counted as passing images.
 
 The implementation is live through the existing GitHub/Vercel project. No Phase 5.2, admin application, authentication change, new customer/request workflow, brand redesign, S3 or CloudFront was introduced.
+
+## Final closure attempt — 2026-11-13
+
+Started from 39 approved assignments and 78 Storage objects. Final verified coverage is **40/42 (95.2%)**. All 42 IDs, all original 39 approved assignments, all original 78 object metadata records and bytes, all non-image product data, and all frontend source files were preserved.
+
+One new representative photograph was approved for Low chowki tables: [Mustang Joe, Phool Mahal of Mehrangarh Fort](https://www.flickr.com/photos/mustangjoe/54350044704/), explicitly dedicated under CC0. The genuine 5669×3833 original was individually cropped to 1300×866, retaining the complete low wooden table and visible legs; the image was not upscaled. Primary license evidence is retained in [low-chowki-license-evidence.json](phase5.1.1-evidence/final-closure/low-chowki-license-evidence.json).
+
+Migration 20261113000000_product_storage_images.sql updates only image_url, thumbnail_url, image_alt and image_match_type for tables:low-chowki-tables. The uploader was invoked with --only=tables:low-chowki-tables: it uploaded only the two new objects and performed read-only hash verification for the other 78. The existing bucket was reused. No request/customer write was made during this closure attempt.
+
+Live customer/request counts remained unchanged; reserved QA customers remained zero. The protected regression asserted **0 submission network requests**. This closure run is separate from the historical, already-cleaned QA incident documented below. See [preservation-verification.json](phase5.1.1-evidence/final-closure/preservation-verification.json).
+
+Chowki seating and Brocade runners remain blocked. Commercial-license-filtered furniture photographs were reviewed at native resolution; accurate retailer furniture photos lacked grants and reusable scenes were dark, clipped or too small. Brocade runner follow-ups found no image satisfying both documented brocade construction and commercial image rights. The new detailed approval/rejection record is [research.json](phase5.1.1-evidence/final-closure/research.json). These two records retain null image fields, rather than inheriting unrelated images.
 
 ## Coverage and initial findings
 
 | Category | Products | Before | Approved now | Unresolved |
 | --- | ---: | ---: | ---: | --- |
 | Seating | 8 | 4 | 7 | Chowki |
-| Tables | 5 | 1 | 4 | Low chowki tables |
+| Tables | 5 | 1 | 5 | None |
 | Linens | 8 | 0 | 7 | Brocade runners |
 | Mandap & stage | 9 | 1 | 9 | None |
 | Decor | 7 | 6 | 7 | None |
@@ -73,7 +85,7 @@ Dimensions below describe the local main WebP referenced before the change; prod
 | tables:banquet-tables-6ft-and-8ft | Banquet tables, 6ft and 8ft / tables | NULL | — | No photograph; source required. Approved final assignment below. |
 | tables:buffet-tables | Buffet tables / tables | NULL | — | No photograph; source required. Approved final assignment below. |
 | tables:cocktail-and-high-tables | Cocktail and high tables / tables | NULL | — | No photograph; source required. Approved final assignment below. |
-| tables:low-chowki-tables | Low chowki tables / tables | NULL | — | No photograph; source required. Still blocked. |
+| tables:low-chowki-tables | Low chowki tables / tables | NULL | — | No photograph; source required. Approved final assignment below. |
 
 ## Final assignments, source attribution and optimization
 
@@ -81,7 +93,7 @@ All approved photographs are classified **representative**. They genuinely depic
 
 The silk runner is an explicitly disclosed historic Japanese silk/metallic-thread runner from Cleveland Museum of Art accession 1939.145. Its museum record verifies the material; age-related fading is visible. It is not presented as a photograph of modern rental inventory. The bolster uses a reviewed native 1000×750 crop of a real traditional cylindrical cushion; it is not upscaled. It has moderate source detail rather than studio-level textile detail.
 
-Downloaded originals total **119,475,168 bytes**. Main WebP files total **6,881,876 bytes** (94.2% smaller); thumbnails total **773,186 bytes**. Combined optimized storage is **7,655,062 bytes**. Sizes are measured download/file lengths, not estimated original sizes.
+Downloaded originals total **139,165,676 bytes**. Main WebP files total **6,981,834 bytes** (95.0% smaller); thumbnails total **789,956 bytes**. Combined optimized storage is **7,771,790 bytes**. Sizes are measured download/file lengths, not estimated original sizes.
 
 Main variants preserve aspect ratio at a maximum edge of 1400px, thumbnails at 384px, with no upscaling. Crops are individually reviewed normalized coordinates in the source manifest. Cards and request rows use object-fit: contain and existing reserved boxes. Unused originals remain outside the repository; previously existing assets were retained.
 
@@ -145,7 +157,7 @@ Public attribution, original links, license links and adaptation notices are pro
 
 **Chowki** — `seating:chowki`
 
-**BLOCKED:** Bajot 01/02 are mislabelled hookah detail photographs. Odisha museum table is woven rope, not a solid low wooden chowki. Continuing museum sources. Research checked Pexels/Unsplash, Wikimedia chowki/bajot/Indian stool/low table categories, CEPT/SADACC furniture photographs, Met API20558, LACMA furniture collection. Accurate retailer product image Flickr19313052978 is All Rights Reserved. Museum open collection options were unrelated cabinets/Western-form stools; temple seats poor framing/condition and low native pixel coverage; refusing inaccurate substitution. Database image_url, thumbnail_url, image_alt and image_match_type remain NULL. The UI displays “Photo unavailable”.
+**BLOCKED:** Accurate isolated retailer/CEPT furniture photographs lack a commercial reuse grant. Newly reviewed commercially licensed scenes do not provide a distinct, sharp, complete high-resolution seating chowki photograph. The approved low-table photograph is not reused or relabelled as seating. Database image_url, thumbnail_url, image_alt and image_match_type remain NULL. The UI displays “Photo unavailable”.
 
 **Jhoola** — `seating:jhoola`
 
@@ -196,7 +208,12 @@ Public attribution, original links, license links and adaptation notices are pro
 
 **Low chowki tables** — `tables:low-chowki-tables`
 
-**BLOCKED:** No approved distinct photograph yet; traditional furniture researchers' excellent chowki photographs lack reusable license. Research checked Pexels/Unsplash, Wikimedia chowki/bajot/Indian stool/low table categories, CEPT/SADACC furniture photographs, Met API20558, LACMA furniture collection. Accurate retailer product image Flickr19313052978 is All Rights Reserved. Museum open collection options were unrelated cabinets/Western-form stools; temple seats poor framing/condition and low native pixel coverage; refusing inaccurate substitution. Database image_url, thumbnail_url, image_alt and image_match_type remain NULL. The UI displays “Photo unavailable”.
+- Source: [Flickr / Mustang Joe](https://www.flickr.com/photos/mustangjoe/54350044704/); [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). Match: `representative`.
+- Visual review: Entire square wooden low platform table visible including top, front carved trim, and all visible legs; dominant foreground product (~730 native pixels wide) within1300x866 crop. Clear enough for catalogue cards. Background cushions establish floor-seating scale. Actual rental inventory not asserted.
+- Original: 5669×3833, **19,690,508 B**. Main: 1300×866, **99,958 B**. Thumbnail: 384×256, **16,770 B**.
+- Storage objects: `tables/low-chowki-tables-5998f5e56689.webp`; `tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp`.
+- Database image_url: [main WebP](https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-5998f5e56689.webp); thumbnail_url: [thumbnail WebP](https://xuiohhowgpfesakxikvo.supabase.co/storage/v1/object/public/rental-product-images/tables/low-chowki-tables-ec6a1dc56a7f-thumb.webp).
+- image_alt: “Representative ornate low wooden chowki table with carved trim and short legs in a traditional Indian palace interior”. Upload/public GET verification: both **200**, image/webp, matching SHA-256.
 
 ### Linens
 
@@ -220,7 +237,7 @@ Public attribution, original links, license links and adaptation notices are pro
 
 **Brocade runners** — `linens:brocade-runners`
 
-**BLOCKED:** Searches across Pexels, Unsplash, Pixabay, Wikimedia Commons, museum open collections and commercial product sources did not verify a suitable reuse-cleared brocade table runner photograph. Commercial exact product images have no reuse permission; generic shiny runners do not establish brocade construction. Museum brocade textiles without runner identity are not suitable substitutes. Database image_url, thumbnail_url, image_alt and image_match_type remain NULL. The UI displays “Photo unavailable”.
+**BLOCKED:** No researched photograph simultaneously establishes an actual brocade table runner, suitable clear product framing/resolution, and affirmative commercial reuse rights. Public-domain actual runner photos lack documented brocade construction and/or usable photography; documented contemporary brocade runner photos do not grant commercial reuse. No image inferred from appearance or unrelated textile assigned. Database image_url, thumbnail_url, image_alt and image_match_type remain NULL. The UI displays “Photo unavailable”.
 
 **Napkins** — `linens:napkins`
 
@@ -466,21 +483,21 @@ Public attribution, original links, license links and adaptation notices are pro
 
 The existing project xuiohhowgpfesakxikvo was inspected. Only the unrelated public EventsBySomia bucket existed initially. The uploader created rental-product-images once as PUBLIC, with image/webp allowed and a 2MiB per-object limit, and reused it on the next run. It did not alter the other bucket or create public upload policies. Files use content-hash-versioned descriptive paths and one-year cache control. Supabase Storage serves the actual bytes through its public delivery infrastructure.
 
-All **78 uploaded objects** were downloaded publicly and hash-verified. See [storage-verification.json](phase5.1.1-evidence/storage-verification.json), including MIME, bytes, paths, URLs, cache-control and SHA-256. There are zero duplicate original-photograph hashes, optimized image hashes or product image assignments.
+All **80 uploaded objects** were downloaded publicly and hash-verified. See [storage-verification.json](phase5.1.1-evidence/storage-verification.json), including MIME, bytes, paths, URLs, cache-control and SHA-256. There are zero duplicate original-photograph hashes, optimized image hashes or product image assignments.
 
 The uploader uses an authenticated Supabase CLI to obtain a server key into process memory, or an explicit SUPABASE_SERVICE_ROLE_KEY environment variable. It never writes keys to disk, logs values, or exposes them in VITE_ variables. Frontend code uses only the existing public client and RLS-protected SELECT access.
 
 Migration 20261112000002_product_storage_images.sql updates only image_url, thumbnail_url, image_alt and image_match_type on existing product rows. It checks the expected 42-record catalogue and each approved ID/name/category, rejects duplicate assignments, and skips unchanged updates. Product IDs, names, slugs, categories, descriptions, active flags, sort order and created_at were compared to the before snapshot and preserved. updated_at naturally changes through the existing trigger. No table was recreated and no application schema change was made.
 
-Direct supabase db push --dry-run could not connect because this network lacks the project database IPv6 route. The exact controlled SQL was applied through supabase db query using the authenticated management API; the migration history receipt was inserted in the same transaction. Remote migration list confirms all three migration versions are applied. The fallback is reproducible via scripts/apply-product-image-update.mjs; no database password is embedded.
+Direct supabase db push --dry-run could not connect because this network lacks the project database IPv6 route. Controlled image SQL was applied through supabase db query using the authenticated management API; migration history receipts were inserted in the same transactions. The fallback is reproducible via scripts/apply-product-image-update.mjs; no database password is embedded.
 
 CatalogueProvider fetches categories and products once per page using a shared Promise, including StrictMode remounts. Category cards use database product records and URLs. ProductImage resolves the same stable product ID in cards, cart, review and confirmation; persisted legacy cart image paths cannot override the current record. Small views select thumbnail_url with image_url fallback. Image failures show explicit unavailable text, and catalogue network failures offer retry. Existing IDs and the somia-rental-cart-v1 storage contract remain unchanged. There are no image-path literals from the historical manifest in the primary product rendering flow.
 
 ## Responsive and functional verification
 
-Local Chromium rendered **72 category/viewport cases**: all six categories at 320, 360, 375, 390, 430, 768, 820, 1024, 1280, 1366, 1440 and 1920px. At every width each card was scrolled into view, its actual image decoded and its rendered box inspected. 468 approved-image render/decode checks passed. All 39 approved photographs loaded in every width; the three documented missing photos retained explicit unavailable states.
+Local Chromium rendered **72 category/viewport cases**: all six categories at 320, 360, 375, 390, 430, 768, 820, 1024, 1280, 1366, 1440 and 1920px. At every width each card was scrolled into view, its actual image decoded and its rendered box inspected. 480 approved-image render/decode checks passed. All 40 approved photographs loaded in every width; the 2 documented missing photos retained explicit unavailable states.
 
-Mobile/tablet profiles use touch/mobile emulation and DPR 2; desktop uses DPR 1. These are **browser-emulated layouts, not physical-device tests**. No horizontal page/card overflow, stretched images, blank failure containers, broken category heroes or runtime exceptions were observed. Existing 230px image boxes preserve alignment; object-fit is contain throughout. Lazy loading was observed before scrolling and every card was decoded after scrolling. Maximum measured local whole-page CLS was **0.0065**, including editorial heroes and fonts. Each page made exactly one products GET and one categories GET; CORS OPTIONS requests are not counted as database reads.
+Mobile/tablet profiles use touch/mobile emulation and DPR 2; desktop uses DPR 1. These are **browser-emulated layouts, not physical-device tests**. No horizontal page/card overflow, stretched images, blank failure containers, broken category heroes or runtime exceptions were observed. Existing 230px image boxes preserve alignment; object-fit is contain throughout. Lazy loading was observed before scrolling and every card was decoded after scrolling. Maximum measured local whole-page CLS was **0.0060**, including editorial heroes and fonts. Each page made exactly one products GET and one categories GET; CORS OPTIONS requests are not counted as database reads.
 
 All 18 required category screenshots are in [phase5.1.1-evidence/local/](phase5.1.1-evidence/local/): <category>-390.webp, <category>-820.webp and <category>-1440.webp. Full measured results are [local/responsive-results.json](phase5.1.1-evidence/local/responsive-results.json).
 
@@ -488,7 +505,7 @@ Production rendered verification: **72 cases** across the same six categories; w
 
 Unrelated production imagery: all 22 homepage images and all 49 gallery images decoded successfully at both 390px and 1440px, with no browser runtime errors. See [production/editorial-results.json](phase5.1.1-evidence/production/editorial-results.json).
 
-Functional regression: **PASS**. All 42 items were inspected in cart, request review and confirmation; each surface decoded 39 current database thumbnails and showed the same three unavailable states. Legacy localStorage image paths, quantity +/- controls, required-field validation, request payload shape, confirmation session storage/cart clearing, CDN failure fallback and catalogue error/retry passed. The final run uses a page-level fetch mock plus a blocked live endpoint and asserts **0 submission network requests**. See [functional-regression.json](phase5.1.1-evidence/functional-regression.json).
+Functional regression: **PASS**. All 42 items were inspected in cart, request review and confirmation; each surface decoded 40 current database thumbnails and showed 2 unavailable states. Legacy localStorage image paths, quantity +/- controls, required-field validation, request payload shape, confirmation session storage/cart clearing, CDN failure fallback and catalogue error/retry passed. The final run uses a page-level fetch mock plus a blocked live endpoint and asserts **0 submission network requests**. See [functional-regression.json](phase5.1.1-evidence/functional-regression.json).
 
 Delayed-response regression: **12 cases passed** across all six categories at 390px and 1440px. The products GET was paused, loading grid dimensions and related-section positions measured, then the response released. Loading and loaded geometry matched exactly, removing the observed catalogue-insertion shift.
 
@@ -499,10 +516,10 @@ QA incident and correction: an early driver-side mock failure allowed one live Q
 Checks run:
 
 - npm run audit:images — PASS for editorial registry, gallery and placements.
-- npm run audit:rental-images — asset integrity PASS for 78 current optimized objects and 80 retained legacy variants; explicitly reports incomplete 39/42 coverage.
+- npm run audit:rental-images — asset integrity PASS for 80 current optimized objects and 80 retained legacy variants; explicitly reports 40/42 coverage.
 - npm run db:verify:phase5.1 — PASS for six categories, 42 products and all other Phase 5.1 content.
-- npm run db:verify:product-images -- --allow-unmapped — PASS for all approved CDN bytes, URLs, image metadata and preserved fields, explicitly reports three blockers.
-- npm run db:verify:product-images without the audit-only flag returns nonzero while three photographs remain missing. This is intentional; the full acceptance gate does not pass.
+- npm run db:verify:product-images -- --allow-unmapped — PASS for all approved CDN bytes, URLs, image metadata and preserved fields, explicitly reports 2 blockers.
+- npm run db:verify:product-images without the audit-only flag returns nonzero while 2 photographs remain missing. This is intentional; the full acceptance gate does not pass.
 - npm run build — PASS. Existing bundle-size advisory remains; main bundle is approximately 682.70kB minified.
 - git diff --check — PASS.
 - No pre-existing npm test suite is configured. The new rendered QA scripts provide the requested relevant regression checks.
@@ -512,15 +529,16 @@ Checks run:
 1. Review scripts/product-storage-sources.json; change only deliberately approved source records. Keep the exact 42 product IDs. A false approval must never be used to suppress a blocker.
 2. Run npm run images:prepare-storage. It verifies cached optimized bytes, downloads new originals, preserves aspect ratio, applies only reviewed crops, and retains prior files. Originals are temporary, not database data.
 3. Run npm run images:upload-storage with the already authenticated Supabase CLI or a local/server-only key. All objects must verify before a migration is generated. Run node scripts/generate-product-credits.mjs.
-4. For a later image change, pass --migration-version=<new 14-digit timestamp> to the uploader and apply helper. Changed image sets cannot overwrite an existing image migration. Preserve image-only identity checks and CDN-before-database ordering. The current generated migration and helper reproduce this phase on a fresh Phase 5.1 baseline; do not replay historical seeds against later admin-edited catalogue data.
+4. For a later image change, pass --only=<product-id> and --migration-version=<new 14-digit timestamp> to the uploader; pass the same migration version to the apply helper. Scoped uploads require the existing bucket, upload only the selected products, verify all other objects read-only, and generate only the selected image updates. Changed image sets cannot overwrite an existing image migration. Preserve image-only identity checks and CDN-before-database ordering; do not replay historical seeds against later admin-edited catalogue data.
 5. Verify database images, both existing audits and the build. Start local preview at port 4173 and isolated Chrome CDP at port 9333, then run npm run qa:product-images and npm run qa:rental-regression. QA_BASE_URL can target production for read-only category checks.
+
+6. For this closure, run node scripts/verify-product-image-closure.mjs --allow-unmapped to verify preservation against the captured baseline. Omitting the flag additionally enforces the 42/42 coverage gate. The flag acknowledges blockers; it does not mark missing photographs as passing.
 
 ## Remaining blockers and acceptance
 
-- **Chowki** (`seating:chowki`): Bajot 01/02 are mislabelled hookah detail photographs. Odisha museum table is woven rope, not a solid low wooden chowki. Continuing museum sources. Research checked Pexels/Unsplash, Wikimedia chowki/bajot/Indian stool/low table categories, CEPT/SADACC furniture photographs, Met API20558, LACMA furniture collection. Accurate retailer product image Flickr19313052978 is All Rights Reserved. Museum open collection options were unrelated cabinets/Western-form stools; temple seats poor framing/condition and low native pixel coverage; refusing inaccurate substitution.
-- **Low chowki tables** (`tables:low-chowki-tables`): No approved distinct photograph yet; traditional furniture researchers' excellent chowki photographs lack reusable license. Research checked Pexels/Unsplash, Wikimedia chowki/bajot/Indian stool/low table categories, CEPT/SADACC furniture photographs, Met API20558, LACMA furniture collection. Accurate retailer product image Flickr19313052978 is All Rights Reserved. Museum open collection options were unrelated cabinets/Western-form stools; temple seats poor framing/condition and low native pixel coverage; refusing inaccurate substitution.
-- **Brocade runners** (`linens:brocade-runners`): Searches across Pexels, Unsplash, Pixabay, Wikimedia Commons, museum open collections and commercial product sources did not verify a suitable reuse-cleared brocade table runner photograph. Commercial exact product images have no reuse permission; generic shiny runners do not establish brocade construction. Museum brocade textiles without runner identity are not suitable substitutes.
+- **Chowki** (`seating:chowki`): Accurate isolated retailer/CEPT furniture photographs lack a commercial reuse grant. Newly reviewed commercially licensed scenes do not provide a distinct, sharp, complete high-resolution seating chowki photograph. The approved low-table photograph is not reused or relabelled as seating.
+- **Brocade runners** (`linens:brocade-runners`): No researched photograph simultaneously establishes an actual brocade table runner, suitable clear product framing/resolution, and affirmative commercial reuse rights. Public-domain actual runner photos lack documented brocade construction and/or usable photography; documented contemporary brocade runner photos do not grant commercial reuse. No image inferred from appearance or unrelated textile assigned.
 
 The accurate chowki retailer photograph found at https://www.flickr.com/photos/indian-wedding-crafts/19313052978/ has embedded license 0 (All Rights Reserved); it was rejected. Brocade research covered Pexels/Unsplash and museum/open collections; reusable covers, samples or undocumented textiles were rejected rather than relabelled as runners. Detailed research and rejection notes are in [source-research.json](phase5.1.1-evidence/source-research.json).
 
-**Required to reach 42/42:** owner-provided photographs with permission, written reproduction permission from a suitable photographer/vendor, or newly verified licensed photographs for the three specific products. These have not been fabricated. Final approved coverage is **39/42 (92.9%)**, with **78 verified Storage objects**. Phase 5.2 remains out of scope and should not be treated as cleared by this partial result.
+**Required to reach 42/42:** owner-provided photographs with permission, written reproduction permission from a suitable photographer/vendor, or newly verified licensed photographs for the 2 remaining products. These have not been fabricated. Final approved coverage is **40/42 (95.2%)**, with **80 verified Storage objects**. Phase 5.2 remains out of scope and should not be treated as cleared by this partial result.

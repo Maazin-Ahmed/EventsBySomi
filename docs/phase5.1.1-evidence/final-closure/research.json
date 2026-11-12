@@ -1,0 +1,279 @@
+{
+  "date": "2026-11-13",
+  "chowki": {
+    "approved": [
+      {
+        "product": "Low chowki tables",
+        "matchType": "representative",
+        "sourcePage": "https://www.flickr.com/photos/mustangjoe/54350044704/",
+        "sourceImage": "https://live.staticflickr.com/65535/54350044704_3cd9cc6117_o.jpg",
+        "photographer": "Mustang Joe",
+        "title": "Phool Mahal of Mehrangarh Fort",
+        "license": "CC0 1.0 Universal",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licenseEvidenceFile": "photo-54350044704.json",
+        "licenseEvidence": "Flickr photo-model license9 = Public Domain Dedication (CC0); license model in captured photo metadata.",
+        "originalPath": "phool-54350044704-original.jpg",
+        "originalDimensions": [
+          5669,
+          3833
+        ],
+        "originalBytes": 19690508,
+        "previewPath": "phool-54350044704-low-table-crop.jpg",
+        "crop": [
+          3500,
+          2967,
+          4800,
+          3833
+        ],
+        "cropDimensions": [
+          1300,
+          866
+        ],
+        "imageAlt": "Representative ornate low wooden chowki table with carved trim and short legs in a traditional Indian palace interior",
+        "visualReview": "Entire square wooden low platform table visible including top, front carved trim, and all visible legs; dominant foreground product (~730 native pixels wide) within1300x866 crop. Clear enough for catalogue cards. Background cushions establish floor-seating scale. Actual rental inventory not asserted."
+      }
+    ],
+    "coverage": {
+      "requestedProducts": 2,
+      "newApprovedImages": 1,
+      "existingApprovedAssignmentsChanged": 0
+    },
+    "products": [
+      {
+        "product": "Chowki",
+        "status": "blocked",
+        "reason": "No distinct accurate, clear high-resolution real photograph with verified commercial reuse grant was found."
+      },
+      {
+        "product": "Low chowki tables",
+        "status": "approved",
+        "reason": "Distinct high-resolution CC0 real photograph approved with product-focused crop."
+      }
+    ],
+    "research": {
+      "flickrLicenseFilteredChokhiDhaniAndChokiPhotographsVisuallyReviewed": 220,
+      "commercialFlickrLicenseIds": [
+        4,
+        5,
+        9,
+        10,
+        11,
+        12
+      ],
+      "searchTerms": [
+        "chowki",
+        "chauki",
+        "chouki",
+        "chowkee",
+        "bajot",
+        "bajoth",
+        "choki",
+        "pooja stool",
+        "puja stool",
+        "pooja furniture",
+        "Indian low table",
+        "Indian stool",
+        "Sankheda stool",
+        "puja table",
+        "piri stool",
+        "pidhi",
+        "paatla",
+        "peetha stool",
+        "Indian wooden seat",
+        "low dining Rajasthan",
+        "Chowki furniture"
+      ],
+      "contactSheets": [
+        "contact-0.jpg",
+        "contact-1.jpg",
+        "contact-2.jpg",
+        "contact-3.jpg",
+        "contact-4.jpg"
+      ],
+      "additionalPhoolMahalRoomPhotosVisuallyReviewed": 13
+    },
+    "rejectedCandidates": [
+      {
+        "sourcePage": "https://www.flickr.com/photos/indian-wedding-crafts/19313052978/",
+        "reason": "Accurate isolated bajot product photograph, but Flickr license 0 is All Rights Reserved; no reuse grant."
+      },
+      {
+        "sourcePage": "https://www.flickr.com/photos/4446083224/",
+        "canonicalPageEvidence": "photo-4446083224.json",
+        "original": "choki-4446083224-original.jpg",
+        "originalDimensions": [
+          3264,
+          1840
+        ],
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "reason": "Real painted wooden chowkis clearly recognized. Foreground furniture clipped at bottom; complete back row subjects only about 250–400 px wide, dark and noisy. Not approved as clear high-resolution product photo.",
+        "visualEvidence": "choki-4446083224-crop.jpg"
+      },
+      {
+        "sourcePage": "https://www.flickr.com/photos/7637371368/",
+        "original": "dining-area-original.jpg",
+        "originalDimensions": [
+          3200,
+          1800
+        ],
+        "license": "CC BY 2.0",
+        "reason": "Servers obscure furniture; foreground dining table is waist high, background low furniture too dark/small."
+      },
+      {
+        "sourcePage": "https://artsandculture.google.com/asset/chowki-low-surface/5AFpYCHHrZi4jw?hl=en",
+        "reason": "Accurate CEPT/SADACC documentation but rights explicitly identify institution and no reusable license."
+      },
+      {
+        "sourcePage": "https://www.ijert.org/research/interior-design-approach-with-consideration-of-life-cycle-assessment-of-furniture-IJERTV12IS110047.pdf",
+        "localFile": "furniture-paper.pdf",
+        "license": "CC BY 4.0 journal footer",
+        "reason": "Figure 4 embeds real chowki photographs at tiny native resolution inside 575x293 composite. Figure 5 standalone photograph 315x197. Retailer-like origin not independently verified. Neither suitable high-resolution image."
+      },
+      {
+        "sourcePage": "https://www.flickr.com/photos/55322756477/",
+        "localFile": "sadhu-55322756477.jpg",
+        "reason": "Keyword match only: person at Chauki Ghat; no wooden furniture."
+      }
+    ],
+    "requiredUnblockingEvidence": "Two distinct owner-supplied photographs with permission, or distinct accurate photographs with explicit commercial-use license and enough native product pixels. No purchases or contacting rights holders performed."
+  },
+  "brocade": {
+    "product": "Brocade runners",
+    "date": "2026-11-13",
+    "approved_image": null,
+    "status": "blocked",
+    "existing_assignments_changed": 0,
+    "blocker": "No researched photograph simultaneously establishes an actual brocade table runner, suitable clear product framing/resolution, and affirmative commercial reuse rights. Public-domain actual runner photos lack documented brocade construction and/or usable photography; documented contemporary brocade runner photos do not grant commercial reuse. No image inferred from appearance or unrelated textile assigned.",
+    "visually_reviewed_downloads": [
+      {
+        "met_object_id": 226572,
+        "source_page": "https://www.metmuseum.org/art/collection/search/226572",
+        "local_file": "met-226572.jpg",
+        "width": 2028,
+        "height": 4000,
+        "bytes": 3176890,
+        "visually_reviewed": true,
+        "rights": "Public Domain / Met Open Access CC0",
+        "approved": false,
+        "rejection_reason": "Clear color studio photograph, but frayed historical velvet runner with worn edges; catalogue records Textiles-Velvets and silk/metal thread, without verified brocade construction. Metallic appearance alone cannot establish brocade."
+      },
+      {
+        "met_object_id": 226576,
+        "source_page": "https://www.metmuseum.org/art/collection/search/226576",
+        "local_file": "met-226576.jpg",
+        "width": 2249,
+        "height": 2953,
+        "bytes": 3123059,
+        "visually_reviewed": true,
+        "rights": "Public Domain / Met Open Access CC0",
+        "approved": false,
+        "rejection_reason": "Black-and-white archival detail scan with accession handwriting and incomplete product framing; catalogue Textiles-Velvets does not verify brocade construction."
+      },
+      {
+        "met_object_id": 69907,
+        "source_page": "https://www.metmuseum.org/art/collection/search/69907",
+        "local_file": "met-69907.jpg",
+        "width": 714,
+        "height": 284,
+        "bytes": 72765,
+        "visually_reviewed": true,
+        "rights": "Public Domain / Met Open Access CC0",
+        "approved": false,
+        "rejection_reason": "Low-resolution 714 by 284 black-and-white detail photograph, showing only part of runner; catalogue silk woven medium does not verify brocade construction."
+      }
+    ],
+    "fresh_research": [
+      {
+        "source": "Openverse commercial reuse filtered image API",
+        "queries": [
+          "brocade table runner",
+          "brocade runner",
+          "brocaded runner"
+        ],
+        "result": "Each exact query returned zero results. Broader table runner / silk table runner results included muslin, linen embroidery, cotton patterns, not documented brocade.",
+        "evidence": [
+          "openverse-brocade.json",
+          "openverse-brocade-runner.json",
+          "openverse-brocaded-runner.json",
+          "openverse-table-runner.json",
+          "openverse-silk-table-runner.json"
+        ]
+      },
+      {
+        "source": "Flickr original public search",
+        "commercial_licenses": [
+          "CC BY",
+          "CC BY-SA",
+          "CC0",
+          "Public Domain Mark"
+        ],
+        "queries": [
+          "brocade runner",
+          "brocade table runner",
+          "brocaded runner",
+          "damask table runner"
+        ],
+        "result": "Embedded search data totalItems zero for all four commercial-filtered exact searches.",
+        "evidence": [
+          "flickr-brocade-runner.html.json",
+          "flickr-brocade-table-runner.html.json",
+          "flickr-brocaded-runner.html.json",
+          "flickr-damask-table-runner.html.json"
+        ]
+      },
+      {
+        "source": "Flickr Chicago Art Department Linden runner",
+        "source_page": "https://www.flickr.com/photos/14242061@N04/3984679997",
+        "license": "CC BY 2.0",
+        "result": "Original description says hand silk-screened muslin, not silk or brocade fabric; rejected.",
+        "evidence": "linden-flickr.html"
+      },
+      {
+        "source": "MET replacement public collection API wider runner searches",
+        "result": "Fetched metadata for union of 162 objects from two runner queries; identified new authentic runners, downloaded and visually inspected three. None met identity plus image quality requirements. 226691 is Textiles-Embroidered, not verified brocade.",
+        "evidence": [
+          "met-runner-objects.json",
+          "met-runner-asian-search.json",
+          "met-runner-textiles-search.json"
+        ]
+      },
+      {
+        "source": "Yale Objects Collection RU 104 item 806",
+        "source_page": "https://ead-pdfs.library.yale.edu/2771.pdf",
+        "result": "Finding aid page37 documents Brocade table runner labeled Kawashima Kyoto Japan, box84. Targeted Yale digital collection searches found no corresponding digitized product photograph with commercial reuse evidence. Finding aid alone cannot be used as product photo."
+      },
+      {
+        "source": "Burke Museum Red Tai table runner 2000-45/79",
+        "source_page": "https://www.burkemuseum.org/static/satextiles/laosindex.html",
+        "result": "Actual runner recorded silk cotton supplementary weft. Page explicitly Copyright University of Washington Burke Museum All Rights Reserved; no commercial license. Rejected."
+      },
+      {
+        "source": "Cooper Hewitt Smithsonian 1973-21-1",
+        "source_page": "https://collections.si.edu/search/results.htm?q=%22Sheila+Hicks%2C+American%2C+born+1934%22",
+        "result": "Modern cotton runner plain weave with discontinuous supplementary wefts, ca1972, designer Sheila Hicks; rights Usage conditions apply, no affirmative CC0 commercial image license confirmed. Not suitable Indian brocade type."
+      },
+      {
+        "source": "Cooper Hewitt Smithsonian 1935-18-1",
+        "source_page": "https://www.si.edu/object/table-scarf%3Achndm_1935-18-1",
+        "result": "Public-domain table scarf but white cotton embroidery/net/lace; not brocade."
+      },
+      {
+        "source": "Saint Louis Art Museum 552",
+        "source_page": "https://www.slam.org/collection/objects/552/",
+        "result": "Napkin or table runner is silk and metallic embroidery on linen, not brocade. Rejected."
+      },
+      {
+        "source": "Seattle Art Museum and Textile Museum Canada followups",
+        "source_pages": [
+          "https://www.seattleartmuseum.org/info/terms-and-conditions",
+          "https://collections.textilemuseum.ca/collection/14912/fd1186a963bd384404b4f8101e564cad"
+        ],
+        "result": "Seattle terms prohibit commercial image reuse without consent. Textile Museum Canada actual brocaded runner T2006X0142 likewise noncommercial/educational/personal permission only. No contact attempted."
+      }
+    ],
+    "excluded_existing_image": "Cleveland Museum 1939.145 already assigned to Silk runners; never reused.",
+    "next_required_input": "Owner-supplied clear photograph of actual brocade runner, or documented commercial reuse permission/license for an appropriate photographer/retailer photo. No purchases or outreach undertaken."
+  }
+}
