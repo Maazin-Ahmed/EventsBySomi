@@ -92,6 +92,8 @@ try {
       assert.equal(products.length, group.items.length)
       assert.ok(products.every(product => product.decoded || product.placeholder), 'Unexpected blank image box')
       assert.ok(products.filter(product => product.src).every(product => product.decoded && product.objectFit === 'contain'), 'Image decode/fit failure')
+      assert.ok(products.filter(product => product.src).every(product => product.renderedHeight <= 231), 'Image element exceeds its reserved 230px frame and clips the subject')
+      assert.ok(products.filter(product => product.src).every(product => product.renderedWidth <= product.cardWidth + 1), 'Image element exceeds the card width')
       assert.ok(products.every(product => product.left >= -1 && product.right <= width + 1), 'Product card overflow')
       assert.ok(layout.documentWidth <= width + 1, 'Horizontal page overflow')
       assert.ok(productRequests <= 1 && categoryRequests <= 1, 'Duplicate catalogue requests')

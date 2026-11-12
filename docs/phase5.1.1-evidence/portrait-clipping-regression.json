@@ -1,0 +1,33 @@
+{
+  "cause": "Intrinsic CSS grid row sizing expanded portrait image elements beyond a 230px clipping container despite object-fit contain.",
+  "fix": "Explicit minmax(0,1fr) row and column; image minimum dimensions zero.",
+  "before": [
+    {
+      "id": "seating:chiavari-chairs",
+      "renderedHeight": 595.890625,
+      "frameHeight": 230,
+      "objectFit": "contain"
+    },
+    {
+      "id": "seating:jhoola",
+      "renderedHeight": 416.28125,
+      "frameHeight": 230,
+      "objectFit": "contain"
+    }
+  ],
+  "after": [
+    {
+      "id": "seating:chiavari-chairs",
+      "renderedHeight": 230,
+      "frameHeight": 230,
+      "objectFit": "contain"
+    },
+    {
+      "id": "seating:jhoola",
+      "renderedHeight": 230,
+      "frameHeight": 230,
+      "objectFit": "contain"
+    }
+  ],
+  "assertion": "Every loaded catalogue image element must render no taller than 231px and no wider than its card."
+}
