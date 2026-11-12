@@ -102,6 +102,28 @@ try {
  await until(`document.querySelectorAll('[data-product-id]').length===8`)
  results.catalogueErrorAndRetry='PASS'
  await cmd('Fetch.disable')
+ const reservations=[]
+ for(const width of [390,1440]) {
+  await cmd('Emulation.setDeviceMetricsOverride',{width,height:width===390?844:1080,deviceScaleFactor:width===390?2:1,mobile:width===390})
+  for(const group of rentalGroups) {
+   let held
+   intercept=async event=>{if(event.request.method==='GET')held=event.requestId;else await cmd('Fetch.continueRequest',{requestId:event.requestId})}
+   await cmd('Fetch.enable',{patterns:[{urlPattern:'*rest/v1/products?*',requestStage:'Request'}]})
+   await nav('/collections/'+group.slug,'h1')
+   for(let retry=0;retry<160&&!held;retry++)await sleep(50)
+   assert.ok(held,'Products GET must be held for loading geometry test')
+   await until(`document.querySelectorAll('.rental-item[aria-hidden=true]').length===${group.items.length}`)
+   const geometry=`(()=>{const grid=document.querySelector('.inventory-grid');return{height:grid.getBoundingClientRect().height,relatedTop:document.querySelector('.related-section').getBoundingClientRect().top+scrollY}})()`
+   const before=await run(geometry)
+   await cmd('Fetch.continueRequest',{requestId:held})
+   await until(`document.querySelectorAll('[data-product-id]').length===${group.items.length}`)
+   const after=await run(geometry)
+   assert.ok(Math.abs(before.height-after.height)<1&&Math.abs(before.relatedTop-after.relatedTop)<1,'Catalogue response changed reserved grid geometry')
+   reservations.push({category:group.slug,width,before,after})
+   await cmd('Fetch.disable')
+  }
+ }
+ results.loadingGridReservation=reservations
  console.log(JSON.stringify({...results,surfaces:results.surfaces.map(surface=>({route:surface.route,products:surface.rows.length,decoded:surface.rows.filter(row=>row.decoded).length,explicitlyUnavailable:surface.rows.filter(row=>row.placeholder).length}))},null,2))
  await fs.writeFile('docs/phase5.1.1-evidence/functional-regression.json',JSON.stringify(results,null,2)+'\n')
 } finally {ws.close();await fetch(`http://127.0.0.1:${port}/json/close/${target.id}`)}

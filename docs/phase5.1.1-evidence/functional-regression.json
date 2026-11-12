@@ -1,6 +1,6 @@
 {
   "base": "http://127.0.0.1:4173",
-  "testedAt": "2026-11-12T17:35:36.697Z",
+  "testedAt": "2026-11-12T18:09:34.058Z",
   "submission": "Mocked in browser; no live customer/request records written",
   "surfaces": [
     {
@@ -779,5 +779,151 @@
   "requiredFieldValidation": "PASS",
   "requestPayloadAndMockedConfirmation": "PASS",
   "cdnFailureFallback": "PASS",
-  "catalogueErrorAndRetry": "PASS"
+  "catalogueErrorAndRetry": "PASS",
+  "loadingGridReservation": [
+    {
+      "category": "seating",
+      "width": 390,
+      "before": {
+        "height": 3992.921875,
+        "relatedTop": 5119.140625
+      },
+      "after": {
+        "height": 3992.921875,
+        "relatedTop": 5119.140625
+      }
+    },
+    {
+      "category": "tables",
+      "width": 390,
+      "before": {
+        "height": 2497.28125,
+        "relatedTop": 3623.5
+      },
+      "after": {
+        "height": 2497.28125,
+        "relatedTop": 3623.5
+      }
+    },
+    {
+      "category": "linens",
+      "width": 390,
+      "before": {
+        "height": 3965.375,
+        "relatedTop": 5091.59375
+      },
+      "after": {
+        "height": 3965.375,
+        "relatedTop": 5091.59375
+      }
+    },
+    {
+      "category": "mandap-stage",
+      "width": 390,
+      "before": {
+        "height": 4491.46875,
+        "relatedTop": 5617.6875
+      },
+      "after": {
+        "height": 4491.46875,
+        "relatedTop": 5617.6875
+      }
+    },
+    {
+      "category": "decor",
+      "width": 390,
+      "before": {
+        "height": 3494.375,
+        "relatedTop": 4620.59375
+      },
+      "after": {
+        "height": 3494.375,
+        "relatedTop": 4620.59375
+      }
+    },
+    {
+      "category": "serveware",
+      "width": 390,
+      "before": {
+        "height": 2469.734375,
+        "relatedTop": 3595.953125
+      },
+      "after": {
+        "height": 2469.734375,
+        "relatedTop": 3595.953125
+      }
+    },
+    {
+      "category": "seating",
+      "width": 1440,
+      "before": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      },
+      "after": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      }
+    },
+    {
+      "category": "tables",
+      "width": 1440,
+      "before": {
+        "height": 932.09375,
+        "relatedTop": 2312.1875
+      },
+      "after": {
+        "height": 932.09375,
+        "relatedTop": 2312.1875
+      }
+    },
+    {
+      "category": "linens",
+      "width": 1440,
+      "before": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      },
+      "after": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      }
+    },
+    {
+      "category": "mandap-stage",
+      "width": 1440,
+      "before": {
+        "height": 1437.1875,
+        "relatedTop": 2817.28125
+      },
+      "after": {
+        "height": 1437.1875,
+        "relatedTop": 2817.28125
+      }
+    },
+    {
+      "category": "decor",
+      "width": 1440,
+      "before": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      },
+      "after": {
+        "height": 1409.640625,
+        "relatedTop": 2789.734375
+      }
+    },
+    {
+      "category": "serveware",
+      "width": 1440,
+      "before": {
+        "height": 932.09375,
+        "relatedTop": 2312.1875
+      },
+      "after": {
+        "height": 932.09375,
+        "relatedTop": 2312.1875
+      }
+    }
+  ]
 }

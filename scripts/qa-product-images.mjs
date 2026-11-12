@@ -58,8 +58,11 @@ await command('Network.enable')
 await command('Runtime.enable')
 await command('Page.addScriptToEvaluateOnNewDocument', { source: `
   localStorage.setItem('somia-rental-process-seen', '1');
-  window.__imageQA = { cls: 0 };
-  new PerformanceObserver(list => { for (const entry of list.getEntries()) if (!entry.hadRecentInput) window.__imageQA.cls += entry.value }).observe({ type: 'layout-shift', buffered: true });
+  window.__imageQA = { cls: 0, shifts: [] };
+  new PerformanceObserver(list => { for (const entry of list.getEntries()) if (!entry.hadRecentInput) {
+    window.__imageQA.cls += entry.value;
+    window.__imageQA.shifts.push({value:entry.value,time:entry.startTime,sources:entry.sources.map(source=>({tag:source.node?.tagName,className:source.node?.className,id:source.node?.id,previous:source.previousRect.toJSON(),current:source.currentRect.toJSON()}))});
+  }}).observe({ type: 'layout-shift', buffered: true });
 ` })
 const results = []
 const editorialResults = []
@@ -71,7 +74,7 @@ try {
     await command('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: mobile ? 2 : 1, mobile })
     await command('Emulation.setTouchEmulationEnabled', { enabled: mobile })
     await command('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: 'reduce' }] })
-    for (const group of process.env.QA_EDITORIAL_ONLY ? [] : rentalGroups) {
+    for (const group of process.env.QA_EDITORIAL_ONLY ? [] : rentalGroups.filter(group => !process.env.QA_CATEGORIES || process.env.QA_CATEGORIES.split(',').includes(group.slug))) {
       requests.length = 0
       await navigate('/collections/' + group.slug)
       await until(`document.querySelectorAll('[data-product-id]').length === ${group.items.length}`)
@@ -84,7 +87,7 @@ try {
         await wait(60)
         products.push(await evaluate(`(async()=>{const card=document.querySelectorAll('[data-product-id]')[${index}];const img=card.querySelector('img');const box=card.getBoundingClientRect();if(img)try{await img.decode()}catch{};const r=img?.getBoundingClientRect();return {id:card.dataset.productId,name:card.querySelector('h3').textContent,src:img?.currentSrc||null,decoded:!!img&&img.complete&&img.naturalWidth>0,naturalWidth:img?.naturalWidth,naturalHeight:img?.naturalHeight,renderedWidth:r?.width,renderedHeight:r?.height,objectFit:img&&getComputedStyle(img).objectFit,placeholder:!!card.querySelector('[role=img]'),cardWidth:box.width,left:box.left,right:box.right,titleLeft:card.querySelector('h3').getBoundingClientRect().left}})()`))
       }
-      const layout = await evaluate(`({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth,cls:window.__imageQA.cls,gridTop:document.querySelector('.inventory-grid').getBoundingClientRect().top+scrollY,gridHeight:document.querySelector('.inventory-grid').getBoundingClientRect().height,columns:getComputedStyle(document.querySelector('.inventory-grid')).gridTemplateColumns,heights:[...document.querySelectorAll('.rental-product-image')].map(e=>e.getBoundingClientRect().height),brokenOtherImages:[...document.images].filter(i=>!i.closest('[data-product-id]')&&i.complete&&!i.naturalWidth).map(i=>i.src)})`)
+      const layout = await evaluate(`({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth,cls:window.__imageQA.cls,shifts:window.__imageQA.shifts,gridTop:document.querySelector('.inventory-grid').getBoundingClientRect().top+scrollY,gridHeight:document.querySelector('.inventory-grid').getBoundingClientRect().height,columns:getComputedStyle(document.querySelector('.inventory-grid')).gridTemplateColumns,heights:[...document.querySelectorAll('.rental-product-image')].map(e=>e.getBoundingClientRect().height),brokenOtherImages:[...document.images].filter(i=>!i.closest('[data-product-id]')&&i.complete&&!i.naturalWidth).map(i=>i.src)})`)
       const productRequests = requests.filter(request => request.method === 'GET' && request.url.includes('/rest/v1/products?')).length
       const categoryRequests = requests.filter(request => request.method === 'GET' && request.url.includes('/rest/v1/categories?')).length
       const result = { category: group.slug, width, height, emulation: mobile ? 'Chromium mobile/touch, DPR 2' : 'Chromium desktop, DPR 1', products, beforeScroll, layout, productRequests, categoryRequests }
@@ -96,6 +99,7 @@ try {
       assert.ok(products.filter(product => product.src).every(product => product.renderedWidth <= product.cardWidth + 1), 'Image element exceeds the card width')
       assert.ok(products.every(product => product.left >= -1 && product.right <= width + 1), 'Product card overflow')
       assert.ok(layout.documentWidth <= width + 1, 'Horizontal page overflow')
+      assert.ok(layout.cls <= 0.1, 'Unexpected major page layout shift; inspect layout.shifts attribution')
       assert.ok(productRequests <= 1 && categoryRequests <= 1, 'Duplicate catalogue requests')
       assert.ok(!layout.brokenOtherImages.length, 'Broken editorial image')
       if ([390,820,1440].includes(width)) {
