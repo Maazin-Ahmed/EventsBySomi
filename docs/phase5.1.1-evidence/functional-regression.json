@@ -1,7 +1,7 @@
 {
   "base": "http://127.0.0.1:4173",
-  "testedAt": "2026-11-12T18:09:34.058Z",
-  "submission": "Mocked in browser; no live customer/request records written",
+  "testedAt": "2026-11-12T18:22:59.518Z",
+  "submission": "Page-level fetch mock with network endpoint blocked; no live submission in this run",
   "surfaces": [
     {
       "route": "/cart",
@@ -777,6 +777,7 @@
   ],
   "cartQuantityAndLegacyCompatibility": "PASS",
   "requiredFieldValidation": "PASS",
+  "submitNetworkRequests": 0,
   "requestPayloadAndMockedConfirmation": "PASS",
   "cdnFailureFallback": "PASS",
   "catalogueErrorAndRetry": "PASS",

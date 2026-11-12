@@ -1,0 +1,77 @@
+{
+  "cause": "Related collections moved when the asynchronous catalogue inserted its grid before first paint.",
+  "before": [
+    {
+      "category": "serveware",
+      "width": 1920,
+      "cls": 0.2784388062603286,
+      "shifts": [
+        {
+          "value": 0.2784388062603286,
+          "time": 354.3999999985099,
+          "sources": [
+            {
+              "tag": "SECTION",
+              "className": "related-section",
+              "id": "",
+              "previous": {
+                "x": 0,
+                "y": 440.09375,
+                "width": 1905,
+                "height": 577,
+                "top": 440.09375,
+                "right": 1905,
+                "bottom": 1017.09375,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            },
+            {
+              "tag": "DIV",
+              "className": "related-inline",
+              "id": "",
+              "previous": {
+                "x": 0,
+                "y": 1017.09375,
+                "width": 1905,
+                "height": 62.90625,
+                "top": 1017.09375,
+                "right": 1905,
+                "bottom": 1080,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fix": "Invisible non-interactive loading shells reserve the exact current catalogue geometry; loaded product records and images remain database-backed.",
+  "after": {
+    "localCases": 72,
+    "productionCases": 72,
+    "localMaxCLS": 0.006450592764752656,
+    "productionMaxCLS": 0,
+    "delayedResponseGeometryCases": 12,
+    "maximumGeometryChangePx": 0
+  }
+}

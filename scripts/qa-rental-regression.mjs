@@ -10,10 +10,12 @@ await new Promise(resolve => ws.addEventListener('open', resolve, {once:true}))
 let id = 0
 const pending = new Map()
 let intercept
+let submitNetworkRequests=0
 ws.addEventListener('message', event => {
   const message = JSON.parse(event.data)
   if (message.id) { const handler=pending.get(message.id); if(handler){pending.delete(message.id);message.error?handler.reject(Error(message.error.message)):handler.resolve(message.result)} }
   else if(message.method==='Fetch.requestPaused') intercept?.(message.params)
+  else if(message.method==='Network.requestWillBeSent'&&message.params.request.url.includes('/functions/v1/submit-rental-request'))submitNetworkRequests++
 })
 const cmd=(method,params={})=>new Promise((resolve,reject)=>{pending.set(++id,{resolve,reject});ws.send(JSON.stringify({id,method,params}))})
 async function run(expression){const result=await cmd('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(result.exceptionDetails)throw Error(result.exceptionDetails.exception?.description||result.exceptionDetails.text);return result.result.value}
@@ -21,8 +23,23 @@ const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms))
 async function until(expression){for(let i=0;i<160;i++){if(await run(`Boolean(${expression})`))return;await sleep(150)}throw Error('Timeout: '+expression)}
 async function nav(route,selector){await cmd('Page.navigate',{url:base+route});await until(`document.readyState==='complete'&&location.pathname===${JSON.stringify(route)}&&!!document.querySelector(${JSON.stringify(selector)})`)}
 const allItems=rentalGroups.flatMap(group=>group.items.map(name=>({id:group.slug+':'+name.toLowerCase().replace(/[^a-z0-9]+/g,'-'),category:group.slug,categoryName:group.title,name,quantity:1,image:'/images/rentals/stale-legacy-image.webp'})))
-const results={base,testedAt:new Date().toISOString(),submission:'Mocked in browser; no live customer/request records written',surfaces:[]}
+const results={base,testedAt:new Date().toISOString(),submission:'Page-level fetch mock with network endpoint blocked; no live submission in this run',surfaces:[]}
 await cmd('Page.enable');await cmd('Runtime.enable');await cmd('Network.enable')
+await cmd('Network.setBlockedURLs',{urls:['https://xuiohhowgpfesakxikvo.supabase.co/functions/v1/submit-rental-request']})
+// Install before the application initializes its Supabase client. The submit
+// mock remains inside the page even if this CDP driver disconnects or fails;
+// it can never fall through to a real customer/request write.
+await cmd('Page.addScriptToEvaluateOnNewDocument',{source:`
+ const originalFetch=window.fetch.bind(window);
+ window.fetch=(input,options)=>{
+  const url=typeof input==='string'?input:input.url||String(input);
+  if(url==='https://xuiohhowgpfesakxikvo.supabase.co/functions/v1/submit-rental-request'){
+   sessionStorage.setItem('__imageQaRequestPayload',options?.body||'null');
+   return Promise.resolve(new Response(JSON.stringify({request_number:'QA-MOCK-IMAGE-001'}),{status:200,headers:{'content-type':'application/json'}}));
+  }
+  return originalFetch(input,options);
+ };
+`})
 await cmd('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:2,mobile:true})
 await cmd('Emulation.setTouchEmulationEnabled',{enabled:true})
 try {
@@ -56,22 +73,14 @@ try {
  await run(`document.querySelector('form button[type=submit], form > button').click()`)
  await until(`document.querySelector('form small')`)
  results.requiredFieldValidation='PASS'
- let payload
- intercept=async event=>{
-  if(event.request.url.includes('/functions/v1/submit-rental-request')){
-   if(event.request.method==='OPTIONS') {
-    await cmd('Fetch.fulfillRequest',{requestId:event.requestId,responseCode:204,responseHeaders:[{name:'access-control-allow-origin',value:'*'},{name:'access-control-allow-methods',value:'POST, OPTIONS'},{name:'access-control-allow-headers',value:event.request.headers['Access-Control-Request-Headers']||'authorization, apikey, content-type, x-client-info, x-supabase-api-version'}]})
-    return
-   }
-   payload=JSON.parse(event.request.postData)
-   await cmd('Fetch.fulfillRequest',{requestId:event.requestId,responseCode:200,responseHeaders:[{name:'content-type',value:'application/json'},{name:'access-control-allow-origin',value:'*'}],body:Buffer.from(JSON.stringify({request_number:'QA-MOCK-IMAGE-001'})).toString('base64')})
-  }else await cmd('Fetch.continueRequest',{requestId:event.requestId})
- }
- await cmd('Fetch.enable',{patterns:[{urlPattern:'*functions/v1/submit-rental-request*',requestStage:'Request'}]})
+ await run(`sessionStorage.removeItem('__imageQaRequestPayload')`)
  await run(`(()=>{const values={full_name:'Image QA',email:'image-qa@example.test',phone:'9545550100',event_type:'Weddings',event_date:'2027-12-01',delivery_address:'QA address',event_venue:'QA venue'};for(const[name,value]of Object.entries(values)){const input=document.querySelector('[name="'+name+'"]');const proto=input.tagName==='SELECT'?HTMLSelectElement.prototype:HTMLInputElement.prototype;Object.getOwnPropertyDescriptor(proto,'value').set.call(input,value);input.dispatchEvent(new Event(input.tagName==='SELECT'?'change':'input',{bubbles:true}))}})()`)
  await run(`document.querySelector('form > button').click()`)
  await until(`location.pathname==='/request-confirmation'&&!!document.querySelector('[data-product-id]')`)
+ const payload=await run(`JSON.parse(sessionStorage.getItem('__imageQaRequestPayload')||'null')`)
  assert.ok(payload,'Submission must be intercepted')
+ assert.equal(submitNetworkRequests,0,'The request submission mock must make zero network requests')
+ results.submitNetworkRequests=submitNetworkRequests
  assert.deepEqual(Object.keys(payload).sort(),['customer','request'])
  assert.deepEqual(payload.request.requested_items.map(item=>Object.keys(item).sort()),selected.map(()=>['category','category_name','id','name','quantity']))
  assert.deepEqual(payload.request.requested_items.map(item=>item.id),selected.map(item=>item.id))

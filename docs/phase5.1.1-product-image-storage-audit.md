@@ -20,6 +20,10 @@ Before this work, 16 database records pointed to local WebP paths and 26 had nul
 
 The retained local variants were visually reviewed. The Chiavari portrait was especially susceptible to soft rendering because the old srcset sizes string requested only 130 CSS pixels and could select a small portrait variant. Primary cards now request the approved larger database image. The prior sofa studio image was replaced with a verified real photograph of an event loveseat; photographic provenance of the previous image was insufficient. The folding chairs clearly depict folding metal chairs and were retained. All other retained images received larger locally optimized variants and verified photographer attribution.
 
+Rendered screenshot review also identified an intrinsic CSS grid sizing bug: portrait image elements could grow beyond the reserved 230px parent even with object-fit: contain, causing the parent to clip chairs, swings and other tall objects. An explicit minmax(0,1fr) grid track and zero minimum image size now constrain each element to its frame. The browser audit asserts actual rendered image height and width, so a contain declaration alone cannot pass this check.
+
+Element-level layout-shift tracing also identified the related-collections section moving when the asynchronous catalogue response inserted its grid. Invisible, non-interactive loading shells now reserve the existing grid geometry using the preserved legacy category identities. Once loaded, visible cards and image URLs come from database records. The loading message is out of normal flow. No finished layout or branding changed, and the QA gate now rejects whole-page CLS above 0.1.
+
 The Phase 4.5 audit and Phase 5.1 architecture were read. The old product image manifest, all 80 old local variants, category listing, shared cart, request review, and confirmation were inspected. No separate rental product detail route exists in this application. Editorial category heroes remain separate from product photography.
 
 ## Initial audit of all 42 records
@@ -480,13 +484,17 @@ Mobile/tablet profiles use touch/mobile emulation and DPR 2; desktop uses DPR 1.
 
 All 18 required category screenshots are in [phase5.1.1-evidence/local/](phase5.1.1-evidence/local/): <category>-390.webp, <category>-820.webp and <category>-1440.webp. Full measured results are [local/responsive-results.json](phase5.1.1-evidence/local/responsive-results.json).
 
-Production rendered verification: **18 cases** across the same six categories; widths 390, 820, 1440px. All assigned images decoded from Supabase Storage URLs; measured results and production screenshots are in [production/](phase5.1.1-evidence/production/).
+Production rendered verification: **72 cases** across the same six categories; widths 320, 360, 375, 390, 430, 768, 820, 1024, 1280, 1366, 1440, 1920px. All assigned images decoded from Supabase Storage URLs. Maximum final production whole-page CLS: **0.0000**. Measured results, element-level shift attribution and production screenshots are in [production/](phase5.1.1-evidence/production/).
 
 Unrelated production imagery: all 22 homepage images and all 49 gallery images decoded successfully at both 390px and 1440px, with no browser runtime errors. See [production/editorial-results.json](phase5.1.1-evidence/production/editorial-results.json).
 
-Functional regression: **PASS**. All 42 items were inspected in cart, request review and confirmation; each surface decoded 39 current database thumbnails and showed the same three unavailable states. Legacy localStorage image paths, quantity +/- controls, required-field validation, request payload shape, confirmation session storage/cart clearing, CDN failure fallback and catalogue error/retry passed. Request submission was intercepted and mocked in Chromium: no live customer/request records were created. See [functional-regression.json](phase5.1.1-evidence/functional-regression.json).
+Functional regression: **PASS**. All 42 items were inspected in cart, request review and confirmation; each surface decoded 39 current database thumbnails and showed the same three unavailable states. Legacy localStorage image paths, quantity +/- controls, required-field validation, request payload shape, confirmation session storage/cart clearing, CDN failure fallback and catalogue error/retry passed. The final run uses a page-level fetch mock plus a blocked live endpoint and asserts **0 submission network requests**. See [functional-regression.json](phase5.1.1-evidence/functional-regression.json).
 
-The public submit_rental_request(jsonb,jsonb) RPC definition was compared before/after and is byte-for-byte unchanged; evidence and its SHA-256 are in [request-rpc-preservation.json](phase5.1.1-evidence/request-rpc-preservation.json). Authentication, the Edge Function and the live request transaction were not changed by this work. A real customer submission was not made during QA.
+Delayed-response regression: **12 cases passed** across all six categories at 390px and 1440px. The products GET was paused, loading grid dimensions and related-section positions measured, then the response released. Loading and loaded geometry matched exactly, removing the observed catalogue-insertion shift.
+
+The public submit_rental_request(jsonb,jsonb) RPC definition was compared before/after and is byte-for-byte unchanged; evidence and its SHA-256 are in [request-rpc-preservation.json](phase5.1.1-evidence/request-rpc-preservation.json). Authentication, the Edge Function and request-processing logic were not changed by this work.
+
+QA incident and correction: an early driver-side mock failure allowed one live QA submission (reserved image-qa@example.test address, request EBS-4CD569781E). A reviewed transaction checked the exact customer/request IDs, creation timestamp, name, event fields and complete three-item payload, refused to proceed if any other request referenced the test customer, and removed only that test request and its otherwise-unused test customer. Verification returned zero remaining fixture rows. No genuine customer/request record was changed. The mock was moved inside the page before Supabase client initialization, with the live endpoint additionally blocked; the final rerun asserts zero submission network requests. See [qa-fixture-cleanup.json](phase5.1.1-evidence/qa-fixture-cleanup.json).
 
 Checks run:
 
@@ -495,7 +503,7 @@ Checks run:
 - npm run db:verify:phase5.1 — PASS for six categories, 42 products and all other Phase 5.1 content.
 - npm run db:verify:product-images -- --allow-unmapped — PASS for all approved CDN bytes, URLs, image metadata and preserved fields, explicitly reports three blockers.
 - npm run db:verify:product-images without the audit-only flag returns nonzero while three photographs remain missing. This is intentional; the full acceptance gate does not pass.
-- npm run build — PASS. Existing bundle-size advisory remains; main bundle is approximately 682.52kB minified.
+- npm run build — PASS. Existing bundle-size advisory remains; main bundle is approximately 682.70kB minified.
 - git diff --check — PASS.
 - No pre-existing npm test suite is configured. The new rendered QA scripts provide the requested relevant regression checks.
 

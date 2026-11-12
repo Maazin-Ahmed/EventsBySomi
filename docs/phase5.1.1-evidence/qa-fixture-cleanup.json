@@ -1,0 +1,12 @@
+{
+  "verifiedAt": "2026-11-12T18:56:34.070Z",
+  "incident": "Early CDP mock failure allowed one QA submission at 2026-11-12T17:34:44.981626Z",
+  "requestReference": "EBS-4CD569781E",
+  "testEmail": "image-qa@example.test",
+  "cleanup": "Reviewed and executed a guarded transaction limited to the exact fixture IDs, timestamp, identity, event fields and complete payload; required exactly one request for the test customer; rolled back on any mismatch.",
+  "remainingTestCustomer": 0,
+  "remainingTestRequest": 0,
+  "genuineCustomerOrRequestRowsChanged": false,
+  "finalMock": "Installed inside the page before application initialization; live endpoint additionally blocked.",
+  "finalSubmitNetworkRequests": 0
+}

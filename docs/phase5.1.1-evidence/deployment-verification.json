@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-11-12T18:18:56.180Z",
+  "commit": "fabe72fcc740499e5bce51ecb445251505f18a0c",
+  "productionUrl": "https://www.eventsbysomia.com",
+  "deployment": "https://vercel.com/maazins-projects/events-by-somi/3CwNCysELV1MUm5fFwcmeBsp4MRu",
+  "deploymentStatus": "success",
+  "creditsStatus": 200,
+  "actualCreditsPage": true,
+  "attributionCount": 39,
+  "localViewportCases": 72,
+  "productionViewportCases": 72,
+  "productionMaxCLS": 0,
+  "publicFrontendKeyVerified": true,
+  "privilegedCredentialScan": "PASS; no values logged"
+}
